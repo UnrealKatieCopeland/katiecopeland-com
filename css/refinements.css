@@ -1,0 +1,530 @@
+/* ============================================================
+   REFINEMENT PASS — Visual Flow & Logo Fixes
+   ============================================================
+   Fixes logo background issues, improves section transitions,
+   integrates tagline, softens decree presentation.
+   ============================================================ */
+
+/* --- Utility: Blend Multiply (for images with white backgrounds) --- */
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+/* --- 1. Hero Wordmark: CSS Text Replacement --- */
+.hero-wordmark-text {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  line-height: 1;
+}
+
+.hero-wordmark-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  display: block;
+}
+
+.hero-wordmark-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 500;
+  color: var(--teal);
+  letter-spacing: 0.15em;
+  display: block;
+  margin-top: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .hero-wordmark-text {
+    text-align: left;
+    margin: 0 0 var(--space-md);
+  }
+}
+
+/* --- 2. Header Wordmark: CSS Text Replacement --- */
+.header-monogram {
+  mix-blend-mode: multiply;
+}
+
+.header-wordmark-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+/* Hide old wordmark image class (safety) */
+.site-logo .wordmark {
+  display: none;
+}
+
+/* --- 3. Footer Wordmark: CSS Text Replacement --- */
+.footer-wordmark-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: -0.01em;
+  display: block;
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+/* Override old footer-brand img rule (no longer needed) */
+.footer-brand img {
+  display: none;
+}
+
+/* --- 4. Divider Monogram --- */
+.divider img {
+  mix-blend-mode: multiply;
+}
+
+/* --- 5. Ruby & Moon / SDT Profile Image --- */
+.sdt-profile-img {
+  max-width: 180px;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  margin: 0 auto var(--space-md);
+}
+
+/* Comics page hero image */
+.sdt-hero-img {
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+}
+
+/* Podcast monogram */
+.podcast-monogram {
+  mix-blend-mode: multiply;
+}
+
+/* --- 6. SDT Intro Layout (Homepage) --- */
+.sdt-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.sdt-intro p {
+  max-width: 55ch;
+  color: var(--ink-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .sdt-intro {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .sdt-intro .sdt-profile-img {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+
+/* --- 7. Decree Carousel (Homepage) — Softer Presentation --- */
+.decree-carousel {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.decree-track {
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+
+.decree-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+}
+
+.decree-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.decree-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.decree-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--teal);
+  background: transparent;
+  color: var(--teal);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.decree-btn:hover {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.decree-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.decree-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray-light);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  padding: 0;
+}
+
+.decree-dot.active,
+.decree-dot:hover {
+  background: var(--teal);
+  transform: scale(1.2);
+}
+
+/* --- 8. Decree Gallery (Comics page) — Softer Edges --- */
+.decree-gallery-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  background: var(--white);
+  transition: all var(--transition);
+}
+
+.decree-gallery-item:hover {
+  box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.decree-gallery-item a {
+  display: block;
+}
+
+.decree-gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+.decree-gallery-item figcaption {
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-light);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* --- 9. Featured In Card (Homepage) --- */
+.featured-in-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--parchment);
+  border-radius: 8px;
+  padding: var(--space-lg);
+  border-left: 4px solid var(--teal);
+  box-shadow: var(--shadow-sm);
+}
+
+.featured-in-content {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.featured-in-icon {
+  flex-shrink: 0;
+  color: var(--teal);
+  margin-top: 2px;
+}
+
+.featured-in-source {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.featured-in-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  margin-bottom: var(--space-xs);
+}
+
+.featured-in-text {
+  color: var(--ink-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* --- 10. Pillar Quote Styling --- */
+.pillar-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--teal-dark);
+  font-size: 1rem;
+  margin-bottom: var(--space-xs);
+  line-height: 1.4;
+}
+
+/* --- 11. Hero Laugh Tagline — Integrated Accent --- */
+.hero-laugh-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--ember);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-md);
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .hero-laugh-tagline {
+    text-align: left;
+  }
+}
+
+/* --- 12. Smooth Section Transitions (Gradient Fades) --- */
+
+/* Parchment → White (section--alt) */
+.section--alt {
+  background: var(--white);
+  position: relative;
+}
+
+.section--alt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--parchment), var(--white));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section--alt::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--white), var(--parchment));
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* When section--alt is followed by section--teal, override the bottom gradient */
+.section--alt + .section--teal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--white), var(--teal));
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Teal section transitions */
+.section--teal {
+  position: relative;
+}
+
+.section--teal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--parchment), var(--teal));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section--teal::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--teal), var(--parchment));
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure section content stays above gradient overlays */
+.section--alt > .container,
+.section--teal > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Soften the divider between sections */
+.divider {
+  margin: var(--space-lg) auto;
+  opacity: 0.7;
+}
+
+/* --- 13. Tagline Banner (Comics page) — Subtler Integration --- */
+.tagline-banner {
+  padding: var(--space-lg) 0;
+  position: relative;
+}
+
+.tagline-banner::before,
+.tagline-banner::after {
+  content: '';
+  display: block;
+  height: 1px;
+  max-width: 200px;
+  margin: 0 auto;
+  background: linear-gradient(to right, transparent, var(--gray-light), transparent);
+}
+
+.tagline-banner::before {
+  margin-bottom: var(--space-lg);
+}
+
+.tagline-banner::after {
+  margin-top: var(--space-lg);
+}
+
+.tagline-banner .laugh-tagline {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  opacity: 0.8;
+}
+
+/* --- 14. SDT Hero Layout (Comics page) --- */
+.sdt-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+}
+
+.sdt-hero-img {
+  max-width: 200px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.sdt-hero-text h2 {
+  color: var(--teal);
+}
+
+.sdt-hero-text p {
+  color: var(--ink-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .sdt-hero {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* --- 15. Page Header Softening --- */
+.page-header {
+  border-bottom: none;
+  padding-bottom: var(--space-xl);
+  position: relative;
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--teal), transparent);
+  border-radius: 2px;
+}
+
+/* --- 16. Footer Transition --- */
+.site-footer {
+  position: relative;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--parchment), var(--ink));
+  pointer-events: none;
+}
+
+/* Ensure footer content is above gradient */
+.site-footer > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Increase footer top padding to account for gradient */
+.site-footer {
+  padding-top: calc(var(--space-xl) + 30px);
+}
+
+/* --- 17. Reduced Section Padding for Smoother Reading --- */
+/* Slightly reduce padding between sections for document-like flow */
+.section {
+  padding: var(--space-xl) 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+}

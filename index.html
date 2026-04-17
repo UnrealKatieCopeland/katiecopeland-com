@@ -24,6 +24,7 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/refinements.css">
 </head>
 <body>
 
@@ -36,8 +37,8 @@
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="index.html" class="site-logo" aria-label="Katie Copeland — Home">
-        <img src="assets/images/monogram_transparent_final.webp" alt="" aria-hidden="true">
-        <img src="assets/images/KatieCopelandBlackAndTealWordmarkcopy.webp" alt="Katie Copeland" class="wordmark">
+        <img src="assets/images/monogram_transparent_final.webp" alt="" aria-hidden="true" class="header-monogram">
+        <span class="header-wordmark-text" aria-label="Katie Copeland">Katie Copeland</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary navigation">
@@ -83,12 +84,16 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-text animate-in">
-            <img src="assets/images/Blackandtealwordmarkcopy.webp" alt="Katie Copeland, J.D." class="hero-wordmark">
+            <div class="hero-wordmark-text" aria-label="Katie Copeland, J.D.">
+              <span class="hero-wordmark-name">Katie<br>Copeland</span>
+              <span class="hero-wordmark-title">J.D.</span>
+            </div>
             <p class="hero-subtitle">Attorney · Author · Scholar · Advocate</p>
             <p class="hero-tagline">"The harm is not the absence of rights. It is the illusion of them."</p>
             <p class="hero-intro">
               Katie Copeland is a disability rights attorney and legal scholar whose work exposes the invisible barriers that prevent people with disabilities from receiving equal justice in America's courts. Her writing, frameworks, and advocacy are changing how the legal system understands its obligations under the ADA.
             </p>
+            <p class="hero-laugh-tagline" aria-label="Brand tagline">Laugh &rarr; Listen &rarr; Learn &rarr; Act&trade;</p>
             <div class="hero-cta">
               <a href="pages/publications.html" class="btn btn--primary btn--large">Explore Her Work</a>
               <a href="pages/speaking.html" class="btn btn--secondary btn--large">Book Katie to Speak</a>
@@ -101,16 +106,9 @@
       </div>
     </section>
 
-    <!-- Laugh → Listen → Learn → Act™ Tagline -->
-    <section class="section tagline-banner" aria-label="Brand tagline">
-      <div class="container text-center">
-        <p class="laugh-tagline">Laugh &rarr; Listen &rarr; Learn &rarr; Act&trade;</p>
-      </div>
-    </section>
-
-    <!-- Divider -->
+    <!-- Decorative Divider -->
     <div class="divider" aria-hidden="true">
-      <img src="assets/images/monogram_transparent_final.webp" alt="">
+      <img src="assets/images/monogram_transparent_final.webp" alt="" class="blend-multiply">
     </div>
 
     <!-- Featured In / Social Proof Section -->
@@ -247,7 +245,7 @@
         </div>
 
         <div class="sdt-intro animate-in">
-          <img src="assets/images/ruby-and-moon.png" alt="Ruby and Moon — Cavalier King Charles Spaniels who issue Royal Decrees about disability rights" class="sdt-profile-img">
+          <img src="assets/images/ruby-and-moon.png" alt="Ruby and Moon — Cavalier King Charles Spaniels who issue Royal Decrees about disability rights" class="sdt-profile-img blend-multiply">
           <p>Ruby is a Blenheim Cavalier King Charles Spaniel who issues Royal Decrees about disability rights from her velvet cushion. Moon is a tricolor Cavalier who holds the clipboard. Together, they make the law accessible — one decree at a time.</p>
         </div>
 
@@ -328,7 +326,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/images/wordmark_whitecopy.webp" alt="Katie Copeland">
+          <span class="footer-wordmark-text">Katie Copeland</span>
           <p>Disability rights attorney, author, and advocate working to transform how America's courts serve people with disabilities.</p>
         </div>
         <div class="footer-nav">

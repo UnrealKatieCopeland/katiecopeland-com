@@ -179,6 +179,41 @@
     });
   });
 
+  // ── Decree Carousel ────────────────────────────────────────
+  const decreeTrack = document.getElementById('decree-track');
+  const decreePrev = document.getElementById('decree-prev');
+  const decreeNext = document.getElementById('decree-next');
+  const decreeDots = document.getElementById('decree-dots');
+
+  if (decreeTrack && decreePrev && decreeNext && decreeDots) {
+    const slides = decreeTrack.querySelectorAll('.decree-slide');
+    let currentSlide = 0;
+
+    // Create dots
+    slides.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.className = 'decree-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to decree ' + (i + 1));
+      dot.addEventListener('click', function () { goToSlide(i); });
+      decreeDots.appendChild(dot);
+    });
+
+    function goToSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentSlide = index;
+      decreeTrack.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+      decreeTrack.style.transition = 'transform 0.4s ease';
+      var dots = decreeDots.querySelectorAll('.decree-dot');
+      dots.forEach(function (d, i) {
+        d.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    decreePrev.addEventListener('click', function () { goToSlide(currentSlide - 1); });
+    decreeNext.addEventListener('click', function () { goToSlide(currentSlide + 1); });
+  }
+
   // ── Current Year in Footer ─────────────────────────────────
   // (Already hardcoded to 2026, but this future-proofs it)
   const yearElements = document.querySelectorAll('[data-year]');
