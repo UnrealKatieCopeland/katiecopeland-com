@@ -8,8 +8,9 @@
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
   /* Brand Colors */
-  --teal:          #187569;
-  --teal-dark:     #145F58;
+  --teal:          #135C54;       /* AAA on white (7.82:1), AAA on parchment (6.95:1) */
+  --teal-deep:     #135C54;       /* AAA with white (7.82:1), used for teal backgrounds */
+  --teal-dark:     #10524B;       /* AAA with white (9.01:1), deepest teal */
   --teal-light:    #2A9D8F;
   --parchment:     #F5F1EB;
   --parchment-dark:#EDE7DD;
@@ -20,8 +21,8 @@
   /* Neutrals */
   --ink:           #1C1C1C;
   --ink-light:     #3A3A3A;
-  --gray:          #6B6B6B;
-  --gray-light:    #757575;
+  --gray:          #515151;       /* AAA on parchment (7.05:1) and white (7.94:1) */
+  --gray-light:    #595959;       /* AAA on white (7.00:1), AA+ on parchment (6.23:1) */
   --white:         #FFFFFF;
   --off-white:     #FAFAF8;
 
@@ -105,7 +106,7 @@ a:focus-visible {
 }
 
 ::selection {
-  background-color: var(--teal);
+  background-color: var(--teal-deep);
   color: var(--white);
 }
 
@@ -159,7 +160,7 @@ blockquote {
   border-left: 4px solid var(--ember);
   padding: var(--space-md) var(--space-lg);
   margin: var(--space-lg) 0;
-  background: rgba(24, 117, 105, 0.04);
+  background: rgba(19, 92, 84, 0.04);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
@@ -180,7 +181,7 @@ blockquote cite {
   position: absolute;
   top: -100%;
   left: var(--space-sm);
-  background: var(--teal);
+  background: var(--teal-deep);
   color: var(--white);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--border-radius);
@@ -394,9 +395,9 @@ blockquote cite {
 }
 
 .btn--primary {
-  background: var(--teal);
+  background: var(--teal-deep);
   color: var(--white);
-  border-color: var(--teal);
+  border-color: var(--teal-deep);
 }
 
 .btn--primary:hover {
@@ -414,7 +415,7 @@ blockquote cite {
 }
 
 .btn--secondary:hover {
-  background: var(--teal);
+  background: var(--teal-deep);
   color: var(--white);
   transform: translateY(-1px);
 }
@@ -522,20 +523,17 @@ blockquote cite {
 }
 
 .section--teal {
-  background: var(--teal);
+  background: var(--teal-deep);
   color: var(--white);
 }
-
 .section--teal h2,
 .section--teal h3,
 .section--teal h4 {
   color: var(--white);
 }
-
 .section--teal p {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.95);
 }
-
 .section--teal a {
   color: var(--parchment);
 }
@@ -688,7 +686,7 @@ blockquote cite {
 
 /* --- Framework Highlight --- */
 .framework-highlight {
-  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  background: linear-gradient(135deg, var(--teal-deep), var(--teal-dark));
   color: var(--white);
   border-radius: 8px;
   padding: var(--space-xl);
@@ -715,7 +713,7 @@ blockquote cite {
 }
 
 .framework-highlight p {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.95);
   font-size: 1.05rem;
   max-width: 65ch;
 }
@@ -802,7 +800,7 @@ blockquote cite {
 .form-group select:focus {
   outline: none;
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(24, 117, 105, 0.15);
+  box-shadow: 0 0 0 3px rgba(19, 92, 84, 0.15);
 }
 
 .form-group textarea {
@@ -813,7 +811,7 @@ blockquote cite {
 /* --- Footer --- */
 .site-footer {
   background: var(--ink);
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.9);
   padding: var(--space-xl) 0 var(--space-lg);
 }
 
@@ -834,16 +832,15 @@ blockquote cite {
 .footer-brand p {
   font-size: 0.9rem;
   max-width: 35ch;
-  color: rgba(255,255,255,0.6);
+   color: rgba(255,255,255,0.85);
 }
-
 .footer-nav h4 {
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.7);
   margin-bottom: var(--space-sm);
 }
 
@@ -856,7 +853,7 @@ blockquote cite {
 }
 
 .footer-nav a {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color var(--transition);
@@ -875,11 +872,10 @@ blockquote cite {
   align-items: center;
   gap: var(--space-sm);
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.7);
 }
-
 .footer-bottom a {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.75);
   text-decoration: none;
 }
 
@@ -1273,19 +1269,19 @@ blockquote cite {
 }
 
 .badge--featured {
-  background: var(--teal);
+  background: var(--teal-deep);
   color: var(--white);
 }
 
 .badge--new {
-  background: var(--teal-light);
+  background: var(--teal-deep);
   color: var(--white);
 }
 
 /* --- Publication Card Featured Variant --- */
 .pub-card--featured {
   border-left: 4px solid var(--teal);
-  background: linear-gradient(135deg, var(--white), rgba(24, 117, 105, 0.03));
+  background: linear-gradient(135deg, var(--white), rgba(19, 92, 84, 0.03));
 }
 
 .pub-card-header {
@@ -1442,7 +1438,7 @@ blockquote cite {
 .podcast-signup-field input:focus {
   outline: none;
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgba(24, 117, 105, 0.15);
+  box-shadow: 0 0 0 3px rgba(19, 92, 84, 0.15);
 }
 
 .podcast-signup-btn {
@@ -1459,7 +1455,7 @@ blockquote cite {
 /* --- Footer Trademarks --- */
 .footer-trademarks {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.7);
   max-width: 100%;
   line-height: 1.6;
 }
