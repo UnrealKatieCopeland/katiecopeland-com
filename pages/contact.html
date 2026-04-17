@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Katie Copeland, J.D.</title>
+  <meta name="description" content="Get in touch with Katie Copeland, J.D. for speaking engagements, media inquiries, collaboration, and general questions.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/webp" href="../assets/images/monogram_transparent_final.webp">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo" aria-label="Katie Copeland — Home">
+        <img src="../assets/images/monogram_transparent_final.webp" alt="" aria-hidden="true">
+        <img src="../assets/images/KatieCopelandBlackAndTealWordmarkcopy.webp" alt="Katie Copeland" class="wordmark">
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="speaking.html">Speaking</a></li>
+          <li><a href="comics.html">Comics</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="comics.html">Comics</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <span class="overline">Contact</span>
+        <h1>Let's Connect</h1>
+        <p>For speaking engagements, media inquiries, collaboration, or to simply say hello.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact Form -->
+          <div>
+            <h2 style="margin-bottom: var(--space-md);">Send a Message</h2>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required autocomplete="name" aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="speaking">Speaking Engagement</option>
+                  <option value="media">Media / Press Inquiry</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="legal">Legal Practice Inquiry</option>
+                  <option value="comics">Comics / Licensing</option>
+                  <option value="general">General Question</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" required aria-required="true" placeholder="Tell me a little about what you're looking for..."></textarea>
+              </div>
+
+              <!-- Honeypot for spam prevention -->
+              <div style="display: none;" aria-hidden="true">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">Send Message</button>
+
+              <!-- Success/Error Messages -->
+              <div id="form-status" role="alert" aria-live="polite" style="margin-top: var(--space-md); display: none;"></div>
+            </form>
+          </div>
+
+          <!-- Contact Info Sidebar -->
+          <div>
+            <div style="background: var(--white); border-radius: 6px; padding: var(--space-lg); box-shadow: var(--shadow-sm); margin-bottom: var(--space-lg);">
+              <h3 style="color: var(--teal); margin-bottom: var(--space-md);">Other Ways to Reach Me</h3>
+
+              <div style="margin-bottom: var(--space-md);">
+                <h4 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember); margin-bottom: 0.3rem;">Email</h4>
+                <p style="margin-bottom: 0;"><a href="mailto:katie@copelandlawtexas.com">katie@copelandlawtexas.com</a></p>
+              </div>
+
+              <div style="margin-bottom: var(--space-md);">
+                <h4 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember); margin-bottom: 0.3rem;">Phone</h4>
+                <p style="margin-bottom: 0;"><a href="tel:+18177898498">(817) 789-8498</a></p>
+              </div>
+
+              <div style="margin-bottom: var(--space-md);">
+                <h4 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember); margin-bottom: 0.3rem;">Speaking Inquiries</h4>
+                <p style="margin-bottom: 0;">For booking and availability, please use the contact form with "Speaking Engagement" selected, or email with "Speaking Inquiry" in the subject line. You can also visit the <a href="speaking.html">Speaking page</a> for topics and details.</p>
+              </div>
+
+              <div style="margin-bottom: var(--space-md);">
+                <h4 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember); margin-bottom: 0.3rem;">Media &amp; Press</h4>
+                <p style="margin-bottom: 0;">Journalists and media professionals are welcome to reach out for interviews, commentary, or expert sourcing on disability rights and court access.</p>
+              </div>
+
+              <div style="margin-bottom: var(--space-md);">
+                <h4 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember); margin-bottom: 0.3rem;">Social</h4>
+                <p style="margin-bottom: 0;">
+                  <a href="https://www.instagram.com/stopdocumentingthis/" target="_blank" rel="noopener">Instagram @stopdocumentingthis</a><br>
+                  <a href="https://www.linkedin.com/in/katiecopeland" target="_blank" rel="noopener">LinkedIn</a>
+                </p>
+              </div>
+
+              <div>
+                <h4 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember); margin-bottom: 0.3rem;">Legal Practice</h4>
+                <p style="margin-bottom: 0;">For legal services and consultation, please visit <a href="https://copelandlawtexas.com" target="_blank" rel="noopener">copelandlawtexas.com</a>.</p>
+              </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, var(--teal), var(--teal-dark)); border-radius: 6px; padding: var(--space-lg); color: var(--white);">
+              <h3 style="color: var(--white); margin-bottom: var(--space-sm); font-size: 1.3rem;">A Note on Response Times</h3>
+              <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin-bottom: 0;">I read every message personally and do my best to respond within a few business days. If your inquiry is time-sensitive, please note that in your message. Thank you for your patience and your interest in this work.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/images/wordmark_whitecopy.webp" alt="Katie Copeland">
+          <p>Disability rights attorney, author, and advocate working to transform how America's courts serve people with disabilities.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="speaking.html">Speaking</a></li>
+            <li><a href="comics.html">Comics</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>The Ecosystem</h4>
+          <ul>
+            <li><a href="https://copelandlawtexas.com" target="_blank" rel="noopener">Copeland Law Texas</a></li>
+            <li><a href="https://systemsjusticeinstitute.org" target="_blank" rel="noopener">Systems Justice Institute</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/stopdocumentingthis/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/katiecopeland" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="speaking.html">Speaking Inquiries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Katie Copeland, J.D. All rights reserved.</p>
+        <p class="footer-trademarks">The Copeland Questions&trade;, Stop Documenting This&trade;, The Avoidable Void&trade;, and Laugh &rarr; Listen &rarr; Learn &rarr; Act&trade; are trademarks of Katie Copeland.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
