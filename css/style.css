@@ -14,9 +14,9 @@
   --teal-light:    #2A9D8F;
   --parchment:     #F5F1EB;
   --parchment-dark:#EDE7DD;
-  --ember:         #5B2333;
-  --ember-dark:    #4A1C2B;
-  --ember-light:   #722F37;
+  --ember:         #4A1942;       /* Deep Plum — AAA on parchment (12.37:1) */
+  --ember-dark:    #3A1233;
+  --ember-light:   #5E2356;
 
   /* Neutrals */
   --ink:           #1C1C1C;

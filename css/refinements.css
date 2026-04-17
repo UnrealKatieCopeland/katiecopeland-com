@@ -707,3 +707,83 @@ textarea:focus-visible {
   object-fit: contain;
   background: var(--parchment);
 }
+
+/* ============================================================
+   ORNAMENTAL DIVIDERS
+   Black-on-white PNGs blended into parchment via multiply
+   ============================================================ */
+
+.ornamental-divider {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+  overflow: hidden;
+  /* Vertical rhythm — breathing room around each divider */
+  margin: 0;
+  padding: 0;
+  /* Ensure the divider area doesn't collapse */
+  position: relative;
+}
+
+.ornamental-divider img {
+  mix-blend-mode: multiply;
+  display: block;
+  margin: 0 auto;
+  /* Prevent white halos on parchment */
+  background: transparent;
+}
+
+/* Simple line with center flourish — workhorse between sections */
+.ornamental-divider--simple img {
+  max-width: 600px;
+  width: 80%;
+  height: auto;
+  opacity: 0.7;
+}
+
+/* Fleur-de-lis — vertical ornament, used as accent point */
+.ornamental-divider--fleur img {
+  max-width: 120px;
+  width: 18%;
+  height: auto;
+  opacity: 0.75;
+}
+
+/* Scrollwork with center cameo — medium horizontal ornament */
+.ornamental-divider--scrollwork img {
+  max-width: 560px;
+  width: 70%;
+  height: auto;
+  opacity: 0.72;
+}
+
+/* Full baroque ornament — large statement divider */
+.ornamental-divider--ornate img {
+  max-width: 700px;
+  width: 85%;
+  height: auto;
+  opacity: 0.68;
+}
+
+/* Wrapper that provides vertical spacing for dividers between sections */
+.section-divider-wrap {
+  text-align: center;
+  padding: var(--space-sm) 0;
+  background: var(--parchment);
+  /* Ensure no section background bleeds through */
+  position: relative;
+  z-index: 1;
+}
+
+/* Alt background variant — for dividers between section--alt sections */
+.section-divider-wrap--alt {
+  background: var(--parchment-dark);
+}
+
+@media (max-width: 600px) {
+  .ornamental-divider--simple img  { width: 90%; }
+  .ornamental-divider--fleur img   { width: 28%; max-width: 90px; }
+  .ornamental-divider--scrollwork img { width: 90%; }
+  .ornamental-divider--ornate img  { width: 95%; }
+}
