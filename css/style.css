@@ -441,7 +441,7 @@ blockquote cite {
 
 /* --- Hero Section --- */
 .hero {
-  padding: var(--space-2xl) 0;
+  padding: var(--space-lg) 0 var(--space-2xl);
   position: relative;
   overflow: hidden;
 }
@@ -1039,7 +1039,7 @@ blockquote cite {
 /* --- Responsive: Desktop (1024px+) --- */
 @media (min-width: 1024px) {
   .hero {
-    padding: var(--space-3xl) 0;
+    padding: var(--space-xl) 0 var(--space-2xl);
   }
 
   .hero-grid {
