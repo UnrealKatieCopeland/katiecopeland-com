@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copeland v. Weinstein: A Federal Disability-Housing Civil Rights Case</title>
+  <meta name="description" content="A plain-language evidence hub for Copeland v. Weinstein Management Co., Inc. et al., a federal disability-housing civil rights case in the Northern District of Texas.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="../assets/images/monogram_transparent_final.webp">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/refinements.css">
+  <style>
+    /* Case page specific styles */
+    .case-hero {
+      background: linear-gradient(135deg, rgba(25, 55, 85, 0.95), rgba(45, 85, 125, 0.95));
+      color: #fff;
+      padding: var(--space-3xl) var(--space-lg);
+      text-align: center;
+    }
+    
+    .case-hero h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: var(--space-md);
+    }
+    
+    .case-hero .subtitle {
+      font-size: 1.25rem;
+      opacity: 0.95;
+      margin-bottom: var(--space-lg);
+    }
+    
+    .case-hero .intro-text {
+      max-width: 800px;
+      margin: 0 auto var(--space-lg);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    
+    .case-buttons {
+      display: flex;
+      gap: var(--space-md);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: var(--space-lg);
+    }
+    
+    .case-buttons .btn {
+      background: #fff;
+      color: #193755;
+      font-weight: 600;
+    }
+    
+    .case-buttons .btn:hover {
+      background: #f0f0f0;
+    }
+    
+    .case-section {
+      padding: var(--space-3xl) var(--space-lg);
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .case-section:last-child {
+      border-bottom: none;
+    }
+    
+    .case-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: var(--space-lg);
+      color: #193755;
+    }
+    
+    .case-section h3 {
+      font-size: 1.3rem;
+      margin-top: var(--space-lg);
+      margin-bottom: var(--space-md);
+      color: #193755;
+    }
+    
+    .case-section p {
+      line-height: 1.8;
+      margin-bottom: var(--space-md);
+      color: #333;
+    }
+    
+    .case-section ul, .case-section ol {
+      margin-left: var(--space-lg);
+      margin-bottom: var(--space-md);
+    }
+    
+    .case-section li {
+      margin-bottom: var(--space-sm);
+      line-height: 1.8;
+    }
+    
+    .case-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: var(--space-lg) 0;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+    
+    .case-table th, .case-table td {
+      padding: var(--space-md);
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .case-table th {
+      background: #f5f5f5;
+      font-weight: 600;
+      color: #193755;
+    }
+    
+    .case-table tr:hover {
+      background: #fafafa;
+    }
+    
+    .case-blockquote {
+      border-left: 4px solid #193755;
+      padding-left: var(--space-lg);
+      margin: var(--space-lg) 0;
+      font-style: italic;
+      color: #555;
+    }
+    
+    .case-questions {
+      background: #f9f9f9;
+      padding: var(--space-lg);
+      border-radius: 8px;
+      margin: var(--space-lg) 0;
+    }
+    
+    .case-questions ol {
+      margin-left: var(--space-lg);
+    }
+    
+    .case-questions li {
+      margin-bottom: var(--space-md);
+      font-weight: 500;
+      color: #193755;
+    }
+    
+    .case-form-section {
+      background: #f0f5fa;
+      padding: var(--space-lg);
+      border-radius: 8px;
+      margin-top: var(--space-lg);
+    }
+    
+    .case-form-section label {
+      display: block;
+      margin-top: var(--space-md);
+      margin-bottom: var(--space-sm);
+      font-weight: 600;
+      color: #193755;
+    }
+    
+    .case-form-section input,
+    .case-form-section textarea,
+    .case-form-section select {
+      width: 100%;
+      padding: var(--space-sm);
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+      margin-bottom: var(--space-md);
+    }
+    
+    .case-form-section textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    .case-form-section .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+    }
+    
+    .case-form-section input[type="checkbox"] {
+      width: auto;
+      margin-top: 6px;
+    }
+    
+    .case-form-section .checkbox-label {
+      display: block;
+      font-weight: normal;
+      margin: 0;
+    }
+    
+    .case-disclaimer {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      padding: var(--space-lg);
+      border-radius: 4px;
+      margin: var(--space-lg) 0;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    
+    .case-disclaimer strong {
+      color: #193755;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
+    }
+    
+    @media (max-width: 768px) {
+      .case-hero h1 {
+        font-size: 1.8rem;
+      }
+      
+      .case-hero .subtitle {
+        font-size: 1rem;
+      }
+      
+      .case-buttons {
+        flex-direction: column;
+      }
+      
+      .case-buttons .btn {
+        width: 100%;
+      }
+      
+      .case-table {
+        font-size: 0.9rem;
+      }
+      
+      .case-table th, .case-table td {
+        padding: var(--space-sm);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo" aria-label="Katie Copeland — Home">
+        <img src="../assets/images/monogram_transparent_final.webp" alt="" aria-hidden="true" class="header-monogram">
+        <span class="header-wordmark-text" aria-label="Katie Copeland">Katie Copeland</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="book.html">Book</a></li>
+          <li><a href="speaking.html">Speaking</a></li>
+          <li><a href="comics.html">Comics</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="comics.html">Comics</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="case-hero" aria-label="Case introduction">
+      <div class="container">
+        <h1>Copeland v. Weinstein Management Co., Inc. et al.</h1>
+        <p class="subtitle">A Federal Disability-Housing Civil Rights Case in the Northern District of Texas</p>
+        <p class="intro-text">
+          This page provides a plain-language public record for a federal disability-housing civil rights case filed pro se in the United States District Court for the Northern District of Texas, Fort Worth Division.
+        </p>
+        <div class="case-buttons">
+          <a href="#case-summary" class="btn btn--primary">Read the Summary</a>
+          <a href="#similar-experience" class="btn btn--primary">Share Your Experience</a>
+          <a href="#key-documents" class="btn btn--primary">View Documents</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Summary Section -->
+    <section class="case-section" id="case-summary">
+      <div class="container">
+        <h2>The Case in One Minute</h2>
+        <p>
+          Katie Copeland is a Texas attorney and disabled tenant who alleges that Weinstein Management Co., Inc. and related defendants failed to provide reasonable disability-related housing accommodations after receiving medical and documentary notice of disability-related needs.
+        </p>
+        <p>
+          According to the verified complaint, the evidence includes a fully favorable SSDI determination, contemporaneous treating-physician records, a contamination report from the landlord's own retained contractor, a written demand letter, and a 14-month multi-forum litigation history. The complaint alleges that the defendants' conduct implicated federal disability-housing protections, including the Fair Housing Act's reasonable-accommodation requirement and interference provision, the ADA's anti-interference provision, and federal declaratory-relief statutes.
+        </p>
+        <div class="case-blockquote">
+          <strong>Plain-language theory of the case:</strong> When a housing provider has notice that a tenant's disability affects housing access, the law does not require sympathy. It requires a meaningful accommodation process, non-interference, and access to housing on equal terms.
+        </div>
+      </div>
+    </section>
+
+    <!-- Why This Matters Section -->
+    <section class="case-section">
+      <div class="container">
+        <h2>Why This Matters</h2>
+        <p>
+          This case matters because disability housing rights are not limited to ramps and parking spaces. They also include the right to request a reasonable change in rules, policies, practices, or services when that change may be necessary for a disabled person to use and enjoy housing.
+        </p>
+        <p>
+          Federal law recognizes that a refusal to make a necessary reasonable accommodation can be a form of housing discrimination. The Fair Housing Act also prohibits coercion, intimidation, threats, or interference with someone's exercise or enjoyment of fair-housing rights. The ADA contains a separate anti-interference provision protecting the exercise of ADA rights.
+        </p>
+        
+        <table class="case-table">
+          <thead>
+            <tr>
+              <th>Legal Issue</th>
+              <th>Plain-Language Meaning</th>
+              <th>Why It Matters Here</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Reasonable Accommodation</strong></td>
+              <td>A housing provider may need to adjust a rule, policy, practice, or service when necessary for equal housing access.</td>
+              <td>The case alleges that medically supported accommodation needs were not meaningfully resolved.</td>
+            </tr>
+            <tr>
+              <td><strong>Interference</strong></td>
+              <td>A person or entity may not interfere with someone's exercise of fair-housing rights.</td>
+              <td>The case alleges that the response to protected requests created barriers rather than access.</td>
+            </tr>
+            <tr>
+              <td><strong>ADA Anti-Interference</strong></td>
+              <td>The ADA protects people from coercion, intimidation, threats, or interference related to ADA rights.</td>
+              <td>The case alleges disability-related rights were burdened after notice.</td>
+            </tr>
+            <tr>
+              <td><strong>Declaratory Relief</strong></td>
+              <td>A federal court may declare the parties' legal rights.</td>
+              <td>The case seeks clarity about obligations and rights going forward.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- What This Page Is Section -->
+    <section class="case-section">
+      <div class="container">
+        <h2>What This Page Is — and Is Not</h2>
+        <p>
+          This page is not a social-media campaign, a substitute for pleadings, or a request that readers decide contested facts without evidence. It is an organized public index to a federal civil-rights record.
+        </p>
+        
+        <table class="case-table">
+          <thead>
+            <tr>
+              <th>This Page Is...</th>
+              <th>This Page Is Not...</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A plain-language guide to a federal case</td>
+              <td>A replacement for the verified complaint</td>
+            </tr>
+            <tr>
+              <td>A document hub for key filings and evidence</td>
+              <td>An invitation to harass any person or entity</td>
+            </tr>
+            <tr>
+              <td>A way for similarly situated tenants to share information</td>
+              <td>Legal advice to other tenants</td>
+            </tr>
+            <tr>
+              <td>A place for journalists and advocates to understand the record</td>
+              <td>A final adjudication of liability</td>
+            </tr>
+            <tr>
+              <td>A civil-rights access tool</td>
+              <td>An emotional archive of hardship</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p>
+          The allegations are presented as allegations unless and until adjudicated. The documents are provided so readers can evaluate the record directly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Key Documents Section -->
+    <section class="case-section" id="key-documents">
+      <div class="container">
+        <h2>Key Documents</h2>
+        <p>
+          The documents below are provided to help readers review the record directly. Some documents contain medical, legal, or personal information. Redactions may be applied where appropriate to protect privacy, safety, and third-party information.
+        </p>
+        
+        <table class="case-table">
+          <thead>
+            <tr>
+              <th>Document</th>
+              <th>What It Shows</th>
+              <th>Access</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Verified Complaint</strong></td>
+              <td>The federal claims, factual allegations, requested relief, and sworn allegations.</td>
+              <td><a href="../assets/docs/pacer/" target="_blank">View →</a></td>
+            </tr>
+            <tr>
+              <td><strong>Notice of Nonsuit Without Prejudice</strong></td>
+              <td>The state-court filing preserving claims after the summary-judgment posture.</td>
+              <td><a href="../assets/docs/pacer/2026.05.11NoticeofNonsuitWithoutPrejudice.pdf" target="_blank">Download →</a></td>
+            </tr>
+            <tr>
+              <td><strong>Summary Judgment Filing with Exhibits</strong></td>
+              <td>The summary-judgment sequence and key exhibits including contamination evidence.</td>
+              <td><a href="../assets/docs/pacer/2026.05.11MSJwExhibits.pdf" target="_blank">Download →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- The Legal Questions Section -->
+    <section class="case-section">
+      <div class="container">
+        <h2>The Legal Questions</h2>
+        <p>
+          These questions are not abstract. They are the questions presented by the record in <strong>Copeland v. Weinstein Management Co., Inc. et al.</strong>
+        </p>
+        
+        <div class="case-questions">
+          <ol>
+            <li>When a disabled tenant provides medical documentation, what does a meaningful accommodation process require?</li>
+            <li>When a landlord's own retained contractor documents contamination concerns, what obligations follow once disability-related housing access is at issue?</li>
+            <li>When a tenant invokes federal disability-housing rights, where is the line between ordinary litigation defense and unlawful interference?</li>
+            <li>When state-court litigation continues after a nonsuit intended to preserve federal claims, what federal relief is necessary to clarify rights and prevent ongoing harm?</li>
+            <li>How many procedural doors can close before "access" becomes a word on paper rather than a right in practice?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Experience Section -->
+    <section class="case-section" id="similar-experience">
+      <div class="container">
+        <h2>If You've Had a Similar Experience</h2>
+        <p>
+          If you are a current or former tenant of Weinstein Management Co., one of its affiliates, or a related property in Virginia, North Carolina, Texas, or another state, and you experienced disability-related housing barriers, ignored accommodation requests, mold or contamination concerns, retaliation, interference, or unusual litigation pressure, you may share your experience below.
+        </p>
+        <p>
+          This form is intended to identify possible patterns, witnesses, documents, and similarly situated tenants. You do not need to be a lawyer. You do not need to know which statute applies. You only need to describe what happened as clearly and accurately as you can.
+        </p>
+        
+        <div class="case-disclaimer">
+          <strong>Important:</strong> Your information will be reviewed carefully and treated respectfully. Please do not submit anything false, exaggerated, or inflammatory. The most useful information is specific: dates, property names, names of people involved, documents, photographs, emails, work orders, reports, notices, or court filings.
+        </div>
+        
+        <form class="case-form-section" id="tenant-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+          <h3>Share Your Information</h3>
+          
+          <label for="name">Name (optional — you may remain anonymous)</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+          
+          <label for="email">Email (required for response)</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+          
+          <label for="state">State where property is located</label>
+          <select id="state" name="state" required>
+            <option value="">Select a state...</option>
+            <option value="Virginia">Virginia</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="Texas">Texas</option>
+            <option value="Other">Other</option>
+          </select>
+          
+          <label for="property">Property name and city</label>
+          <input type="text" id="property" name="property" placeholder="Property name and city" required>
+          
+          <label for="dates">Dates of tenancy (approximate is okay)</label>
+          <input type="text" id="dates" name="dates" placeholder="e.g., January 2024 - May 2026">
+          
+          <label for="experience">What happened? (Please be as specific and factual as possible)</label>
+          <textarea id="experience" name="experience" placeholder="Describe your experience with dates, names, and any documents you have..." required></textarea>
+          
+          <label for="accommodation">Did you request a disability accommodation?</label>
+          <select id="accommodation" name="accommodation" required>
+            <option value="">Select...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+          
+          <label for="mold">Did you report mold, water intrusion, contamination, or health concerns?</label>
+          <select id="mold" name="mold" required>
+            <option value="">Select...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+          
+          <label for="documents">Do you have documents (emails, photos, reports, court filings)?</label>
+          <select id="documents" name="documents" required>
+            <option value="">Select...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          
+          <label for="contact">May Katie or her team contact you about your experience?</label>
+          <select id="contact" name="contact" required>
+            <option value="">Select...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          
+          <div class="checkbox-group">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent" class="checkbox-label">
+              I understand that submitting this form does not create an attorney-client relationship, does not guarantee a response, and should not be used for emergencies. I confirm that the information I am submitting is accurate to the best of my knowledge, and I consent to being contacted about my experience.
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn--primary">Submit Your Experience</button>
+        </form>
+        
+        <div class="case-disclaimer" style="margin-top: var(--space-lg);">
+          <strong>Disclaimer:</strong> Submitting this form does not create an attorney-client relationship and does not mean Katie Copeland represents you. If your situation is urgent, please contact a licensed attorney in your jurisdiction, a local legal-aid organization, or emergency services if health or safety is at immediate risk.
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Plaintiff Section -->
+    <section class="case-section">
+      <div class="container">
+        <h2>About the Plaintiff</h2>
+        <p>
+          Katie Copeland is a Texas attorney, author, and disability-rights advocate whose work focuses on meaningful access to courts, disability accommodation, and the structural integrity of legal systems. Her 2026 article, <strong>"Access Is Not Advantage: Structural Integrity and Disability Accommodation in State Courts,"</strong> was published through the American Bar Association Commission on Disability Rights.
+        </p>
+        <p>
+          In <strong>Copeland v. Weinstein Management Co., Inc. et al.</strong>, she appears pro se as a disabled tenant and plaintiff asserting federal disability-housing civil rights claims. The public record includes a verified complaint, medical and documentary evidence, a pre-suit demand letter, a contamination report, and a multi-forum procedural history.
+        </p>
+        <p>
+          This page does not ask readers to rely on personal hardship as proof. It provides access to the legal record so that tenants, journalists, advocates, and lawyers can evaluate the evidence directly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Media and Legal Inquiries Section -->
+    <section class="case-section">
+      <div class="container">
+        <h2>Media, Advocacy, and Legal Inquiries</h2>
+        <p>
+          Journalists, advocacy organizations, clinics, and lawyers may contact Katie Copeland at:
+        </p>
+        <p>
+          <strong>katie@katiecopeland.com</strong>
+        </p>
+        <p>
+          Please include the words <strong>Copeland v. Weinstein Inquiry</strong> in the subject line and identify whether your inquiry is for media, legal review, advocacy, tenant information, or referral support.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer Disclaimer Section -->
+    <section class="case-section" style="background: #f9f9f9;">
+      <div class="container">
+        <h2>Disclaimer</h2>
+        <p>
+          This page summarizes allegations and public-record materials in pending or anticipated litigation. Allegations are not findings of liability unless and until decided by a court. The documents linked here may be redacted to protect medical privacy, personal identifying information, third-party privacy, or litigation-sensitive material.
+        </p>
+        <p>
+          This page is not legal advice. Submitting information through this website does not create an attorney-client relationship. If you need legal advice about your own housing situation, consult a licensed attorney in your jurisdiction.
+        </p>
+        <p>
+          <strong>This page is unlisted and not indexed by search engines.</strong> It is intended for review by trusted advisors, legal professionals, and similarly situated tenants who are directed to this URL.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Katie Copeland, J.D. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
