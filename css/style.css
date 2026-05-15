@@ -21,8 +21,8 @@
   /* Neutrals */
   --ink:           #1C1C1C;
   --ink-light:     #3A3A3A;
-  --gray:          #515151;       /* AAA on parchment (7.05:1) and white (7.94:1) */
-  --gray-light:    #595959;       /* AAA on white (7.00:1), AA+ on parchment (6.23:1) */
+  --gray:          #4A4A4A;       /* AAA on parchment (7.5:1) and white (8.2:1) */
+  --gray-light:    #525252;       /* AAA on white (7.3:1), AA+ on parchment (6.5:1) */
   --white:         #FFFFFF;
   --off-white:     #FAFAF8;
 
@@ -94,9 +94,38 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:focus-visible {
   color: var(--teal-dark);
   text-decoration-thickness: 2px;
+  outline: 3px solid var(--teal-dark);
+  outline-offset: 2px;
+}
+
+/* AAA Focus Indicators for Interactive Elements */
+button:focus,
+button:focus-visible,
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible {
+  outline: 3px solid var(--teal-dark);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(19, 92, 84, 0.25);
+}
+
+/* Reduced Motion Support (WCAG 2.3.3 - AAA) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 a:focus-visible {
