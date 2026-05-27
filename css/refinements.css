@@ -31,7 +31,7 @@
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   font-weight: 500;
-  color: var(--teal);
+  color: var(--teal-dark);
   letter-spacing: 0.15em;
   display: block;
   margin-top: 0.3em;
@@ -196,22 +196,33 @@
 
 .decree-dots {
   display: flex;
-  gap: 8px;
+  gap: 12px;
+  align-items: center;
 }
 
 .decree-dot {
-  width: 10px;
-  height: 10px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background: var(--gray-light);
+  background: transparent;
   border: none;
   cursor: pointer;
   transition: all var(--transition);
   padding: 0;
+  position: relative;
 }
 
-.decree-dot.active,
-.decree-dot:hover {
+.decree-dot::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: var(--gray-light);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.decree-dot.active::after,
+.decree-dot:hover::after {
   background: var(--teal-deep);
   transform: scale(1.2);
 }
@@ -443,7 +454,8 @@
 
 .tagline-banner .laugh-tagline {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  opacity: 0.8;
+  color: var(--teal-dark);
+  opacity: 1;
 }
 
 /* --- 14. SDT Hero Layout (Comics page) --- */
@@ -606,8 +618,8 @@
 
 /* --- 19. Accessibility Statement in Footer --- */
 .footer-a11y {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.88);
   margin-top: var(--space-xs);
 }
 

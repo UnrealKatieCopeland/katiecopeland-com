@@ -8,9 +8,9 @@
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
   /* Brand Colors */
-  --teal:          #135C54;       /* AAA on white (7.82:1), AAA on parchment (6.95:1) */
-  --teal-deep:     #135C54;       /* AAA with white (7.82:1), used for teal backgrounds */
-  --teal-dark:     #10524B;       /* AAA with white (9.01:1), deepest teal */
+  --teal:          #10524B;       /* Deep teal for stronger AAA-oriented contrast on parchment and white */
+  --teal-deep:     #10524B;       /* Deep teal for accessible backgrounds and active states */
+  --teal-dark:     #0B3F39;       /* Darkest teal for emphasis, focus, and enhanced contrast */
   --teal-light:    #2A9D8F;
   --parchment:     #F5F1EB;
   --parchment-dark:#EDE7DD;
@@ -63,7 +63,7 @@
 }
 
 html {
-  font-size: 18px; /* Larger base for brain-injury friendliness */
+  font-size: 20px; /* Larger base for low-vision and brain-injury friendliness */
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
@@ -71,7 +71,7 @@ html {
 body {
   font-family: var(--font-body);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--ink);
   background-color: var(--parchment);
   -webkit-font-smoothing: antialiased;
@@ -88,8 +88,8 @@ img {
 a {
   color: var(--teal);
   text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
   transition: color var(--transition);
 }
 
@@ -315,7 +315,7 @@ blockquote cite {
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: var(--teal);
+  color: var(--teal-dark);
 }
 
 .main-nav a:hover::after,
@@ -397,7 +397,7 @@ blockquote cite {
 
 .mobile-nav a:hover,
 .mobile-nav a.active {
-  color: var(--teal);
+  color: var(--teal-dark);
 }
 
 /* --- Buttons --- */
@@ -439,8 +439,8 @@ blockquote cite {
 
 .btn--secondary {
   background: transparent;
-  color: var(--teal);
-  border-color: var(--teal);
+  color: var(--teal-dark);
+  border-color: var(--teal-dark);
 }
 
 .btn--secondary:hover {
@@ -864,14 +864,16 @@ blockquote cite {
   max-width: 35ch;
    color: rgba(255,255,255,0.85);
 }
-.footer-nav h4 {
+.footer-nav h4,
+.footer-heading {
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
+  color: var(--white);
   margin-bottom: var(--space-sm);
+  line-height: 1.4;
 }
 
 .footer-nav ul {
@@ -1484,8 +1486,8 @@ blockquote cite {
 
 /* --- Footer Trademarks --- */
 .footer-trademarks {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.88);
   max-width: 100%;
   line-height: 1.6;
 }
