@@ -805,3 +805,53 @@ textarea:focus-visible {
   .ornamental-divider--scrollwork img { width: 90%; }
   .ornamental-divider--ornate img  { width: 95%; }
 }
+
+/* --- 16. Header Collision Fix: keep the wordmark and navigation from overlapping --- */
+.header-inner {
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.site-logo {
+  flex: 0 0 auto;
+  min-width: max-content;
+}
+
+.main-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.main-nav ul {
+  justify-content: flex-end;
+  gap: clamp(0.8rem, 1.4vw, 1.35rem);
+}
+
+.main-nav a {
+  font-size: clamp(0.72rem, 0.78vw, 0.86rem);
+  letter-spacing: 0.055em;
+  white-space: nowrap;
+}
+
+@media (max-width: 1179px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-wordmark-text {
+    font-size: 1.05rem;
+  }
+
+  .site-logo {
+    gap: 0.45rem;
+  }
+
+  .site-logo img {
+    height: 42px;
+  }
+}
