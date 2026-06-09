@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rights Require Routes: SCOTUS Emergency Application No. 25A1368</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      color: #2C2C2C;
+      background-color: #FAF8F5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3F4A47 0%, #2C3530 100%);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-bottom: 4px solid #C85A3A;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 4px solid #C85A3A;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      color: #3F4A47;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      color: #3F4A47;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #2C2C2C;
+    }
+
+    .highlight-box {
+      background-color: #F5F0E8;
+      border: 2px solid #C85A3A;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #2C2C2C;
+      margin: 0;
+    }
+
+    .closed-loop {
+      background-color: #F9F8F6;
+      border: 1px solid #DDD;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .closed-loop ol {
+      margin-left: 1.5rem;
+      color: #2C2C2C;
+    }
+
+    .closed-loop li {
+      margin-bottom: 0.75rem;
+      color: #2C2C2C;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #C85A3A;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #B84A2A;
+    }
+
+    .btn-secondary {
+      background-color: #3F4A47;
+    }
+
+    .btn-secondary:hover {
+      background-color: #2C3530;
+    }
+
+    .docket-info {
+      background-color: #E8F4F8;
+      border-left: 4px solid #3F4A47;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+    }
+
+    .docket-info strong {
+      color: #3F4A47;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      color: #2C2C2C;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #C85A3A;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    footer {
+      background-color: #3F4A47;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #C85A3A;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .nav-link a {
+      color: #C85A3A;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nav-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+
+      .button-group {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Accessibility: Focus indicators */
+    a:focus, button:focus {
+      outline: 3px solid #C85A3A;
+      outline-offset: 2px;
+    }
+
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rights Require Routes</h1>
+    <p>A Supreme Court emergency application on ADA court access, institutional responsibility, and the invisible door</p>
+  </header>
+
+  <div class="container">
+    <!-- Navigation -->
+    <div class="nav-link">
+      <a href="/">← Back to Home</a>
+    </div>
+
+    <!-- The Core Question -->
+    <section>
+      <h2>The Question</h2>
+      <p>When a disabled person needs accommodations in Tarrant County court, where do they go?</p>
+      <div class="highlight-box">
+        <p><strong>A courthouse is not accessible if the only door is invisible.</strong></p>
+      </div>
+      <p>This case asks whether federal courts can abstain while a disabled court user faces ongoing legal consequences without an identified ADA Title II / § 504 court-access pathway.</p>
+    </section>
+
+    <!-- The Closed Loop -->
+    <section>
+      <h2>The Closed Loop</h2>
+      <p>Tarrant County's written responses to federal litigation reveal a systemic institutional failure:</p>
+      
+      <div class="closed-loop">
+        <ol>
+          <li><strong>Ask the judge.</strong> Court accommodation requests are routed to individual judges, not through the County's ADA compliance system.</li>
+          <li><strong>If the judge denies or ignores it:</strong> The County says judges control their courtrooms and the County has "no control" over judicial ADA decisions.</li>
+          <li><strong>Then what?</strong> The disabled person has no clear ADA coordinator, no written accommodation determination, and no grievance route.</li>
+        </ol>
+      </div>
+
+      <p><strong>The County could not locate responsive records identifying:</strong></p>
+      <ul>
+        <li>A designated ADA Title II coordinator for courts</li>
+        <li>A written court-user accommodation process</li>
+        <li>A grievance procedure for denied accommodations</li>
+        <li>A self-evaluation of court-access barriers</li>
+      </ul>
+
+      <p>That is not a policy disagreement. That is a documented institutional gap.</p>
+    </section>
+
+    <!-- Why This Matters -->
+    <section>
+      <h2>Why This Matters</h2>
+
+      <h3>For Tarrant County residents:</h3>
+      <p>People enter Tarrant County courts as jurors, witnesses, tenants, parents, defendants, crime victims, protective-order applicants, debtors, and caregivers. If someone needs CART, extra processing time, remote access, breaks, accessible forms, or a written ruling, the public should know where that request goes. This is a civic infrastructure question.</p>
+
+      <h3>For disability advocates:</h3>
+      <p>Meaningful access to courts requires a visible route, not just a right on paper. This case clarifies that institutional responsibility cannot disappear through procedural routing.</p>
+
+      <h3>For legal observers:</h3>
+      <p>The Fifth Circuit denied emergency relief, but Judge Haynes twice indicated she would grant temporary relief or carry the issue with the merits panel. That signals serious judicial concern about the underlying question.</p>
+
+      <h3>For everyone:</h3>
+      <p>This case sits at the intersection of disability rights, court access, family law, poverty, and institutional power. It asks how institutions can erase people politely, one form at a time.</p>
+    </section>
+
+    <!-- The Documents -->
+    <section>
+      <h2>The Documents</h2>
+      <p>This case is not based on allegations. It is based on public records and written communications from Tarrant County officials.</p>
+      
+      <h3>SCOTUS Emergency Application (No. 25A1368)</h3>
+      <p>The full emergency application to the U.S. Supreme Court, filed June 4, 2026, Circuit Justice Alito (Fifth Circuit).</p>
+      <div class="button-group">
+        <a href="https://www.supremecourt.gov/docket/25a1368" class="btn" target="_blank" rel="noopener noreferrer">View SCOTUS Docket No. 25A1368</a>
+      </div>
+
+      <h3>Tarrant County ADA Violations Analysis</h3>
+      <p>Public records and correspondence showing Tarrant County's written responses, including admissions that the County has no identified court-user accommodation pathway.</p>
+      <div class="button-group">
+        <a href="/assets/docs/tarrant-county/TarrantCountyADAViolations.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download Evidence (PDF)</a>
+      </div>
+
+      <h3>Case Page with Full Details</h3>
+      <p>For more information about the underlying state court case and Tarrant County's institutional failures, see the full case page.</p>
+      <div class="button-group">
+        <a href="/pages/copeland-v-weinstein.html" class="btn btn-secondary">View Full Case Page</a>
+      </div>
+    </section>
+
+    <!-- The Procedural Posture -->
+    <section>
+      <h2>The Procedural Posture</h2>
+      
+      <div class="docket-info">
+        <strong>SCOTUS Docket:</strong> No. 25A1368<br>
+        <strong>Circuit Justice:</strong> Samuel Alito (Fifth Circuit)<br>
+        <strong>Filed:</strong> June 4, 2026<br>
+        <strong>Status:</strong> Emergency application pending
+      </div>
+
+      <h3>What Happened So Far:</h3>
+      <ul>
+        <li>Pro se applicant filed an emergency application for temporary injunctive relief pending Fifth Circuit appeal</li>
+        <li>Fifth Circuit denied emergency relief (May 2026)</li>
+        <li>However, Judge Jennifer Haynes (Fifth Circuit) twice indicated she would grant temporary relief or carry the issue with the merits panel</li>
+        <li>Application escalated to Circuit Justice Alito at SCOTUS</li>
+      </ul>
+
+      <p><strong>Judge Haynes' indication of willingness to grant relief is significant.</strong> It signals that at least one federal appellate judge saw enough seriousness in the underlying question to preserve it for the merits panel.</p>
+    </section>
+
+    <!-- Key Arguments -->
+    <section>
+      <h2>The Legal Arguments</h2>
+
+      <h3>The ADA Title II / § 504 Question:</h3>
+      <p>Does the ADA require federal courts and court systems to maintain an identified, accessible pathway for court users to request accommodations, receive written determinations, and access grievance review?</p>
+
+      <h3>The Institutional Responsibility Question:</h3>
+      <p>When a court system routes accommodation requests to individual judges while disclaiming institutional responsibility, does that satisfy ADA Title II / § 504 obligations?</p>
+
+      <h3>The Emergency Relief Question:</h3>
+      <p>Is temporary injunctive relief warranted where a disabled court user faces ongoing proceedings, deadlines, sanctions, or enforcement consequences without an identified accommodation pathway?</p>
+
+      <h3>The Abstention Question:</h3>
+      <p>Can federal courts abstain from reviewing ADA court-access infrastructure while a disabled litigant faces ongoing legal consequences in state court?</p>
+    </section>
+
+    <!-- Multiple Entry Points -->
+    <section>
+      <h2>Why Different Audiences Care</h2>
+
+      <h3>Local readers (Fort Worth, Tarrant County):</h3>
+      <p><em>"Who handles ADA accommodations in Tarrant County courts, and what happens if the process fails?"</em></p>
+
+      <h3>Disability advocates:</h3>
+      <p><em>"Do disabled Texans have a meaningful court-access pathway, or just a right on paper?"</em></p>
+
+      <h3>Legal journalists:</h3>
+      <p><em>"Can Younger/O'Shea abstention block federal review of ADA court-access infrastructure?"</em></p>
+
+      <h3>Court-reform advocates:</h3>
+      <p><em>"What happens when procedural gatekeeping prevents access to justice for disabled people?"</em></p>
+
+      <h3>Writers and observers:</h3>
+      <p><em>"How do institutions erase people politely, one form at a time?"</em></p>
+    </section>
+
+    <!-- Call to Action -->
+    <section>
+      <h2>Get Involved</h2>
+
+      <h3>For journalists and media:</h3>
+      <p>This case has multiple angles: local accountability, disability rights, federal court procedure, and institutional responsibility. All documents are available. Contact Katie Copeland for interviews or additional information.</p>
+
+      <h3>For disability-rights organizations:</h3>
+      <p>Consider filing an amicus curiae brief with the Supreme Court. The emergency docket moves quickly. Contact Katie Copeland to coordinate.</p>
+
+      <h3>For advocates and observers:</h3>
+      <p>Share this page. The story is not just legal—it is civic. Every person who enters Tarrant County courts should know where to go if they need accommodations.</p>
+
+      <div class="button-group">
+        <a href="mailto:katie@katiecopeland.com" class="btn">Contact Katie Copeland</a>
+        <a href="https://www.supremecourt.gov/docket/25a1368" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View SCOTUS Docket</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p><strong>Rights Require Routes</strong></p>
+    <p>A case about institutional responsibility, court access, and the invisible door.</p>
+    <p style="margin-top: 1.5rem; font-size: 0.9rem;">
+      <a href="/">Home</a> | 
+      <a href="/pages/copeland-v-weinstein.html">Full Case Page</a> | 
+      <a href="https://www.supremecourt.gov/docket/25a1368" target="_blank" rel="noopener noreferrer">SCOTUS Docket</a>
+    </p>
+  </footer>
+</body>
+</html>
