@@ -25,178 +25,6 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/refinements.css">
-  <style>
-    /* Narrative Architecture Styles */
-    .hero-narrative {
-      background: linear-gradient(135deg, rgba(26, 124, 114, 0.08), rgba(74, 25, 66, 0.08));
-      padding: var(--space-4xl) 0;
-      text-align: center;
-    }
-
-    .hero-narrative h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      color: var(--ink);
-      line-height: 1.2;
-      margin: 0 0 var(--space-lg) 0;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero-narrative .hook-question {
-      font-size: 1.35rem;
-      color: var(--teal-dark);
-      font-weight: 600;
-      margin-bottom: var(--space-3xl);
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .pathway-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: var(--space-lg);
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 var(--space-lg);
-    }
-
-    .pathway-card {
-      background: var(--white);
-      padding: var(--space-xl);
-      border-radius: 8px;
-      box-shadow: var(--shadow-sm);
-      border-top: 4px solid var(--teal);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .pathway-card:hover {
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-4px);
-    }
-
-    .pathway-card h3 {
-      color: var(--teal-dark);
-      margin: 0 0 var(--space-md) 0;
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
-
-    .pathway-card p {
-      color: var(--gray-dark);
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin: 0 0 var(--space-md) 0;
-      flex-grow: 1;
-    }
-
-    .pathway-card .pathway-cta {
-      color: var(--teal);
-      font-weight: 600;
-      font-size: 0.9rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: auto;
-    }
-
-    .pathway-card:hover .pathway-cta {
-      color: var(--teal-dark);
-    }
-
-    /* Section Spacing */
-    .section-narrative {
-      padding: var(--space-4xl) 0;
-    }
-
-    .section-narrative h2 {
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      color: var(--ink);
-      margin-bottom: var(--space-xl);
-    }
-
-    /* Credential Section */
-    .credential-section {
-      background: var(--white);
-      padding: var(--space-3xl) 0;
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .credential-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: var(--space-xl);
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .credential-item {
-      padding: 0 var(--space-lg);
-    }
-
-    .credential-item h3 {
-      color: var(--teal-dark);
-      font-size: 1.1rem;
-      margin: 0 0 var(--space-md) 0;
-      font-weight: 600;
-    }
-
-    .credential-item p {
-      color: var(--gray-dark);
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    /* Featured In */
-    .featured-in-minimal {
-      background: var(--white);
-      padding: var(--space-lg);
-      border-radius: 8px;
-      border-left: 6px solid var(--gold);
-    }
-
-    .featured-in-minimal p {
-      margin: 0;
-      font-size: 0.9rem;
-    }
-
-    .featured-in-minimal .source {
-      color: var(--gold);
-      font-weight: 600;
-    }
-
-    .featured-in-minimal .text {
-      color: var(--ink);
-      margin-top: var(--space-sm);
-      line-height: 1.6;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero-narrative h1 {
-        font-size: 1.8rem;
-      }
-
-      .hero-narrative .hook-question {
-        font-size: 1.1rem;
-      }
-
-      .pathway-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .credential-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -248,83 +76,122 @@
        ============================================================ -->
   <main id="main-content">
 
-    <!-- Narrative Hook Section -->
-    <section class="hero-narrative" aria-label="Central question">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Introduction">
       <div class="container">
-        <h1>Tarrant County Admits It Has No ADA Pathway for Disabled Court Users</h1>
-        <p class="hook-question">How many others are affected? Help document the scale.</p>
+        <div class="hero-grid">
+          <div class="hero-text animate-in">
+            <h1 class="hero-wordmark-text">
+              <span class="hero-wordmark-name">Katie<br>Copeland</span>
+              <span class="hero-wordmark-title">J.D.</span>
+            </h1>
+            <p class="hero-subtitle">Attorney · Author · Access Architect</p>
+            <p class="hero-tagline hero-tagline--primary">Laugh &rarr; Listen &rarr; Learn &rarr; Act&trade;</p>
+            <p class="hero-intro">
+              Katie Copeland is a Texas attorney, author, and access architect developing public-facing legal frameworks and resources on ADA Title II, meaningful court access, and due process. Her work translates complex access failures into clear questions, practical tools, and humane systems reform.
+            </p>
+            <div class="hero-cta">
+              <a href="pages/publications.html" class="btn btn--primary btn--large">Explore Her Work</a>
+              <a href="pages/speaking.html" class="btn btn--secondary btn--large">Book Katie to Speak</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper animate-in animate-delay-2">
+            <img src="assets/images/KatieCopeland-2000x2500.webp" alt="Katie Copeland — attorney, author, and access architect" class="hero-image">
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Four Pathways Section -->
-    <section class="section-narrative" id="resources">
+    <!-- Book Launch Banner -->
+    <section class="section section--alt" aria-label="Book launch announcement">
       <div class="container">
-        <div class="pathway-grid">
-          <!-- Pathway 1: Toolkit -->
-          <a href="pages/litigants-toolkit.html" class="pathway-card">
-            <h3>Free Toolkit</h3>
-            <p>Exact language for requesting accommodations in court without opening yourself to "unfit" attacks. Scripts, templates, and documentation checklists.</p>
-            <span class="pathway-cta">Get the Toolkit →</span>
-          </a>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+          <span class="overline" style="color: var(--gold);">Coming Soon</span>
+          <h2 style="margin: var(--space-md) 0 var(--space-lg) 0; color: var(--teal-dark); font-size: clamp(1.8rem, 4vw, 2.4rem);">The Invisible Barrier</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: var(--space-lg); color: var(--ink);"><strong>Disability, Due Process, and the Architecture of Exclusion in American Courts</strong></p>
+          <p style="font-size: 1rem; line-height: 1.7; margin-bottom: var(--space-lg); color: var(--ink);">A manifesto exposing how America's state courts systematically fail to comply with ADA Title II — and a framework for holding them accountable.</p>
+          <p style="font-size: 0.95rem; color: var(--gray-dark); font-style: italic; margin-bottom: var(--space-lg);\">&quot;The law already requires this. The harm is already happening. And the people who will change it are already in the room.&quot;</p>
+          <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; justify-content: center;">
+            <a href="pages/publications.html" class="btn btn--primary">Learn More</a>
+            <a href="pages/litigants-toolkit.html" class="btn btn--secondary">Free Toolkit: Get Accommodations Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Pathway 2: Evidence Hub -->
-          <a href="pages/tarrant-county.html" class="pathway-card">
-            <h3>Evidence Hub</h3>
-            <p>Official records showing Tarrant County's missing ADA pathway. Share your story and help document how this gap affects disabled litigants.</p>
-            <span class="pathway-cta">View the Evidence →</span>
-          </a>
+    <!-- Featured In / Social Proof Section -->
+    <section class="section section--alt" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Featured In</span>
+          <h2 id="featured-heading">Recognized by the Profession</h2>
+        </div>
+        <div class="featured-in-card animate-in">
+          <div class="featured-in-content">
+            <div class="featured-in-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="featured-in-source">ABA Commission on Disability Rights</p>
+              <p class="featured-in-date">April 7, 2026</p>
+              <p class="featured-in-text">The ABA Commission on Disability Rights amplified Katie's article <strong>"Access Is Not Advantage"</strong> — recognizing her argument that disability accommodations in court are legal requirements, not judicial favors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Pull-Quote -->
+    <section class="section pull-quote-section" aria-label="Featured statement">
+      <div class="container container--narrow text-center">
+        <p class="pull-quote-text">
+          The people who will change this are already in the room.
+        </p>
+      </div>
+    </section>
+    <!-- The Work Section -->
+    <section class="section" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">The Work</span>
+          <h2 id="work-heading">Changing How Courts Understand Access</h2>
+          <p>From published scholarship to legislative proposals, Katie's work provides the legal profession with practical tools for systemic change.</p>
+        </div>
 
-          <!-- Pathway 3: SCOTUS Filing -->
-          <a href="pages/scotus-25a1368.html" class="pathway-card">
-            <h3>SCOTUS Filing</h3>
-            <p>Emergency application to the U.S. Supreme Court seeking temporary protection while the Fifth Circuit considers the ADA access question.</p>
-            <span class="pathway-cta">Read the Filing →</span>
-          </a>
-
-          <!-- Pathway 4: Book -->
-          <a href="pages/publications.html" class="pathway-card">
+        <div class="card-grid card-grid--three">
+          <div class="card animate-in">
+            <span class="overline">Forthcoming Book</span>
             <h3>The Invisible Barrier</h3>
-            <p>Forthcoming manifesto: Disability, Due Process, and the Architecture of Exclusion in American Courts. The deeper framework behind all of this work.</p>
-            <span class="pathway-cta">Learn More →</span>
-          </a>
-        </div>
-      </div>
-    </section>
+            <p>A manifesto exposing how America's state courts systematically fail to comply with ADA Title II — and a framework for holding them accountable.</p>
+            <a href="pages/publications.html" class="card-link">Learn More About The Invisible Barrier &rarr;</a>
+          </div>
 
-    <!-- Featured In Section (Minimal) -->
-    <section class="section section--alt">
-      <div class="container">
-        <div style="max-width: 700px; margin: 0 auto;">
-          <div class="featured-in-minimal">
-            <p class="source">ABA Commission on Disability Rights — April 7, 2026</p>
-            <p class="text">The ABA Commission on Disability Rights amplified Katie's article <strong>"Access Is Not Advantage"</strong> — recognizing her argument that disability accommodations in court are legal requirements, not judicial favors.</p>
+          <div class="card animate-in animate-delay-1">
+            <span class="overline">ABA Publication</span>
+            <h3>Access Is Not Advantage</h3>
+            <p>Published in the American Bar Association journal, March 2026. A foundational argument that disability accommodations are legal requirements, not judicial favors.</p>
+            <a href="pages/publications.html" class="card-link">Read More About Access Is Not Advantage &rarr;</a>
+          </div>
+
+          <div class="card animate-in animate-delay-2">
+            <span class="overline">Framework</span>
+            <h3>The Copeland Questions&trade;</h3>
+            <p>Four threshold questions that reveal exactly where a court's ADA Title II obligations were violated — a practical tool for attorneys, advocates, and litigants.</p>
+            <a href="pages/publications.html#copeland-questions" class="card-link">Discover The Copeland Questions Framework &rarr;</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- About Katie (Brief) -->
-    <section class="section-narrative">
-      <div class="container">
-        <div style="max-width: 900px; margin: 0 auto;">
-          <h2>About Katie Copeland</h2>
-          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--ink); margin-bottom: var(--space-lg);">
-            Katie Copeland is a Texas attorney, author, and access architect developing public-facing legal frameworks and resources on ADA Title II, meaningful court access, and due process. Her work translates complex access failures into clear questions, practical tools, and humane systems reform.
-          </p>
-          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--ink); margin-bottom: var(--space-lg);">
-            She brings the precision of a trained litigator and the insight of someone who has navigated these systems personally. Her approach is dialectical—holding complexity rather than collapsing it. She doesn't ask courts to be sympathetic. She asks them to be compliant.
-          </p>
-          <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
-            <a href="pages/about.html" class="btn btn--primary">Full Biography</a>
-            <a href="pages/publications.html" class="btn btn--secondary">Publications & Work</a>
-            <a href="pages/speaking.html" class="btn btn--secondary">Speaking Inquiries</a>
-          </div>
-        </div>
+    <!-- Quote Section -->
+    <section class="section section--teal" aria-label="Featured quote">
+      <div class="container container--narrow text-center">
+        <blockquote class="hero-quote">
+          &ldquo;The law already requires this. The harm is already happening. And the people who will change it are already in the room. Some of them are reading this sentence right now.&rdquo;
+          <cite>From <em>The Invisible Barrier</em></cite>
+        </blockquote>
       </div>
     </section>
-
     <!-- Three Pillars Section -->
-    <section class="section section--alt" aria-labelledby="pillars-heading">
+    <section class="section" aria-labelledby="pillars-heading">
       <div class="container">
         <div class="section-header">
           <span class="overline">The Foundation</span>
@@ -362,14 +229,135 @@
         </div>
       </div>
     </section>
+    <!-- Resources Section -->
+    <section class="section section--alt" id="resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Resources</span>
+          <h2 id="resources-heading">Start Where the System Feels Most Unclear</h2>
+          <p>These public resources are built for parents, advocates, and court observers who need language for what is happening — and a clearer route through it.</p>
+        </div>
 
-    <!-- Quote Section -->
-    <section class="section section--teal" aria-label="Featured quote">
-      <div class="container container--narrow text-center">
-        <blockquote class="hero-quote">
-          &ldquo;The law already requires this. The harm is already happening. And the people who will change it are already in the room. Some of them are reading this sentence right now.&rdquo;
-          <cite>From <em>The Invisible Barrier</em></cite>
-        </blockquote>
+        <div class="card-grid card-grid--three">
+          <div class="card animate-in">
+            <span class="overline">For Parents</span>
+            <h3>A Record Is Not Reality</h3>
+            <p>A grounding resource for parents trying to preserve truth, coherence, and meaningful voice while building a court record under pressure.</p>
+            <a href="pages/for-parents-building-the-record.html" class="card-link">Read the Parent Resource &rarr;</a>
+          </div>
+
+          <div class="card animate-in animate-delay-1">
+            <span class="overline">Evidence &amp; Access</span>
+            <h3>A Right Without a Route Is Not Access</h3>
+            <p>A restrained evidence hub examining court-access infrastructure, ADA pathways, and the conditions that make records reliable or unreliable.</p>
+            <a href="pages/tarrant-county.html" class="card-link">View the Tarrant County Hub &rarr;</a>
+          </div>
+
+          <div class="card animate-in animate-delay-2">
+            <span class="overline">Framework</span>
+            <h3>The Copeland Questions&trade;</h3>
+            <p>A practical diagnostic framework for asking whether access was meaningful, whether the route was usable, and whether process preserved reality.</p>
+            <a href="pages/publications.html#copeland-questions" class="card-link">Explore the Framework &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Approach Section -->
+    <section class="section" aria-labelledby="approach-heading">
+      <div class="container container--narrow">
+        <div class="section-header">
+          <span class="overline">The Approach</span>
+          <h2 id="approach-heading">Both Rigorous and Human</h2>
+        </div>
+        <div class="prose">
+          <p>Katie's work lives at the intersection of legal scholarship and lived experience. She brings the precision of a trained litigator and the insight of someone who has navigated these systems personally. Her approach is dialectical — holding complexity rather than collapsing it.</p>
+          <p>She doesn't ask courts to be sympathetic. She asks them to be compliant. Her "both/and" framework recognizes that courts can protect judicial discretion <em>and</em> meet their legal obligations under the ADA. That judges can maintain authority <em>and</em> provide meaningful access. That the law can be rigorous <em>and</em> humane.</p>
+          <p>At the center of the work is a simple public-access thesis: access is not a favor granted at the courthouse door. It is the route by which rights become usable, records become reliable, and due process becomes more than a promise on paper.</p>
+          <p>This is systems-level thinking applied to civil rights — identifying patterns of non-compliance, building frameworks for accountability, and offering practical tools that work within existing legal structures.</p>
+        </div>
+        <div class="text-center mt-lg">
+          <a href="pages/about.html" class="btn btn--primary">Read Katie's Story</a>
+        </div>
+      </div>
+    </section>
+    <!-- Stop Documenting This™ Section -->
+    <section class="section" aria-labelledby="sdt-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">Stop Documenting This&trade;</span>
+          <h2 id="sdt-heading">Ruby &amp; Moon's Royal Decrees</h2>
+          <p>Making the law accessible — one decree at a time.</p>
+        </div>
+
+        <div class="sdt-intro animate-in">
+          <img src="assets/images/TheLure2.png" alt="Ruby (a Blenheim Cavalier King Charles Spaniel wearing a crown) and Moon (a tricolor Cavalier in a safety vest holding a magnifying glass reflecting a courthouse) — the Royal Decree duo" class="sdt-profile-img blend-multiply">
+          <p>Ruby is a Blenheim Cavalier King Charles Spaniel who issues Royal Decrees about disability rights from her velvet cushion. Moon is a tricolor Cavalier who holds the clipboard. Together, they make the law accessible — one decree at a time.</p>
+        </div>
+
+        <div class="decree-carousel" aria-label="Royal Decree comics gallery">
+          <div class="decree-track" id="decree-track">
+            <div class="decree-slide">
+              <img src="assets/images/royal-decree.png" alt="Royal Decree No. 112 — Let it be known that inaccessible courtrooms are not a design oversight. They are a policy." loading="lazy">
+            </div>
+            <div class="decree-slide">
+              <img src="assets/images/decree-d322.png" alt="Royal Decree — The Copeland Questions: Do's and Don'ts for accommodation decisions" loading="lazy">
+            </div>
+            <div class="decree-slide">
+              <img src="assets/images/decree-d323.png" alt="Royal Decree — The Copeland Questions: What to Ask, What to Listen For, What Not to Do" loading="lazy">
+            </div>
+            <div class="decree-slide">
+              <img src="assets/images/decree-d324.png" alt="Royal Decree — The Copeland Questions: Does granting this accommodation fundamentally alter the proceeding?" loading="lazy">
+            </div>
+            <div class="decree-slide">
+              <img src="assets/images/decree-d325.png" alt="Royal Decree — The Copeland Questions: The Law, Who Decides, What This Means" loading="lazy">
+            </div>
+            <div class="decree-slide">
+              <img src="assets/images/decree-d326.png" alt="Royal Decree — The Copeland Questions: Typically Granted vs. Requires Analysis accommodations" loading="lazy">
+            </div>
+          </div>
+          <div class="decree-controls">
+            <button class="decree-btn decree-btn--prev" aria-label="Previous decree" id="decree-prev">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="decree-dots" id="decree-dots" aria-label="Decree navigation"></div>
+            <button class="decree-btn decree-btn--next" aria-label="Next decree" id="decree-next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center mt-lg">
+          <a href="pages/comics.html" class="btn btn--primary">View All Comics</a>
+          <a href="https://www.instagram.com/stopdocumentingthis/" target="_blank" rel="noopener" class="btn btn--secondary">Follow @stopdocumentingthis</a>
+        </div>
+      </div>
+    </section>
+    <!-- Three-Tier Brand Section -->
+    <section class="section section--alt" aria-labelledby="ecosystem-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="overline">The Ecosystem</span>
+          <h2 id="ecosystem-heading">Three Dimensions of the Work</h2>
+          <h3 style="font-size: 1rem; font-weight: 400; color: var(--ink-light); margin: 0;">Katie's mission spans personal thought leadership, legal practice, and systemic advocacy.</h3>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <div class="card text-center">
+            <h3 class="text-teal">Scholar &amp; Author</h3>
+            <p>Writing, speaking, and thought leadership that reframes how the legal profession understands disability access in courts.</p>
+            <p style="font-size: 0.85rem; color: var(--gray); margin-top: var(--space-sm);">katiecopeland.com</p>
+          </div>
+          <div class="card text-center">
+            <h3 class="text-teal">Legal Practice</h3>
+            <p>Direct legal services and consultation applying The Copeland Questions&trade; framework to real cases and court systems.</p>
+            <p style="font-size: 0.85rem; color: var(--gray); margin-top: var(--space-sm);">copelandlawtexas.com</p>
+          </div>
+          <div class="card text-center">
+            <h3 class="text-teal">Systems Justice</h3>
+            <p>Public education, court access reform, and advocacy through the Systems Justice Institute.</p>
+            <p style="font-size: 0.85rem; color: var(--gray); margin-top: var(--space-sm);">systemsjusticeinstitute.org</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -378,41 +366,51 @@
   <!-- ============================================================
        FOOTER
        ============================================================ -->
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
+      <div class="footer-grid">
+        <div class="footer-brand">
           <span class="footer-wordmark-text">Katie Copeland</span>
-          <p class="footer-brand-text">Texas attorney, author, and access architect developing public-facing legal frameworks and resources on ADA Title II, meaningful court access, and due process.</p>
+          <p>Texas attorney, author, and access architect developing public-facing legal frameworks on ADA Title II, meaningful court access, and due process.</p>
         </div>
-
-        <div class="footer-section">
-          <h4 class="footer-heading">Navigate</h4>
-          <nav class="footer-nav">
-            <a href="index.html">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/publications.html">Publications</a>
-            <a href="pages/speaking.html">Speaking</a>
-            <a href="pages/contact.html">Contact</a>
-          </nav>
+        <div class="footer-nav">
+          <p class="footer-heading">Navigate</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/publications.html">Publications</a></li>
+            <li><a href="pages/speaking.html">Speaking</a></li>
+            <li><a href="pages/book.html">Book</a></li>
+            <li><a href="pages/comics.html">Comics</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
         </div>
-
-        <div class="footer-section">
-          <h4 class="footer-heading">Connect</h4>
-          <nav class="footer-nav">
-            <a href="https://instagram.com/kcopeland_esq" target="_blank">Instagram</a>
-            <a href="https://linkedin.com/in/katiecopeland" target="_blank">LinkedIn</a>
-            <a href="pages/contact.html">Get in Touch</a>
-          </nav>
+        <div class="footer-nav">
+          <p class="footer-heading">The Ecosystem</p>
+          <ul>
+            <li><a href="https://copelandlawtexas.com" target="_blank" rel="noopener">Copeland Law Texas</a></li>
+            <li><a href="https://systemsjusticeinstitute.org" target="_blank" rel="noopener">Systems Justice Institute</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <p class="footer-heading">Connect</p>
+          <ul>
+            <li><a href="https://www.instagram.com/stopdocumentingthis/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/katiecopeland" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="pages/contact.html">Get in Touch</a></li>
+            <li><a href="pages/speaking.html">Speaking Inquiries</a></li>
+          </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>&copy; 2026 Katie Copeland, J.D. All rights reserved.</p>
+        <p class="footer-trademarks">The Copeland Questions&trade;, Stop Documenting This&trade;, The Avoidable Void&trade;, and Laugh &rarr; Listen &rarr; Learn &rarr; Act&trade; are trademarks of Katie Copeland.</p>
         <p class="footer-a11y">Accessibility-first: designed for readability, strong contrast, keyboard navigation, and WCAG AA alignment, with AAA-informed practices where feasible.</p>
       </div>
     </div>
   </footer>
 
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>
