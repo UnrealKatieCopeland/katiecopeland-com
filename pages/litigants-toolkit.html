@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Litigant's Toolkit: The Neuro-Legal Script | Katie Copeland, J.D.</title>
+  <meta name="description" content="Free resource: Exact language for requesting ADA accommodations in court without opening yourself to 'unfit' attacks. Scripts, templates, and documentation checklists for disabled litigants.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="../assets/images/monogram_transparent_final.webp">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/refinements.css">
+  <style>
+    .toolkit-page .page-header {
+      background: linear-gradient(135deg, rgba(26, 124, 114, 0.96), rgba(74, 25, 66, 0.92));
+      color: var(--white);
+    }
+
+    .toolkit-page .page-header h1,
+    .toolkit-page .page-header p {
+      color: var(--white);
+    }
+
+    .toolkit-page .page-header .overline {
+      color: var(--gold);
+    }
+
+    .toolkit-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .toolkit-section {
+      margin: var(--space-3xl) 0;
+      padding-bottom: var(--space-3xl);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .toolkit-section:last-child {
+      border-bottom: none;
+    }
+
+    .toolkit-section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.2rem);
+      color: var(--teal-dark);
+      margin-bottom: var(--space-lg);
+      font-weight: 700;
+    }
+
+    .toolkit-section h3 {
+      font-size: 1.35rem;
+      color: var(--ink);
+      margin: var(--space-xl) 0 var(--space-md) 0;
+      font-weight: 600;
+    }
+
+    .toolkit-section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: var(--space-md);
+    }
+
+    .script-box {
+      background: var(--white);
+      border-left: 6px solid var(--teal);
+      padding: var(--space-lg);
+      margin: var(--space-lg) 0;
+      border-radius: 4px;
+      box-shadow: var(--shadow-sm);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .script-box strong {
+      color: var(--teal-dark);
+    }
+
+    .warning-box {
+      background: rgba(74, 25, 66, 0.08);
+      border-left: 6px solid var(--plum);
+      padding: var(--space-lg);
+      margin: var(--space-lg) 0;
+      border-radius: 4px;
+    }
+
+    .warning-box h4 {
+      color: var(--plum);
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    .checklist {
+      background: var(--white);
+      padding: var(--space-lg);
+      border-radius: 4px;
+      box-shadow: var(--shadow-sm);
+      margin: var(--space-lg) 0;
+    }
+
+    .checklist ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .checklist li {
+      padding: var(--space-sm) 0;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .checklist li:last-child {
+      border-bottom: none;
+    }
+
+    .checklist input[type="checkbox"] {
+      margin-right: var(--space-md);
+      margin-top: 4px;
+      cursor: pointer;
+      accent-color: var(--teal);
+    }
+
+    .checklist label {
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .accommodations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-lg);
+      margin: var(--space-lg) 0;
+    }
+
+    .accommodation-card {
+      background: var(--white);
+      padding: var(--space-lg);
+      border-radius: 4px;
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--teal);
+    }
+
+    .accommodation-card h4 {
+      color: var(--teal-dark);
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    .accommodation-card ul {
+      margin: var(--space-md) 0 0 0;
+      padding-left: var(--space-lg);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .key-principle {
+      background: linear-gradient(135deg, rgba(26, 124, 114, 0.08), rgba(74, 25, 66, 0.08));
+      padding: var(--space-xl);
+      border-radius: 8px;
+      margin: var(--space-xl) 0;
+      border-left: 6px solid var(--teal);
+    }
+
+    .key-principle p {
+      margin: 0;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink);
+    }
+
+    .download-section {
+      background: var(--white);
+      padding: var(--space-xl);
+      border-radius: 8px;
+      box-shadow: var(--shadow-sm);
+      margin: var(--space-3xl) 0;
+      text-align: center;
+    }
+
+    .download-section h3 {
+      margin-top: 0;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--white);
+      padding: var(--space-md) var(--space-lg);
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: var(--space-md);
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: var(--teal-dark);
+    }
+
+    .resource-list {
+      background: var(--white);
+      padding: var(--space-lg);
+      border-radius: 4px;
+      box-shadow: var(--shadow-sm);
+      margin: var(--space-lg) 0;
+    }
+
+    .resource-list ul {
+      margin: var(--space-md) 0;
+      padding-left: var(--space-lg);
+    }
+
+    .resource-list li {
+      margin-bottom: var(--space-sm);
+      line-height: 1.7;
+    }
+
+    .disclaimer {
+      background: var(--gray-light);
+      padding: var(--space-lg);
+      border-radius: 4px;
+      margin: var(--space-3xl) 0;
+      font-size: 0.95rem;
+      color: var(--gray-dark);
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .toolkit-content {
+        padding: 0 var(--space-lg);
+      }
+
+      .script-box {
+        font-size: 0.95rem;
+      }
+
+      .accommodations-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolkit-page">
+    <!-- Navigation -->
+    <nav class="site-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="../index.html" class="site-logo">
+            <img src="../assets/images/monogram_transparent_final.webp" alt="Katie Copeland" class="logo-image">
+            <span class="logo-text">Katie Copeland</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="speaking.html">Speaking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container">
+        <span class="overline">Free Resource</span>
+        <h1>Litigant's Toolkit</h1>
+        <p class="subtitle">The Neuro-Legal Script: Exact language for requesting accommodations without opening yourself to "unfit" attacks</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container toolkit-content">
+      <!-- Introduction -->
+      <section class="toolkit-section">
+        <h2>How to Use This Toolkit</h2>
+        <p>This toolkit provides the exact language you need to:</p>
+        <ul style="font-size: 1.05rem; line-height: 1.8; margin: var(--space-lg) 0;">
+          <li>Request accommodations before your hearing</li>
+          <li>Respond if asked about your disability in court</li>
+          <li>Preserve the issue for appeal if accommodations are denied</li>
+          <li>Recognize what opposing counsel cannot legally do</li>
+        </ul>
+        <p><strong>The goal is to name the mechanism, not the character flaw.</strong> You are not asking for sympathy. You are invoking a federal right.</p>
+      </section>
+
+      <!-- Part 1: Accommodation Request Letter -->
+      <section class="toolkit-section">
+        <h2>Part 1: The Accommodation Request Letter</h2>
+        <p>This letter should be sent <strong>as early as possible</strong> — ideally 30 days before any hearing, but send it as soon as you know you need it. Address it to the court's ADA Coordinator (if one exists) or to the Court Administrator if not.</p>
+        
+        <h3>Subject Line:</h3>
+        <p><em>Request for Reasonable Modification Under Title II of the Americans with Disabilities Act</em></p>
+
+        <h3>Template:</h3>
+        <div class="script-box">
+          <p><strong>Dear [ADA Coordinator / Court Administrator],</strong></p>
+          <p>I am writing to request reasonable modifications under Title II of the Americans with Disabilities Act, 42 U.S.C. § 12132, for the hearing scheduled on [DATE] in Case No. [CASE NUMBER].</p>
+          <p>I have been diagnosed with [CONDITION], which affects my [working memory / processing speed / ability to track rapid verbal exchanges / ability to remain upright for extended periods / sensory processing]. As a result, I require the following accommodations to participate meaningfully in the proceeding:</p>
+          <p>1. <strong>[Accommodation 1]</strong>: [Brief explanation of why this is necessary — e.g., "Extended time to respond to questions, as my condition causes delays in word retrieval under stress."]</p>
+          <p>2. <strong>[Accommodation 2]</strong>: [e.g., "Written summaries of key rulings and instructions, as I cannot reliably retain verbal information delivered at conversational speed."]</p>
+          <p>3. <strong>[Accommodation 3]</strong>: [e.g., "Scheduled breaks every 60 minutes, as prolonged upright positioning causes blood pooling and cognitive decline."]</p>
+          <p>I have attached a letter from my treating physician, [Dr. NAME], confirming my diagnosis and functional limitations. This letter is submitted solely to support this accommodation request and is not offered as evidence in the underlying case.</p>
+          <p>I am available to participate in an interactive process to discuss these accommodations or identify alternatives that would provide effective communication and meaningful participation.</p>
+          <p>Please confirm receipt of this request and advise me of the court's response in writing.</p>
+          <p><strong>Respectfully,</strong></p>
+          <p>[YOUR NAME]<br>[DATE]</p>
+        </div>
+
+        <h3>What to Attach:</h3>
+        <p>A <strong>one-page letter from your treating physician</strong> (not a full medical history) that:</p>
+        <ul style="margin-left: var(--space-lg);">
+          <li>Confirms the diagnosis</li>
+          <li>Describes the functional limitations (e.g., "Patient has difficulty with speeded word retrieval and sustained attention under stress")</li>
+          <li>States that the requested accommodations are medically necessary</li>
+        </ul>
+      </section>
+
+      <!-- Part 2: What to Say in Court -->
+      <section class="toolkit-section">
+        <h2>Part 2: What to Say in Court (If Asked About Your Disability)</h2>
+        <p>If the judge or opposing counsel asks you about your disability during the hearing, keep your answer <strong>short, calm, and mechanism-focused</strong>. Do not apologize. Do not over-explain.</p>
+
+        <h3>Script:</h3>
+        <div class="script-box">
+          <p>"I have [CONDITION], which affects my [working memory / processing speed / ability to track rapid exchanges]. I requested accommodations in writing on [DATE], and I have not received a response. I am happy to participate fully, but I may need [specific accommodation] to do so effectively."</p>
+        </div>
+
+        <h3>What NOT to say:</h3>
+        <div class="warning-box">
+          <h4>Avoid These Phrases:</h4>
+          <ul style="margin: 0;">
+            <li>"I'm sorry, I'm just really struggling today."</li>
+            <li>"I know this is inconvenient."</li>
+            <li>"I'm doing my best."</li>
+          </ul>
+          <p style="margin-bottom: 0;"><strong>Why:</strong> Those phrases frame your disability as a personal failing or an inconvenience. The accommodation is a legal right, not a favor.</p>
+        </div>
+      </section>
+
+      <!-- Part 3: Red Flags -->
+      <section class="toolkit-section">
+        <h2>Part 3: Red Flags — What Opposing Counsel Cannot Do</h2>
+        <p>Your accommodation request is an <strong>administrative process between you and the court as a public entity</strong>. Opposing counsel has no legal standing to interfere with it.</p>
+
+        <h3>They CANNOT:</h3>
+        <ul style="font-size: 1.05rem; line-height: 1.8; margin: var(--space-lg) 0;">
+          <li><strong>Move to strike your medical documentation</strong> if it was submitted solely in support of an accommodation request (not as evidence in the case).</li>
+          <li><strong>Cross-examine your doctor</strong> about your diagnosis if the doctor was offered only to explain functional limitations, not to testify about your fitness as a parent.</li>
+          <li><strong>Demand access to your full medical history</strong> as a condition of granting accommodations.</li>
+          <li><strong>Argue that granting accommodations would be "unfair" to them</strong>.</li>
+        </ul>
+
+        <h3>If Opposing Counsel Files a Motion to Strike:</h3>
+        <p>You may respond (in writing or orally, depending on the court's procedure) with:</p>
+        <div class="script-box">
+          <p>"Your Honor, the medical documentation submitted on [DATE] was filed in support of an administrative accommodation request under Title II of the ADA. It was not offered as evidence in the underlying case. Opposing counsel has no standing to challenge an accommodation request, and their motion to strike interferes with a process protected by the ADA's anti-retaliation provision, 42 U.S.C. § 12203(b)."</p>
+        </div>
+      </section>
+
+      <!-- Part 4: If Accommodations Are Denied -->
+      <section class="toolkit-section">
+        <h2>Part 4: If Your Accommodations Are Denied</h2>
+        <p>If the court denies your request (or ignores it), you need to <strong>make a record</strong> so the issue is preserved for appeal.</p>
+
+        <h3>Before the Hearing Begins, State for the Record:</h3>
+        <div class="script-box">
+          <p>"Your Honor, I submitted a written request for accommodations under the ADA on [DATE]. I have not received a written response. I am requesting that the court confirm on the record whether my request has been granted or denied, and if denied, the reason why."</p>
+        </div>
+
+        <h3>If the Court Refuses to Answer or Says the Accommodations Are Unnecessary:</h3>
+        <div class="script-box">
+          <p>"Your Honor, I respectfully request that the court's ruling on my accommodation request be included in the written order so that I may have a record for appeal."</p>
+        </div>
+
+        <h3>Why This Matters:</h3>
+        <p>Appellate courts cannot review what is not in the record. If the accommodation denial is never written down, it is functionally invisible. <strong>You are creating the paper trail that makes the harm visible.</strong></p>
+      </section>
+
+      <!-- Part 5: Documentation Checklist -->
+      <section class="toolkit-section">
+        <h2>Part 5: Documentation Checklist</h2>
+        
+        <h3>What You Need:</h3>
+        <div class="checklist">
+          <ul>
+            <li><input type="checkbox" id="check1"><label for="check1">One-page letter from treating physician confirming diagnosis and functional limitations</label></li>
+            <li><input type="checkbox" id="check2"><label for="check2">Copy of your written accommodation request (with proof of delivery — certified mail or court filing receipt)</label></li>
+            <li><input type="checkbox" id="check3"><label for="check3">Copy of any response (or lack of response) from the court</label></li>
+            <li><input type="checkbox" id="check4"><label for="check4">Notes from the hearing documenting:
+              <ul style="margin-top: var(--space-sm);">
+                <li>Whether you were able to track the proceeding</li>
+                <li>Moments when you could not respond in time</li>
+                <li>Physical symptoms (dizziness, sensory overload, etc.)</li>
+                <li>Any statements the judge or opposing counsel made about your behavior</li>
+              </ul>
+            </label></li>
+          </ul>
+        </div>
+
+        <h3>What You Do NOT Need:</h3>
+        <div class="warning-box">
+          <ul style="margin: 0;">
+            <li>Full neuropsychological evaluation (unless you choose to provide it)</li>
+            <li>Thirteen years of medical records</li>
+            <li>A formal diagnosis from a specialist (a treating physician's letter is sufficient)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Part 6: Sample Accommodations -->
+      <section class="toolkit-section">
+        <h2>Part 6: Sample Accommodations (Choose What You Actually Need)</h2>
+        
+        <div class="accommodations-grid">
+          <div class="accommodation-card">
+            <h4>For Working Memory / Processing Speed:</h4>
+            <ul>
+              <li>Extended time to respond to questions</li>
+              <li>Written summaries of key rulings and instructions</li>
+              <li>Permission to refer to written notes during testimony</li>
+              <li>A copy of the hearing agenda in advance</li>
+            </ul>
+          </div>
+
+          <div class="accommodation-card">
+            <h4>For Sensory Processing / Attention:</h4>
+            <ul>
+              <li>Scheduled breaks every 60-90 minutes</li>
+              <li>Reduced courtroom lighting (if fluorescent lights cause overload)</li>
+              <li>Limits on cross-talk (one person speaking at a time)</li>
+            </ul>
+          </div>
+
+          <div class="accommodation-card">
+            <h4>For Physical Limitations:</h4>
+            <ul>
+              <li>Permission to sit or stand as needed</li>
+              <li>Breaks to allow for recumbency (lying down) if blood pooling occurs</li>
+              <li>Shorter hearing days with more frequent sessions</li>
+            </ul>
+          </div>
+
+          <div class="accommodation-card">
+            <h4>For Communication:</h4>
+            <ul>
+              <li>A support person (not an attorney) to assist with organization and note-taking</li>
+              <li>Real-time transcription (CART)</li>
+              <li>Simplified language from the judge (plain English, not legal jargon)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 7: Key Principle -->
+      <section class="toolkit-section">
+        <h2>Part 7: The Core Reframe</h2>
+        <div class="key-principle">
+          <p>You are not asking for special treatment. You are not asking the court to lower its standards. You are asking the court to <strong>provide the tools that make the standard accessible.</strong></p>
+          <p>A wheelchair ramp does not give someone an unfair advantage. It allows them to enter the building. A cognitive accommodation does not give you an unfair advantage. It allows you to participate in the proceeding.</p>
+          <p><strong>The law already says you have this right. This toolkit helps you invoke it.</strong></p>
+        </div>
+      </section>
+
+      <!-- Part 8: Past the Hearing -->
+      <section class="toolkit-section">
+        <h2>Part 8: What to Do If You're Already Past the Hearing</h2>
+        <p>If you've already had a hearing where accommodations were denied or ignored, you may still be able to raise this issue on appeal or in a motion for reconsideration.</p>
+
+        <h3>In a Motion for Reconsideration or New Trial:</h3>
+        <div class="script-box">
+          <p>"The court's failure to respond to my ADA accommodation request, submitted on [DATE], deprived me of meaningful participation in the proceeding. This constitutes a structural due process violation and a violation of Title II of the ADA. I request a new hearing with appropriate accommodations in place."</p>
+        </div>
+
+        <h3>On Appeal:</h3>
+        <p>Your appellate brief should argue:</p>
+        <ul style="margin-left: var(--space-lg);">
+          <li>The court had an affirmative obligation under Title II to provide accommodations.</li>
+          <li>The failure to provide them rendered the proceeding fundamentally unfair.</li>
+          <li>The trial court's credibility findings are unreliable because they were based on observing an unaccommodated litigant.</li>
+        </ul>
+        <p>This is a <strong>structural error</strong> argument, not a sufficiency-of-the-evidence argument. You are not asking the appellate court to second-guess the judge's credibility call. You are asking them to find that the process itself was defective.</p>
+      </section>
+
+      <!-- Resources -->
+      <section class="toolkit-section">
+        <h2>Additional Resources</h2>
+        
+        <h3>If You Need Help Finding an Attorney:</h3>
+        <div class="resource-list">
+          <ul>
+            <li>Contact your state's <strong>Protection & Advocacy agency</strong> (every state has one, federally funded)</li>
+            <li>Contact the nearest <strong>disability rights legal clinic</strong></li>
+            <li>Search for attorneys who practice both <strong>family law AND civil rights / ADA law</strong> (they are rare, but they exist)</li>
+          </ul>
+        </div>
+
+        <h3>If You Cannot Afford an Attorney:</h3>
+        <div class="resource-list">
+          <ul>
+            <li>Many states have <strong>self-help centers</strong> in the courthouse that can help you file written requests</li>
+            <li><strong>Legal aid organizations</strong> may be able to help with accommodation requests even if they cannot represent you in the full case</li>
+            <li><strong>Law school clinics</strong> sometimes take ADA court access cases</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Download Section -->
+      <section class="download-section">
+        <h3>Download This Toolkit</h3>
+        <p>Print or save this toolkit as a PDF to share with legal aid clinics, Protection & Advocacy agencies, or other disabled litigants.</p>
+        <a href="#" class="download-btn" onclick="window.print(); return false;">Print or Save as PDF</a>
+      </section>
+
+      <!-- Disclaimer -->
+      <div class="disclaimer">
+        <p><strong>Disclaimer:</strong> This toolkit is provided for informational purposes only and does not constitute legal advice. Consult with an attorney licensed in your jurisdiction for advice specific to your case.</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <span class="footer-wordmark-text">Katie Copeland</span>
+            <p class="footer-brand-text">Texas attorney, author, and access architect developing public-facing legal frameworks and resources on ADA Title II, meaningful court access, and due process.</p>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Navigate</h4>
+            <nav class="footer-nav">
+              <a href="../index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="publications.html">Publications</a>
+              <a href="speaking.html">Speaking</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Connect</h4>
+            <nav class="footer-nav">
+              <a href="https://instagram.com/kcopeland_esq" target="_blank">Instagram</a>
+              <a href="https://linkedin.com/in/katiecopeland" target="_blank">LinkedIn</a>
+              <a href="contact.html">Get in Touch</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Katie Copeland, J.D. All rights reserved.</p>
+          <p class="footer-a11y">Accessibility-first: designed for readability, strong contrast, keyboard navigation, and WCAG AA alignment, with AAA-informed practices where feasible.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
