@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Story | Katie Copeland, J.D.</title>
+  <meta name="description" content="Help document family court access barriers. Share your experience with disability, accommodations, and meaningful court access. Your story matters.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="../assets/images/monogram_transparent_final.webp">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/refinements.css">
+  <style>
+    .intake-page .page-header {
+      background: linear-gradient(135deg, rgba(26, 124, 114, 0.96), rgba(74, 25, 66, 0.92));
+      color: var(--white);
+    }
+
+    .intake-page .page-header h1,
+    .intake-page .page-header p {
+      color: var(--white);
+    }
+
+    .intake-page .page-header .overline {
+      color: var(--gold);
+    }
+
+    .intake-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: var(--space-2xl);
+    }
+
+    .intake-intro {
+      background: var(--parchment);
+      border-left: 4px solid var(--teal);
+      padding: var(--space-xl);
+      margin-bottom: var(--space-3xl);
+      border-radius: 4px;
+    }
+
+    .intake-intro p {
+      margin: 0 0 var(--space-md) 0;
+      line-height: 1.7;
+      color: var(--charcoal);
+    }
+
+    .intake-intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    .form-section {
+      margin-bottom: var(--space-3xl);
+      padding-bottom: var(--space-3xl);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .form-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .form-section h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: var(--space-md);
+    }
+
+    .form-section .section-label {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-sm);
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: var(--space-lg);
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: var(--space-sm);
+      font-weight: 500;
+      color: var(--charcoal);
+      font-size: 1rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: var(--space-md);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      color: var(--charcoal);
+      background: var(--white);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+      line-height: 1.6;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(26, 124, 114, 0.1);
+    }
+
+    .checkbox-group,
+    .radio-group {
+      margin-top: var(--space-md);
+    }
+
+    .checkbox-item,
+    .radio-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: var(--space-md);
+    }
+
+    .checkbox-item input[type="checkbox"],
+    .radio-item input[type="radio"] {
+      margin-top: 4px;
+      margin-right: var(--space-md);
+      cursor: pointer;
+      accent-color: var(--teal);
+    }
+
+    .checkbox-item label,
+    .radio-item label {
+      margin: 0;
+      cursor: pointer;
+      font-weight: 400;
+    }
+
+    .form-help-text {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      margin-top: var(--space-sm);
+      line-height: 1.5;
+    }
+
+    .consent-box {
+      background: #fef9f3;
+      border: 1px solid var(--border-color);
+      padding: var(--space-lg);
+      border-radius: 4px;
+      margin-bottom: var(--space-lg);
+    }
+
+    .consent-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: var(--space-md);
+    }
+
+    .consent-box p {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--charcoal);
+      margin-bottom: var(--space-md);
+    }
+
+    .consent-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .consent-box .consent-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: var(--space-md);
+    }
+
+    .consent-box .consent-item input[type="checkbox"] {
+      margin-top: 4px;
+      margin-right: var(--space-md);
+      cursor: pointer;
+      accent-color: var(--teal);
+    }
+
+    .consent-box .consent-item label {
+      margin: 0;
+      cursor: pointer;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .resources-box {
+      background: #f0f8f7;
+      border-left: 4px solid var(--teal);
+      padding: var(--space-lg);
+      margin-bottom: var(--space-2xl);
+      border-radius: 4px;
+    }
+
+    .resources-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: var(--space-md);
+    }
+
+    .resources-box p {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--charcoal);
+      margin-bottom: var(--space-md);
+    }
+
+    .resources-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .resources-box a {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .resources-box a:hover {
+      text-decoration: underline;
+    }
+
+    .submit-button {
+      background: var(--teal);
+      color: var(--white);
+      padding: var(--space-md) var(--space-2xl);
+      border: none;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background: var(--teal-dark);
+    }
+
+    .submit-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(26, 124, 114, 0.3);
+    }
+
+    .optional-note {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      font-style: italic;
+      margin-top: var(--space-2xl);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .intake-container {
+        padding: var(--space-lg);
+      }
+
+      .form-section h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="intake-page">
+    <!-- Header -->
+    <header class="page-header">
+      <div class="container">
+        <span class="overline">Share Your Experience</span>
+        <h1>Help Document Family Court Access Barriers</h1>
+        <p>Your story matters. By sharing your experience, you help us understand how disability, cognitive challenges, and court access intersect—and build evidence for systemic change.</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="intake-container">
+      <!-- Intro -->
+      <div class="intake-intro">
+        <p><strong>This is not legal advice.</strong> Sharing your story does not create an attorney–client relationship with Katie Copeland. Katie Copeland cannot represent you, and this form is not a substitute for legal counsel.</p>
+        <p>Your story will be used to identify patterns in how family courts handle disability and access. With your permission, anonymized versions may appear in research, publications, or advocacy work.</p>
+      </div>
+
+      <!-- Resources Alert -->
+      <div class="resources-box">
+        <h3>In Crisis?</h3>
+        <p><strong>988 Suicide & Crisis Lifeline:</strong> Call or text 988 (available 24/7)</p>
+        <p><strong>National Domestic Violence Hotline:</strong> 1-800-799-7233</p>
+        <p>If you're in immediate danger, call 911.</p>
+      </div>
+
+      <!-- Form -->
+      <form id="storyIntakeForm">
+        <!-- Section A: Consent & Identity -->
+        <div class="form-section">
+          <h2>How Can We Use Your Story?</h2>
+          <span class="section-label">Section A: Consent & Identity</span>
+
+          <div class="form-group">
+            <label>How may we use your story? (Check all that apply)</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="use_research" name="use_research" value="research">
+                <label for="use_research">Research and pattern analysis</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="use_anonymous" name="use_anonymous" value="anonymous">
+                <label for="use_anonymous">Quoted anonymously in the book or articles</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="use_initials" name="use_initials" value="initials">
+                <label for="use_initials">Quoted with my first name or initials</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="use_contact" name="use_contact" value="contact">
+                <label for="use_contact">Contact me before any specific use of my story</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="use_count_only" name="use_count_only" value="count_only">
+                <label for="use_count_only">Do not publish—just count me in the data</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact_permission">May we contact you for follow-up?</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="contact_yes" name="contact_permission" value="yes">
+                <label for="contact_yes">Yes</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="contact_no" name="contact_permission" value="no">
+                <label for="contact_no">No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact_email">Email (optional—only if you said yes above)</label>
+            <input type="email" id="contact_email" name="contact_email" placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="name_or_initials">Name or initials (optional—anonymous is fine)</label>
+            <input type="text" id="name_or_initials" name="name_or_initials" placeholder="Leave blank to stay anonymous">
+          </div>
+        </div>
+
+        <!-- Section B: The Basics -->
+        <div class="form-section">
+          <h2>The Basics</h2>
+          <span class="section-label">Section B: Court & Case Information</span>
+
+          <div class="form-group">
+            <label for="state">What state? (required)</label>
+            <input type="text" id="state" name="state" required placeholder="e.g., Texas">
+          </div>
+
+          <div class="form-group">
+            <label for="county">County (if you know it)</label>
+            <input type="text" id="county" name="county" placeholder="e.g., Tarrant County">
+          </div>
+
+          <div class="form-group">
+            <label>Type of proceeding (required)</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="type_custody" name="proceeding_type" value="custody_divorce">
+                <label for="type_custody">Custody / Divorce</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="type_cps" name="proceeding_type" value="cps_dependency">
+                <label for="type_cps">CPS / Dependency</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="type_guardianship" name="proceeding_type" value="guardianship">
+                <label for="type_guardianship">Guardianship</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="type_eviction" name="proceeding_type" value="eviction_housing">
+                <label for="type_eviction">Eviction / Housing</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="type_benefits" name="proceeding_type" value="benefits_disability">
+                <label for="type_benefits">Benefits / Disability Hearing</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="type_criminal" name="proceeding_type" value="criminal">
+                <label for="type_criminal">Criminal</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="type_other" name="proceeding_type" value="other">
+                <label for="type_other">Other</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Is this case ongoing or resolved?</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="status_ongoing" name="case_status" value="ongoing">
+                <label for="status_ongoing">Ongoing</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="status_resolved" name="case_status" value="resolved">
+                <label for="status_resolved">Resolved (year: <input type="text" name="resolved_year" style="width: 100px; display: inline;" placeholder="2024">)</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Were you representing yourself?</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="self_rep_yes" name="self_represented" value="yes">
+                <label for="self_rep_yes">Yes</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="self_rep_no" name="self_represented" value="no">
+                <label for="self_rep_no">No</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="self_rep_part" name="self_represented" value="part">
+                <label for="self_rep_part">Part of the time</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section C: Disability & Accommodation -->
+        <div class="form-section">
+          <h2>Disability & Accommodation</h2>
+          <span class="section-label">Section C: Your Experience with Access</span>
+
+          <div class="form-group">
+            <label>Do you have a disability or condition that affected how you participated in court?</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="disability_yes" name="has_disability" value="yes">
+                <label for="disability_yes">Yes</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="disability_no" name="has_disability" value="no">
+                <label for="disability_no">No</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="disability_prefer" name="has_disability" value="prefer_not">
+                <label for="disability_prefer">Prefer not to say</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" id="disability_category_group" style="display: none;">
+            <label>What category? (Check all that apply)</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_tbi" name="disability_category" value="tbi">
+                <label for="cat_tbi">Traumatic brain injury</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_ptsd" name="disability_category" value="ptsd">
+                <label for="cat_ptsd">PTSD / Trauma</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_adhd" name="disability_category" value="adhd">
+                <label for="cat_adhd">ADHD</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_autism" name="disability_category" value="autism">
+                <label for="cat_autism">Autism</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_learning" name="disability_category" value="learning">
+                <label for="cat_learning">Learning disability</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_psychiatric" name="disability_category" value="psychiatric">
+                <label for="cat_psychiatric">Psychiatric (depression, bipolar, etc.)</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_intellectual" name="disability_category" value="intellectual">
+                <label for="cat_intellectual">Intellectual / Developmental</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_chronic" name="disability_category" value="chronic">
+                <label for="cat_chronic">Chronic illness / Physical</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_deaf" name="disability_category" value="deaf">
+                <label for="cat_deaf">Deaf / Hard of hearing</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_blind" name="disability_category" value="blind">
+                <label for="cat_blind">Blind / Low vision</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_other" name="disability_category" value="other">
+                <label for="cat_other">Other</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="cat_prefer" name="disability_category" value="prefer">
+                <label for="cat_prefer">Prefer not to say</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Did you ask the court for any accommodation?</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="asked_yes" name="asked_accommodation" value="yes">
+                <label for="asked_yes">Yes</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="asked_no" name="asked_accommodation" value="no">
+                <label for="asked_no">No</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="asked_didnt_know" name="asked_accommodation" value="didnt_know">
+                <label for="asked_didnt_know">I didn't know I could</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" id="accommodation_outcome_group" style="display: none;">
+            <label>What happened?</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="outcome_granted" name="accommodation_outcome" value="granted">
+                <label for="outcome_granted">Granted</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="outcome_denied" name="accommodation_outcome" value="denied">
+                <label for="outcome_denied">Denied</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="outcome_ignored" name="accommodation_outcome" value="ignored">
+                <label for="outcome_ignored">Ignored / No answer</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="outcome_bounced" name="accommodation_outcome" value="bounced">
+                <label for="outcome_bounced">Bounced between offices (no one would decide)</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>How did the court seem to read you? (Check all that apply)</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="read_cold" name="court_read" value="cold">
+                <label for="read_cold">Cold / Uncaring</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="read_evasive" name="court_read" value="evasive">
+                <label for="read_evasive">Evasive / Dishonest</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="read_uncooperative" name="court_read" value="uncooperative">
+                <label for="read_uncooperative">Uncooperative / Difficult</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="read_unstable" name="court_read" value="unstable">
+                <label for="read_unstable">Unstable / Dramatic</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="read_high_functioning" name="court_read" value="high_functioning">
+                <label for="read_high_functioning">"High-functioning, so fine"</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="read_other" name="court_read" value="other">
+                <label for="read_other">Other</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>What was the outcome? (optional)</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="outcome_lost_custody" name="case_outcome" value="lost_custody">
+                <label for="outcome_lost_custody">Lost custody / Primary care</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="outcome_reduced_time" name="case_outcome" value="reduced_time">
+                <label for="outcome_reduced_time">Reduced time with child</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="outcome_child_removed" name="case_outcome" value="child_removed">
+                <label for="outcome_child_removed">Child removed</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="outcome_money" name="case_outcome" value="money">
+                <label for="outcome_money">Money judgment</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="outcome_other_outcome" name="case_outcome" value="other">
+                <label for="outcome_other_outcome">Other</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="outcome_prefer" name="case_outcome" value="prefer">
+                <label for="outcome_prefer">Prefer not to say</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section D: Your Story & Evidence -->
+        <div class="form-section">
+          <h2>Your Story</h2>
+          <span class="section-label">Section D: The Heart of It</span>
+
+          <div class="form-group">
+            <label for="story_text">Tell us what happened (required)</label>
+            <p class="form-help-text">Share what you experienced. What barriers did you face? How did disability affect your participation? What do you wish had been different? Please do not include your child's medical specifics.</p>
+            <textarea id="story_text" name="story_text" required placeholder="Your story here..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Do you have documentation? (Check all that apply)</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="doc_transcript" name="documentation" value="transcript">
+                <label for="doc_transcript">Court transcript</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="doc_order" name="documentation" value="order">
+                <label for="doc_order">The order</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="doc_request" name="documentation" value="request">
+                <label for="doc_request">Your written accommodation request</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="doc_letter" name="documentation" value="letter">
+                <label for="doc_letter">A doctor's letter</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="doc_none" name="documentation" value="none">
+                <label for="doc_none">None</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="doc_unsure" name="documentation" value="unsure">
+                <label for="doc_unsure">Not sure</label>
+              </div>
+            </div>
+            <p class="form-help-text">Don't send documents now—just let us know what exists. We may ask for them later.</p>
+          </div>
+
+          <div class="form-group">
+            <label>Would you be open to: (Check all that apply)</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="open_interview" name="future_involvement" value="interview">
+                <label for="open_interview">A future interview</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="open_documents" name="future_involvement" value="documents">
+                <label for="open_documents">Sharing documents later</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="open_resources" name="future_involvement" value="resources">
+                <label for="open_resources">Being connected to resources</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="open_legislation" name="future_involvement" value="legislation">
+                <label for="open_legislation">Supporting legislation in your state</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consent -->
+        <div class="consent-box">
+          <h3>Consent & Legal Notice</h3>
+          <p><strong>This is not legal advice.</strong> Sharing your story does not create an attorney–client relationship with Katie Copeland. Katie Copeland cannot represent you, and this form is not a substitute for legal counsel. Do not send confidential or strategy details about an active case.</p>
+          <p>Your story will be used to identify patterns in how family courts handle disability and access. With your permission (as indicated above), anonymized or attributed versions may appear in research, publications, or advocacy work. Your data will be stored securely and accessed only by Katie Copeland and authorized team members.</p>
+          <div class="consent-item">
+            <input type="checkbox" id="consent_agree" name="consent_agree" required>
+            <label for="consent_agree">I understand and agree to the above.</label>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="submit-button">Submit Your Story</button>
+
+        <p class="optional-note">Most fields are optional. Share as much or as little as you're comfortable with.</p>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-wordmark-text">Katie Copeland</h3>
+            <p class="footer-brand-description">Texas attorney, author, and access architect developing public-facing legal frameworks and resources on ADA Title II, meaningful court access, and due process.</p>
+          </div>
+
+          <nav class="footer-nav">
+            <div class="footer-nav-column">
+              <h4>Navigate</h4>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="litigants-toolkit.html">Litigant's Toolkit</a></li>
+                <li><a href="tarrant-county.html">Tarrant County Evidence Hub</a></li>
+                <li><a href="scotus-25a1368.html">SCOTUS Filing</a></li>
+                <li><a href="book.html">The Invisible Barrier</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/rightsrequirerouttes/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/katie-copeland-j-d-7b5a6b1a3/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://www.substack.com/@rightsrequirerouttes" target="_blank">Substack</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Katie Copeland, J.D. All rights reserved.</p>
+          <p class="accessibility-statement">Accessibility-first, designed for readability, strong contrast, keyboard navigation, and WCAG 2.1 AAA alignment. <a href="contact.html">Report an issue.</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Show/hide disability category based on selection
+    document.querySelectorAll('input[name="has_disability"]').forEach(radio => {
+      radio.addEventListener('change', function() {
+        const categoryGroup = document.getElementById('disability_category_group');
+        if (this.value === 'yes') {
+          categoryGroup.style.display = 'block';
+        } else {
+          categoryGroup.style.display = 'none';
+        }
+      });
+    });
+
+    // Show/hide accommodation outcome based on selection
+    document.querySelectorAll('input[name="asked_accommodation"]').forEach(radio => {
+      radio.addEventListener('change', function() {
+        const outcomeGroup = document.getElementById('accommodation_outcome_group');
+        if (this.value === 'yes') {
+          outcomeGroup.style.display = 'block';
+        } else {
+          outcomeGroup.style.display = 'none';
+        }
+      });
+    });
+
+    // Form submission
+    document.getElementById('storyIntakeForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      // Collect form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+
+      // Convert checkboxes to arrays
+      const checkboxGroups = ['use_research', 'use_anonymous', 'use_initials', 'use_contact', 'use_count_only', 'proceeding_type', 'disability_category', 'court_read', 'case_outcome', 'documentation', 'future_involvement'];
+      checkboxGroups.forEach(group => {
+        const values = [];
+        document.querySelectorAll(`input[name="${group}"]:checked`).forEach(checkbox => {
+          values.push(checkbox.value);
+        });
+        data[group] = values.join(', ');
+      });
+
+      // Send to Notion (you'll need to set up the integration)
+      // For now, show success message
+      alert('Thank you for sharing your story. We will review it and may reach out if you provided contact information.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
