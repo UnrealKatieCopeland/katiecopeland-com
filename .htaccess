@@ -1,0 +1,7 @@
+# Enable mod_rewrite
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Redirect /toolkit to /pages/litigants-toolkit.html
+  RewriteRule ^toolkit/?$ pages/litigants-toolkit.html [L,R=301]
+</IfModule>
