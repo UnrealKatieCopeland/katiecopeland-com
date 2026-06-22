@@ -102,18 +102,74 @@
       </div>
     </section>
 
-    <!-- Newsletter CTA Section -->
-    <section class="section section--alt" aria-labelledby="newsletter-cta-heading">
+    <!-- Email Signup Section (Prominent, Right After Hero) -->
+    <section class="section email-signup-section" aria-label="Email signup">
       <div class="container container--narrow">
-        <div class="section-header text-center">
-          <h2 id="newsletter-cta-heading">Stay Connected</h2>
-          <p>Get updates on new publications, speaking engagements, and resources for court access and systems change.</p>
-        </div>
-        <div class="text-center">
-          <a href="pages/newsletter.html" class="btn btn--primary btn--large">Subscribe to the Newsletter</a>
+        <div class="email-signup-box">
+          <form id="email-signup-form" class="email-signup-form">
+            <input type="email" name="email" placeholder="Enter your email" required class="email-input" aria-label="Email address">
+            <button type="submit" class="email-submit">→</button>
+          </form>
+          <p class="email-signup-note">Get updates on <em>The Invisible Barrier</em>, new publications, and resources for court access and systems change.</p>
         </div>
       </div>
     </section>
+
+    <style>
+      .email-signup-section {
+        padding: var(--space-lg) 0;
+        background: transparent;
+      }
+      .email-signup-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+      }
+      .email-signup-form {
+        display: flex;
+        width: 100%;
+        max-width: 500px;
+        border: 2px solid var(--teal-dark);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .email-input {
+        flex: 1;
+        padding: 12px 16px;
+        border: none;
+        font-size: 1rem;
+        font-family: inherit;
+        background: white;
+        color: var(--ink);
+      }
+      .email-input::placeholder {
+        color: var(--gray-medium);
+      }
+      .email-input:focus {
+        outline: none;
+        background: var(--cream-light);
+      }
+      .email-submit {
+        padding: 12px 20px;
+        background: var(--teal-dark);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+      .email-submit:hover {
+        background: var(--teal);
+      }
+      .email-signup-note {
+        font-size: 0.9rem;
+        color: var(--gray-dark);
+        text-align: center;
+        max-width: 500px;
+      }
+    </style>
 
     <!-- Book Launch Banner -->
     <section class="section section--alt" aria-label="Book launch announcement">
@@ -121,7 +177,7 @@
         <div style="text-align: center; max-width: 800px; margin: 0 auto;">
           <span class="overline" style="color: var(--gold);">Coming Soon</span>
           <h2 style="margin: var(--space-md) 0 var(--space-lg) 0; color: var(--teal-dark); font-size: clamp(1.8rem, 4vw, 2.4rem);">The Invisible Barrier</h2>
-          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: var(--space-lg); color: var(--ink);"><strong>Disability, Due Process, and the Architecture of Exclusion in American Courts</strong></p>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: var(--space-lg); color: var(--ink);"><strong>Disability, Due Process, and the Architecture of Exclusion in Family Courts</strong></p>
           <p style="font-size: 1rem; line-height: 1.7; margin-bottom: var(--space-lg); color: var(--ink);">A manifesto exposing how America's state courts systematically fail to comply with ADA Title II — and a framework for holding them accountable.</p>
           <p style="font-size: 0.95rem; color: var(--gray-dark); font-style: italic; margin-bottom: var(--space-lg);\">&quot;The law already requires this. The harm is already happening. And the people who will change it are already in the room.&quot;</p>
           <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; justify-content: center;">
@@ -275,8 +331,8 @@
         </div>
       </div>
     </section>
-    <!-- Approach Section -->
-    <section class="section" aria-labelledby="approach-heading">
+    <!-- Approach Section (HIDDEN FOR ENDORSEMENT PUSH) -->
+    <section class="section" aria-labelledby="approach-heading" style="display: none;">
       <div class="container container--narrow">
         <div class="section-header">
           <span class="overline">The Approach</span>
@@ -293,8 +349,8 @@
         </div>
       </div>
     </section>
-    <!-- Stop Documenting This™ Section -->
-    <section class="section" aria-labelledby="sdt-heading">
+    <!-- Stop Documenting This™ Section (HIDDEN FOR ENDORSEMENT PUSH) -->
+    <section class="section" aria-labelledby="sdt-heading" style="display: none;">
       <div class="container">
         <div class="section-header">
           <span class="overline">Stop Documenting This&trade;</span>
