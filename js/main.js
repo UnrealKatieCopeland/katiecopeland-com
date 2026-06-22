@@ -98,68 +98,9 @@
     });
   }
 
-  // ── Email Signup Form Handling (Homepage) ──────────────────
-  const emailSignupForm = document.getElementById('email-signup-form');
-
-  if (emailSignupForm) {
-    emailSignupForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const emailInput = emailSignupForm.querySelector('input[name="email"]');
-      const email = emailInput.value.trim();
-
-      if (!email) {
-        emailInput.focus();
-        return;
-      }
-
-      // Email validation
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        emailInput.focus();
-        return;
-      }
-
-      // Submit to Web3Forms
-      const formData = new FormData();
-      formData.append('access_key', '4b3e0a2a-c4b7-4b5c-9d8e-2f1a3b5c7d9e');
-      formData.append('email', email);
-      formData.append('from_name', 'Katie Copeland Website');
-      formData.append('subject', 'New Newsletter Signup from katiecopeland.com');
-      formData.append('message', 'New email signup: ' + email);
-
-      const submitBtn = emailSignupForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = '✓';
-      submitBtn.disabled = true;
-
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-        .then(function (response) {
-          if (response.ok) {
-            emailInput.value = '';
-            submitBtn.textContent = '✓';
-            setTimeout(function () {
-              submitBtn.textContent = originalText;
-              submitBtn.disabled = false;
-            }, 2000);
-          } else {
-            throw new Error('Submission failed');
-          }
-        })
-        .catch(function (error) {
-          console.error('Email signup error:', error);
-          alert('Something went wrong. Please email katie@katiecopeland.com directly.');
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-        });
-    });
-  }
+  // ── Email Signup (Using mailto link) ──────────────────
+  // Email input is now a mailto link for simplicity and better UX
+  // No JavaScript handler needed
 
   // ── Contact Form Handling ──────────────────────────────────
   const contactForm = document.getElementById('contact-form');

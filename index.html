@@ -106,10 +106,10 @@
     <section class="section email-signup-section" aria-label="Email signup">
       <div class="container container--narrow">
         <div class="email-signup-box">
-          <form id="email-signup-form" class="email-signup-form">
-            <input type="email" name="email" placeholder="Enter your email" required class="email-input" aria-label="Email address">
-            <button type="submit" class="email-submit">→</button>
-          </form>
+          <div class="email-signup-form">
+            <input type="email" id="email-input" placeholder="Enter your email" class="email-input" aria-label="Email address">
+            <a href="mailto:katie@katiecopeland.com?subject=Newsletter%20Signup" class="email-submit" aria-label="Send email">→</a>
+          </div>
           <p class="email-signup-note">Get updates on <em>The Invisible Barrier</em>, new publications, and resources for court access and systems change.</p>
         </div>
       </div>
@@ -159,6 +159,10 @@
         font-size: 1.2rem;
         font-weight: 600;
         transition: background 0.2s;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .email-submit:hover {
         background: var(--teal);
