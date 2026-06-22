@@ -125,7 +125,8 @@
       formData.append('access_key', '4b3e0a2a-c4b7-4b5c-9d8e-2f1a3b5c7d9e');
       formData.append('email', email);
       formData.append('from_name', 'Katie Copeland Website');
-      formData.append('subject', 'New Newsletter Signup');
+      formData.append('subject', 'New Newsletter Signup from katiecopeland.com');
+      formData.append('message', 'New email signup: ' + email);
 
       const submitBtn = emailSignupForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
@@ -134,7 +135,10 @@
 
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
       })
         .then(function (response) {
           if (response.ok) {
@@ -187,6 +191,7 @@
       // Submit form
       const formData = new FormData(contactForm);
       formData.append('access_key', '4b3e0a2a-c4b7-4b5c-9d8e-2f1a3b5c7d9e');
+      formData.append('from_name', 'Katie Copeland Website');
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
       submitBtn.textContent = 'Sending...';
@@ -194,7 +199,10 @@
 
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
       })
         .then(function (response) {
           if (response.ok) {
