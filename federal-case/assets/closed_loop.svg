@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1120" viewBox="0 0 1700 1120" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#8B1E2D"/>
+    </marker>
+  </defs>
+
+  <rect width="1700" height="1120" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="850" y="64" text-anchor="middle" font-size="40" font-weight="bold" fill="#16283C" letter-spacing="1">THE TITLE II CLOSED LOOP</text>
+  <text x="850" y="98" text-anchor="middle" font-size="19" fill="#4A5568" font-style="italic">How a court user's request for access became the reason access was never reviewed — each link in the institutions' own words</text>
+
+  <!-- ========== TOP ROW: nodes 1,2,3 ========== -->
+  <!-- Node 1 -->
+  <g>
+    <rect x="70" y="150" width="460" height="215" rx="10" fill="#F7F9FB" stroke="#93A5B8" stroke-width="1.5"/>
+    <rect x="70" y="150" width="460" height="44" rx="10" fill="#16283C"/>
+    <rect x="70" y="180" width="460" height="14" fill="#16283C"/>
+    <text x="300" y="179" text-anchor="middle" font-size="19" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">1 · THE REQUEST</text>
+    <text x="94" y="228" font-size="17" fill="#1A2432" font-style="italic">
+      <tspan x="94" dy="0">"I've been in speech therapy every week … I need</tspan>
+      <tspan x="94" dy="24">speech accommodations to keep track of what is</tspan>
+      <tspan x="94" dy="24">going on."</tspan>
+    </text>
+    <text x="94" y="318" font-size="13.5" fill="#5A6A7A">— Litigant, on the record · RR Vol. 19 at 11 (5/6/24)</text>
+    <text x="94" y="342" font-size="13.5" fill="#5A6A7A">CART requested; State Bar guide attached · CR 885–97</text>
+  </g>
+
+  <!-- Node 2 -->
+  <g>
+    <rect x="620" y="150" width="460" height="215" rx="10" fill="#F7F9FB" stroke="#93A5B8" stroke-width="1.5"/>
+    <rect x="620" y="150" width="460" height="44" rx="10" fill="#16283C"/>
+    <rect x="620" y="180" width="460" height="14" fill="#16283C"/>
+    <text x="850" y="179" text-anchor="middle" font-size="19" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">2 · THE COUNTY POINTS AWAY</text>
+    <text x="644" y="228" font-size="17" fill="#1A2432" font-style="italic">
+      <tspan x="644" dy="0">"Tarrant County has no authority or control over</tspan>
+      <tspan x="644" dy="24">state district judges," so there is nothing the County</tspan>
+      <tspan x="644" dy="24">can do about court accommodations.</tspan>
+    </text>
+    <text x="644" y="318" font-size="13.5" fill="#5A6A7A">— County counsel, Jan. 13, 2026</text>
+    <text x="644" y="342" font-size="13.5" fill="#5A6A7A">No ADA coordinator or grievance procedure · 28 C.F.R. § 35.107</text>
+  </g>
+
+  <!-- Node 3 -->
+  <g>
+    <rect x="1170" y="150" width="460" height="215" rx="10" fill="#F7F9FB" stroke="#93A5B8" stroke-width="1.5"/>
+    <rect x="1170" y="150" width="460" height="44" rx="10" fill="#16283C"/>
+    <rect x="1170" y="180" width="460" height="14" fill="#16283C"/>
+    <text x="1400" y="179" text-anchor="middle" font-size="19" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">3 · THE COURT DECLINES</text>
+    <text x="1194" y="228" font-size="17" fill="#1A2432" font-style="italic">
+      <tspan x="1194" dy="0">"We're not going to do that."</tspan>
+      <tspan x="1194" dy="28">"I would like to know if we are [subject to the ADA].</tspan>
+      <tspan x="1194" dy="24">I'm not sure if we are or not."</tspan>
+    </text>
+    <text x="1194" y="318" font-size="13.5" fill="#5A6A7A">— The trial court, on the record · RR Vol. 19 (5/6/24)</text>
+    <text x="1194" y="342" font-size="13.5" fill="#5A6A7A">No interactive process; no written determination</text>
+  </g>
+
+  <!-- ========== BOTTOM ROW: nodes 6,5,4 (right to left flow) ========== -->
+  <!-- Node 4 (bottom right) -->
+  <g>
+    <rect x="1170" y="740" width="460" height="215" rx="10" fill="#F7F9FB" stroke="#93A5B8" stroke-width="1.5"/>
+    <rect x="1170" y="740" width="460" height="44" rx="10" fill="#16283C"/>
+    <rect x="1170" y="770" width="460" height="14" fill="#16283C"/>
+    <text x="1400" y="769" text-anchor="middle" font-size="19" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">4 · A JUDGMENT ISSUES</text>
+    <text x="1194" y="818" font-size="17" fill="#1A2432">
+      <tspan x="1194" dy="0" font-style="italic">"I just lost — I have to start my brain back."</tspan>
+      <tspan x="1194" dy="28">The unaccommodated trial ends in loss of</tspan>
+      <tspan x="1194" dy="24">conservatorship, supervised visitation, and a</tspan>
+      <tspan x="1194" dy="24">six-figure fee judgment.</tspan>
+    </text>
+    <text x="1194" y="932" font-size="13.5" fill="#5A6A7A">— RR Vol. 19 at 31–32 · Final Order, May 31, 2024</text>
+  </g>
+
+  <!-- Node 5 (bottom middle) -->
+  <g>
+    <rect x="620" y="740" width="460" height="215" rx="10" fill="#F7F9FB" stroke="#93A5B8" stroke-width="1.5"/>
+    <rect x="620" y="740" width="460" height="44" rx="10" fill="#16283C"/>
+    <rect x="620" y="770" width="460" height="14" fill="#16283C"/>
+    <text x="850" y="769" text-anchor="middle" font-size="19" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">5 · THE APPEAL CANNOT REACH IT</text>
+    <text x="644" y="818" font-size="17" fill="#1A2432">
+      <tspan x="644" dy="0">The ADA claim is held to be a suit against the trial</tspan>
+      <tspan x="644" dy="24">court that was never filed — <tspan font-style="italic">"the remedies … set</tspan></tspan>
+      <tspan x="644" dy="24" font-style="italic">forth in federal law"</tspan>
+      <tspan x="644" dy="24">— while the judgment remains fully operative.</tspan>
+    </text>
+    <text x="644" y="932" font-size="13.5" fill="#5A6A7A">— Mem. Op. No. 02-24-00278-CV (Tex. App.—Fort Worth 7/9/26)</text>
+  </g>
+
+  <!-- Node 6 (bottom left) -->
+  <g>
+    <rect x="70" y="740" width="460" height="215" rx="10" fill="#F7F9FB" stroke="#93A5B8" stroke-width="1.5"/>
+    <rect x="70" y="740" width="460" height="44" rx="10" fill="#16283C"/>
+    <rect x="70" y="770" width="460" height="14" fill="#16283C"/>
+    <text x="300" y="769" text-anchor="middle" font-size="19" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">6 · THE RETURN PATH IS BARRED</text>
+    <text x="94" y="818" font-size="17" fill="#1A2432">
+      <tspan x="94" dy="0">A prefiling order bars her pro se filings; the clerk</tspan>
+      <tspan x="94" dy="24">refuses her notice of appeal — <tspan font-style="italic">"No Appeal</tspan></tspan>
+      <tspan x="94" dy="24" font-style="italic">Allowed"</tspan><tspan> — and new evidence must start in the</tspan>
+      <tspan x="94" dy="24">very trial court she cannot reach without counsel.</tspan>
+    </text>
+    <text x="94" y="932" font-size="13.5" fill="#5A6A7A">— Prefiling order, Jan. 21, 2025 · e-filing rejections, May 2026</text>
+  </g>
+
+  <!-- ========== CENTER THESIS ========== -->
+  <g>
+    <rect x="360" y="470" width="980" height="150" rx="12" fill="#16283C"/>
+    <text x="850" y="530" text-anchor="middle" font-size="30" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">“A RIGHT WITHOUT A ROUTE IS NOT ACCESS.”</text>
+    <text x="850" y="572" text-anchor="middle" font-size="16.5" fill="#C9D4E0" font-style="italic">The accessibility question is never decided — anywhere. Every link is lawful; the circuit is the violation.</text>
+  </g>
+
+  <!-- ========== ARROWS (clockwise circuit) ========== -->
+  <!-- 1 -> 2, 2 -> 3 -->
+  <line x1="534" y1="257" x2="612" y2="257" stroke="#8B1E2D" stroke-width="5" marker-end="url(#arr)"/>
+  <line x1="1084" y1="257" x2="1162" y2="257" stroke="#8B1E2D" stroke-width="5" marker-end="url(#arr)"/>
+  <!-- 3 -> 4 (down right side) -->
+  <line x1="1400" y1="369" x2="1400" y2="732" stroke="#8B1E2D" stroke-width="5" marker-end="url(#arr)"/>
+  <!-- 4 -> 5, 5 -> 6 (right to left) -->
+  <line x1="1166" y1="847" x2="1088" y2="847" stroke="#8B1E2D" stroke-width="5" marker-end="url(#arr)"/>
+  <line x1="616" y1="847" x2="538" y2="847" stroke="#8B1E2D" stroke-width="5" marker-end="url(#arr)"/>
+  <!-- 6 -> 1 (up left side) -->
+  <line x1="300" y1="736" x2="300" y2="373" stroke="#8B1E2D" stroke-width="5" marker-end="url(#arr)"/>
+  <text x="278" y="560" font-size="15" fill="#8B1E2D" font-weight="bold" transform="rotate(-90 278 560)" text-anchor="middle">THE LOOP REPEATS</text>
+
+  <!-- Footer -->
+  <line x1="70" y1="1010" x2="1630" y2="1010" stroke="#D5DCE4" stroke-width="1.5"/>
+  <text x="850" y="1044" text-anchor="middle" font-size="16.5" fill="#3D4C5C" font-weight="bold">Copeland v. Tarrant County, No. 26-10389 (5th Cir.) · Rule 22.4 renewal pending (U.S. Sup. Ct. No. 25A1368) · In re Q.C. &amp; P.C., No. 02-24-00278-CV (Tex. App.—Fort Worth)</text>
+  <text x="850" y="1072" text-anchor="middle" font-size="14" fill="#7A8794" font-style="italic">Every quotation is verbatim from filed documents and certified transcripts; citations available on request. Prepared July 2026 · katiecopeland.com/federal-case</text>
+</svg>
