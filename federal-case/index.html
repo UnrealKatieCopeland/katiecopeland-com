@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federal Appeal 26-10389 | Counsel & Amicus Portal</title>
+  <title>Counsel Portal: Copeland v. Tarrant County</title>
   <meta name="description" content="Counsel and Amicus review portal for Copeland v. Tarrant County, No. 26-10389 (5th Cir.), concerning ADA Title II accommodation pathways in state courts.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,28 +62,22 @@
     .stat { background: var(--soft); border-radius: 16px; padding: 1rem; border: 1px solid #dce7ea; }
     .stat strong { display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.25rem; }
     .stat span { font-weight: 700; color: var(--navy); }
+    .qp-box { background: var(--warm); border-left: 6px solid var(--gold); border-radius: 0 16px 16px 0; padding: 1.5rem; margin-bottom: 2rem; font-size: 1.1rem; font-weight: 500; color: var(--ink); border-top: 1px solid #ead4ad; border-right: 1px solid #ead4ad; border-bottom: 1px solid #ead4ad; }
     .callout { background: var(--warm); border: 1px solid #ead4ad; border-left: 6px solid var(--gold); border-radius: 0 16px 16px 0; padding: 1rem 1.15rem; margin: 1.25rem 0; }
+    .honesty-box { background: #f8fbfc; border: 1px solid var(--line); border-left: 6px solid var(--muted); border-radius: 0 16px 16px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; font-size: 0.95rem; }
     blockquote { margin: 1.25rem 0; padding: 1rem 1.15rem; border-left: 5px solid var(--navy-2); background: #f6fafb; border-radius: 0 14px 14px 0; color: #283746; }
-    .source-note { font-size: 0.93rem; color: var(--muted); }
-    .btn-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem; }
-    .btn { display: inline-block; text-decoration: none; border-radius: 999px; padding: 0.78rem 1rem; border: 2px solid var(--navy); background: var(--navy); color: #fff; font-weight: 800; }
-    .btn.secondary { background: #fff; color: var(--navy); }
-    .btn:hover, .btn:focus { transform: translateY(-1px); color: #fff; }
-    .btn.secondary:hover, .btn.secondary:focus { color: var(--navy); }
-    details { background: #fff; border: 1px solid var(--line); border-radius: 16px; margin: 0.85rem 0; overflow: hidden; }
-    summary { cursor: pointer; padding: 1rem 1.15rem; font-weight: 800; color: var(--navy); background: #f8fbfc; list-style-position: inside; }
-    summary:focus { outline: 3px solid rgba(185,144,82,0.55); outline-offset: 2px; }
-    details > div { padding: 0 1.15rem 1.15rem; }
-    table { width: 100%; border-collapse: collapse; margin: 1rem 0; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
-    th, td { text-align: left; vertical-align: top; padding: 0.85rem; border-bottom: 1px solid var(--line); }
-    th { background: var(--navy); color: #fff; }
-    tr:last-child td { border-bottom: none; }
     .doc-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.85rem; }
-    .doc { display: block; text-decoration: none; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1rem; min-height: 100%; }
+    .doc { display: block; text-decoration: none; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1rem; min-height: 100%; transition: all 0.2s ease; }
+    .doc:hover { border-color: var(--navy-2); box-shadow: 0 4px 12px rgba(25, 55, 85, 0.08); transform: translateY(-1px); }
     .doc strong { display: block; color: var(--navy); margin-bottom: 0.35rem; }
-    .doc span { display: block; color: var(--muted); font-weight: 500; }
-    .fine-print { color: var(--muted); font-size: 0.95rem; }
-    footer { border-top: 1px solid var(--line); background: #fff; padding: 2rem 1.25rem; color: var(--muted); }
+    .doc span { display: block; color: var(--muted); font-weight: 500; font-size: 0.95rem; }
+    .img-wrap { text-align: center; margin: 2rem 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+    .img-wrap img { max-width: 100%; height: auto; display: block; }
+    .img-caption { padding: 0.85rem; background: var(--soft); font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); font-weight: 600; }
+    ul.doctrinal-list { list-style: none; padding: 0; margin: 0; }
+    ul.doctrinal-list li { margin-bottom: 1rem; padding-left: 1.5rem; position: relative; }
+    ul.doctrinal-list li::before { content: "•"; color: var(--gold); font-weight: bold; font-size: 1.2rem; position: absolute; left: 0; top: -2px; }
+    footer { border-top: 1px solid var(--line); background: #fff; padding: 2rem 1.25rem; color: var(--muted); font-size: 0.95rem; text-align: center; }
     @media (max-width: 800px) { .grid.two, .grid.three, .doc-list { grid-template-columns: 1fr; } nav.quick { position: static; } h1 { font-size: 2.6rem; } }
   </style>
 </head>
@@ -94,74 +88,113 @@
       <div class="eyebrow">Counsel & Amicus Portal</div>
       <h1>Federal Appeal: Tarrant County Court Access</h1>
       <p>This page is a curated review portal for appellate counsel and civil rights organizations evaluating potential representation or amicus support in <em>Copeland v. Tarrant County, et al.</em>, No. 26-10389, pending in the Fifth Circuit Court of Appeals.</p>
-      <div class="notice"><strong>Purpose of this page:</strong> to make the core ADA Title II / court-access issue quickly reviewable, clarify the emergency procedural posture before the Fifth Circuit and Supreme Court, and provide direct access to the operative filings.</div>
     </div>
   </header>
   <nav class="quick" aria-label="Page sections">
     <div class="wrap">
-      <a href="#snapshot">Snapshot</a>
-      <a href="#closed-loop">The "Closed Loop"</a>
-      <a href="#emergency-posture">Emergency Posture</a>
-      <a href="#documents">Document Packet</a>
+      <a href="#question">Question Presented</a>
+      <a href="#admissions">County's Admissions</a>
+      <a href="#doctrinal-map">Doctrinal Map</a>
+      <a href="#honesty-box">Record Status</a>
+      <a href="#documents">Document Library</a>
       <a href="#contact">Representation Ask</a>
     </div>
   </nav>
   <main id="main">
-    <section id="snapshot" class="card">
-      <h2>Executive Snapshot</h2>
-      <p>This appeal asks whether a state court system can impose binding legal consequences—such as dismissals, struck pleadings, and sanctions—through proceedings that afford a disabled litigant no accessible, reviewable pathway to seek ADA Title II accommodations. The immediate objective is to secure appellate counsel to litigate this question in the Fifth Circuit before the underlying harms render the appeal moot.</p>
-      
-      <h2>About the Plaintiff</h2>
-      <p>Plaintiff-Appellant Kathryn Copeland is a licensed Texas attorney (State Bar No. 24086056), an ABA-published author on disability accommodation in state courts, and a qualified individual with a disability (fully favorable SSA adjudication). She is seeking representation precisely because she understands what this civil rights appeal requires—and that it should not be litigated from crisis mode, pro se.</p>
+    
+    <section id="question" class="card">
+      <div class="qp-box">
+        <strong style="color: var(--navy); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.9rem; display: block; margin-bottom: 0.5rem;">Question Presented</strong>
+        Whether a public entity satisfies Title II by referring court-participation accommodation requests to individual judges — while maintaining no coordinator, no intake process, and no grievance procedure (28 C.F.R. § 35.107) — and whether proceedings may advance before any written accommodation determination issues.
+      </div>
       
       <div class="grid three" aria-label="case snapshot">
         <div class="stat"><strong>Case</strong><span><em>Copeland v. Tarrant County, et al.</em></span></div>
         <div class="stat"><strong>Appellate Court</strong><span>Fifth Circuit Court of Appeals</span></div>
         <div class="stat"><strong>Appeal Number</strong><span>No. 26-10389</span></div>
         <div class="stat"><strong>Originating Court</strong><span>N.D. Texas (No. 4:25-cv-00890-O)</span></div>
-        <div class="stat"><strong>Core Issue</strong><span>ADA Title II / § 504 Court Access Pathways</span></div>
-        <div class="stat"><strong>Ask</strong><span>Appellate Representation / Amicus Support</span></div>
+        <div class="stat"><strong>Core Issue</strong><span>ADA Title II / § 504 Court Access</span></div>
+        <div class="stat"><strong>Ask</strong><span>Appellate Representation / Amicus</span></div>
       </div>
     </section>
 
-    <section id="closed-loop" class="card">
-      <h2>The Core Issue: A Right Without a Route</h2>
-      <p>The operative theory is that Tarrant County lacks an identifiable ADA Title II / § 504 accommodation pathway or grievance review structure. When a disabled court user cannot find the doorway to request an accommodation, they cannot meaningfully participate. When they cannot participate, they face default consequences. And when they attempt to appeal those consequences, the lack of an accommodation record is used against them.</p>
-      <blockquote>“The question is not whether I should prevail in every underlying case. It is whether I may be made to lose them before any court decides whether I was given a lawful way to participate. A right without a route is not access.” — <em>Emergency Application to SCOTUS</em></blockquote>
-      <details><summary>Why this matters for Title II Doctrine</summary><div><p>This case presents an opportunity for the Fifth Circuit to clarify that ADA Title II requires more than a theoretical promise of access; it requires the administrative structure—the coordinators and grievance procedures mandated by regulation—to make that access real. A state cannot use the consequences of an inaccessible proceeding to foreclose review of the accessibility failure itself.</p></div></details>
+    <section id="admissions" class="card">
+      <h2>In the County's Own Words: The Admissions Wall</h2>
+      <p>This record presents a structural Title II failure documented entirely through the defendant's own written admissions and certified court transcripts. Tarrant County has openly admitted on letterhead that it lacks the infrastructure required since 1992.</p>
+      
+      <div class="img-wrap">
+        <a href="assets/QuoteCard(verbatim,clean).webp" target="_blank">
+          <img src="assets/QuoteCard(verbatim,clean).webp" alt="Tarrant County Admission Quote Card">
+        </a>
+        <div class="img-caption">The County's written admission that it lacks the infrastructure required since 1992.</div>
+      </div>
+
+      <div class="img-wrap">
+        <a href="assets/RequiredvsProduced(sourced,clean).webp" target="_blank">
+          <img src="assets/RequiredvsProduced(sourced,clean).webp" alt="Required vs Produced Chart">
+        </a>
+        <div class="img-caption">Five Title II obligations. Zero produced. Every row sourced to its own document.</div>
+      </div>
+
+      <div class="img-wrap" id="closed-loop">
+        <a href="assets/NoDoorLeadsOut(clean).webp" target="_blank">
+          <img src="assets/NoDoorLeadsOut(clean).webp" alt="No Door Leads Out Exhaustion Trap Diagram">
+        </a>
+        <div class="img-caption">The Exhaustion Trap: Every procedural route blocked or routed back to the same judge.</div>
+      </div>
     </section>
 
-    <section id="emergency-posture" class="card">
-      <h2>Emergency Posture (Fifth Circuit & SCOTUS)</h2>
-      <p>The plaintiff is currently seeking narrow, temporary injunctive relief to preserve the Fifth Circuit's jurisdiction. Without this relief, the harms the appeal seeks to prevent are actively occurring.</p>
-      <table>
-        <thead><tr><th>Date</th><th>Event</th><th>Impact</th></tr></thead>
-        <tbody>
-          <tr><td>June 4, 2026</td><td>Emergency Application for Injunction filed with SCOTUS (Justice Alito)</td><td>Sought to freeze enforcement consequences pending the 5th Circuit appeal. Denied June 11.</td></tr>
-          <tr><td>June 11, 2026</td><td>District Court denies IFP status on appeal</td><td>Exposes the 5th Circuit appeal to dismissal for nonpayment before merits review. A protective Rule 24(a)(5) motion was filed June 14.</td></tr>
-          <tr><td>July 1, 2026</td><td>Rule 22.4 Renewal submitted to SCOTUS (Justice Sotomayor)</td><td>Alerts the Court that since the June 11 denial, Tarrant County struck pleadings, dismissed a case with prejudice, and set a sanctions hearing (July 17) against the medically unavailable plaintiff.</td></tr>
-        </tbody>
-      </table>
-      <div class="callout"><strong>The Strategic Ask:</strong> The plaintiff is not asking federal courts to decide underlying state-law merits (custody or housing). The ask is solely to preserve meaningful appellate review of the ADA Title II structural failure.</div>
+    <section id="doctrinal-map" class="card">
+      <h2>Doctrinal Map</h2>
+      <ul class="doctrinal-list">
+        <li><strong><em>Tennessee v. Lane</em> (2004):</strong> Access to courts is the core of Title II.</li>
+        <li><strong><em>Crawford v. Hinds County</em> (5th Cir. 2021) & <em>Luke v. Texas</em> (5th Cir. 2022):</strong> Framing the structural-failure and participation-injury framework.</li>
+        <li><strong><em>Strife</em> (5th Cir. 2025):</strong> Unjustifiable delay operates as a denial.</li>
+        <li><strong><em>A.J.T. v. Osseo</em> (9th Cir. 2025):</strong> No heightened intent showing required for structural failures.</li>
+      </ul>
+      <div class="callout">
+        <strong>The Hook:</strong> No circuit has squarely decided whether § 35.107's administrative obligations extend to court-participation accommodations. This record presents that open question with the county's own admissions.
+      </div>
+    </section>
+
+    <section id="honesty-box" class="card">
+      <h2>Record Status: What is Still Needed</h2>
+      <div class="honesty-box">
+        <p><strong>The Gap:</strong> While the trial record contains a speech-language pathologist's evaluation documenting "moderate cognitive linguistic deficits" and recommending CART, it lacks a formal forensic expert report concluding that CART was <em>medically essential</em> (rather than just helpful) for effective communication in this specific proceeding.</p>
+        <p style="margin-bottom: 0;"><strong>The Plan:</strong> The plaintiff is actively commissioning this precise forensic expert report to complete the evidentiary record before any next accommodation request or new trial-level action.</p>
+      </div>
     </section>
 
     <section id="documents" class="card">
-      <h2>Curated Document Packet</h2>
-      <p>These materials are provided for rapid intake and conflict review. They establish the federal claims and the current emergency posture.</p>
+      <h2>Complete Document Library</h2>
+      <p>The full 226-page curated packet is available upon request. The core filings are linked below for rapid conflict and merits review.</p>
       <div class="doc-list">
-        <a class="doc" href="documents/counsel/doc-scotus-application-alito-2026-06-04.pdf"><strong>1. SCOTUS Emergency Application</strong><span>Filed June 4, 2026. Details the "closed loop" and the need for an injunction pending appeal.</span></a>
-        <a class="doc" href="documents/counsel/doc-scotus-renewal-sotomayor-2026-07-01.pdf"><strong>2. SCOTUS Rule 22.4 Renewal Letter</strong><span>Filed July 1, 2026. Details the immediate harms (IFP denial, struck pleadings, July 17 sanctions hearing) that materialized after the initial denial.</span></a>
-        <a class="doc" href="documents/counsel/doc-scotus-docket-25a1368.pdf"><strong>3. SCOTUS Docket (25A1368)</strong><span>Official Supreme Court docket record for the emergency application.</span></a>
+        <a class="doc" href="documents/counsel/doc-scotus-application-alito-2026-06-04.pdf"><strong>1. SCOTUS Emergency Application (Rule 22.4)</strong><span>Filed June 4, 2026. Details the "closed loop" and structural failure.</span></a>
+        <a class="doc" href="documents/counsel/doc-scotus-renewal-sotomayor-2026-07-01.pdf"><strong>2. SCOTUS Rule 22.4 Renewal Letter</strong><span>Filed July 1, 2026. Details the immediate harms (IFP denial, struck pleadings).</span></a>
+        <a class="doc" href="documents/counsel/doc-scotus-docket-25a1368.pdf"><strong>3. SCOTUS Docket (25A1368)</strong><span>Official Supreme Court docket record.</span></a>
+        <div class="doc" style="background: #f8fbfc; border-color: #dce7ea; cursor: default;">
+          <strong>Available on Request (Full Packet)</strong>
+          <span>• State trial court ADA order & CART ruling (RR Vol. 19)<br>• 2nd COA opinion, judgment, and rehearing motion<br>• Federal district court FCR and orders<br>• Both 5th Circuit orders with Judge Haynes notations<br>• Merits briefing (state and federal)</span>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="card">
       <h2>Representation Ask</h2>
-      <p>The requested next step is a conflict check and a short review call with appellate counsel or civil rights organizations interested in ADA Title II court-access doctrine in the Fifth Circuit.</p>
-      <div class="callout"><strong>Immediate objective:</strong> Transition the appellate strategy from pro se emergency management into professional representation, ensuring the Fifth Circuit reaches the merits of the Title II structural failure.</div>
-      <p>If you are reviewing this page from an outreach email, please reply directly to that email to schedule a call.</p>
+      <p>This case requires a vehicle transition from pro se emergency management to professional civil-rights representation.</p>
+      <ul class="doctrinal-list">
+        <li><strong>Amicus under FRAP 29</strong> (est. 10–20 hours)</li>
+        <li><strong>Merits consult</strong> on the Fifth Circuit vehicle vs. a new federal action</li>
+        <li><strong>One referral name</strong> for trial-level co-counsel</li>
+      </ul>
+      <p>If you are reviewing this page from an outreach email, please reply directly to that email.</p>
     </section>
   </main>
-  <footer><div class="wrap"><p><strong>Important note:</strong> This page summarizes allegations and procedural materials for counsel review. It is not legal advice, not a complete evidentiary record, and not a substitute for reviewing the operative filings and docket.</p><p>Last updated July 2026.</p></div></footer>
+  <footer>
+    <div class="wrap">
+      <p><strong>Important note:</strong> This page summarizes allegations and procedural materials for counsel review. It is not legal advice, not a complete evidentiary record, and not a substitute for reviewing the operative filings and docket.</p>
+      <p>Prepared July 2026 · <a href="../pages/tarrant-county.html">Civic & Media Page</a></p>
+    </div>
+  </footer>
 </body>
 </html>
