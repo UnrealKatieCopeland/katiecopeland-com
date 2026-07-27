@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Overview: Copeland v. Tarrant County</title>
+  <meta name="description" content="Comprehensive overview of the structural ADA Title II failure in Tarrant County, featuring the procedural timeline and evidentiary graphics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #172433;
+      --muted: #556575;
+      --navy: #193755;
+      --navy-2: #244f79;
+      --gold: #b99052;
+      --cream: #fbf7ef;
+      --paper: #ffffff;
+      --line: #d8dedf;
+      --soft: #eef3f5;
+      --warm: #fff8ed;
+      --shadow: 0 18px 45px rgba(23, 36, 51, 0.14);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.62;
+    }
+    a { color: var(--navy-2); font-weight: 700; }
+    a:hover, a:focus { color: #0d253c; }
+    .skip-link { position: absolute; left: -999px; top: 0; background: #fff; color: var(--navy); padding: 0.75rem 1rem; z-index: 99; }
+    .skip-link:focus { left: 1rem; top: 1rem; }
+    header.hero {
+      background: linear-gradient(135deg, rgba(25, 55, 85, 0.98), rgba(36, 79, 121, 0.94));
+      color: #fff;
+      padding: 4.5rem 1.25rem 3.5rem;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; }
+    .eyebrow { letter-spacing: 0.13em; text-transform: uppercase; font-size: 0.82rem; font-weight: 700; color: #f4d9aa; margin-bottom: 1rem; }
+    h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; line-height: 1.08; margin: 0 0 1rem; color: inherit; }
+    h1 { font-size: clamp(2.55rem, 6vw, 5rem); max-width: 980px; }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--navy); margin-top: 2rem; }
+    h3 { font-size: 1.55rem; color: var(--navy); }
+    .hero p { max-width: 900px; font-size: 1.18rem; color: rgba(255,255,255,0.92); }
+    nav.quick { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; box-shadow: 0 8px 24px rgba(23,36,51,0.07); }
+    nav.quick .wrap { display: flex; gap: 0.65rem; flex-wrap: wrap; padding: 0.75rem 1.25rem; align-items: center; }
+    nav.quick a { text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.85rem; font-size: 0.95rem; background: #fff; }
+    main { padding: 2.5rem 1.25rem 4rem; }
+    section { margin: 0 auto 2rem; max-width: 1080px; }
+    .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: clamp(1.25rem, 3vw, 2rem); margin-bottom: 2rem; }
+    .img-wrap { text-align: center; margin: 2rem 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+    .img-wrap img { max-width: 100%; height: auto; display: block; }
+    .img-caption { padding: 0.85rem; background: var(--soft); font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); font-weight: 600; }
+    
+    /* Timeline Styles */
+    .timeline { position: relative; max-width: 900px; margin: 2rem auto; }
+    .timeline::after { content: ''; position: absolute; width: 4px; background-color: var(--line); top: 0; bottom: 0; left: 20px; margin-left: -2px; }
+    .timeline-item { padding: 10px 40px; position: relative; background-color: inherit; width: 100%; }
+    .timeline-item::after { content: ''; position: absolute; width: 16px; height: 16px; right: auto; background-color: var(--paper); border: 4px solid var(--navy); top: 15px; left: 12px; border-radius: 50%; z-index: 1; }
+    .timeline-content { padding: 1.5rem; background-color: var(--paper); position: relative; border-radius: 14px; border: 1px solid var(--line); box-shadow: 0 4px 12px rgba(23, 36, 51, 0.05); }
+    .timeline-date { font-weight: 700; color: var(--navy-2); margin-bottom: 0.5rem; display: block; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.9rem; }
+    .timeline-title { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+    .timeline-content p { margin: 0 0 0.5rem 0; font-size: 0.95rem; }
+    .timeline-cite { font-size: 0.85rem; color: var(--muted); font-style: italic; }
+
+    .callout { background: var(--warm); border: 1px solid #ead4ad; border-left: 6px solid var(--gold); border-radius: 0 16px 16px 0; padding: 1rem 1.15rem; margin: 1.25rem 0; }
+    ul.doctrinal-list { list-style: none; padding: 0; margin: 0; }
+    ul.doctrinal-list li { margin-bottom: 1rem; padding-left: 1.5rem; position: relative; }
+    ul.doctrinal-list li::before { content: "•"; color: var(--gold); font-weight: bold; font-size: 1.2rem; position: absolute; left: 0; top: -2px; }
+    footer { border-top: 1px solid var(--line); background: #fff; padding: 2rem 1.25rem; color: var(--muted); font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Comprehensive Overview</div>
+      <h1>The Structural ADA Failure</h1>
+      <p>A unified presentation of the evidentiary record, structural doctrine, and procedural timeline in <em>Copeland v. Tarrant County</em>.</p>
+    </div>
+  </header>
+  
+  <nav class="quick" aria-label="Page sections">
+    <div class="wrap">
+      <a href="#structural-graphics">Structural Graphics</a>
+      <a href="#procedural-timeline">Procedural Timeline</a>
+      <a href="#doctrinal-framework">Doctrinal Framework</a>
+      <a href="index.html">← Back to Counsel Portal</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    
+    <section id="structural-graphics" class="card">
+      <h2>The Structural Evidence</h2>
+      <p>This case is built on the defendant's own written admissions and certified court transcripts. These graphics map the exact structural failure that prevents disabled litigants from accessing the courts in Tarrant County.</p>
+      
+      <div class="img-wrap">
+        <a href="assets/The_Title_II_Closed_Loop.webp" target="_blank">
+          <img src="assets/The_Title_II_Closed_Loop.webp" alt="The Title II Closed Loop Graphic">
+        </a>
+        <div class="img-caption">The Title II Closed Loop: How a court user's request for access became the reason access was never reviewed. Every link is lawful; the circuit is the violation.</div>
+      </div>
+
+      <div class="img-wrap">
+        <a href="assets/NoDoorLeadsOut(clean).webp" target="_blank">
+          <img src="assets/NoDoorLeadsOut(clean).webp" alt="No Door Leads Out Exhaustion Trap Diagram">
+        </a>
+        <div class="img-caption">The Exhaustion Trap: Every procedural route is blocked or routed back to the same judge. No door leads out.</div>
+      </div>
+
+      <div class="img-wrap">
+        <a href="assets/RequiredvsProduced(sourced,clean).webp" target="_blank">
+          <img src="assets/RequiredvsProduced(sourced,clean).webp" alt="Required vs Produced Chart">
+        </a>
+        <div class="img-caption">Five Title II obligations required since 1992. Zero produced in 2026. Every row sourced to its own document.</div>
+      </div>
+
+      <div class="img-wrap">
+        <a href="assets/QuoteCard(verbatim,clean).webp" target="_blank">
+          <img src="assets/QuoteCard(verbatim,clean).webp" alt="Tarrant County Admission Quote Card">
+        </a>
+        <div class="img-caption">The County's written admission that it lacks the infrastructure required since 1992.</div>
+      </div>
+    </section>
+
+    <section id="procedural-timeline" class="card">
+      <h2>Comprehensive Procedural Timeline</h2>
+      <p>The timeline below details the sequence of ADA and due process violations from May 2022 to the present, demonstrating the exhaustion trap in action.</p>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">May 19, 2022</span>
+            <div class="timeline-title">The Initial Injury</div>
+            <p>Traumatic Brain Injury (TBI) sustained due to strangulation. This injury created the cognitive linguistic deficits that necessitate CART (Communication Access Realtime Translation) for effective participation in complex proceedings.</p>
+            <div class="timeline-cite">Medical Records</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">March 2024</span>
+            <div class="timeline-title">The Expert Recommendation</div>
+            <p>Speech-Language Pathologist evaluation formally documents "moderate cognitive linguistic deficits" and recommends CART for court proceedings to ensure effective communication.</p>
+            <div class="timeline-cite">SLP Evaluation Report</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">April 17, 2024</span>
+            <div class="timeline-title">The County Points Away</div>
+            <p>Tarrant County ADA Administration instructs the litigant in writing: "Your ADA request would need to go directly through the court your case is assigned to."</p>
+            <div class="timeline-cite">County ADA Administration Email</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">May 6, 2024</span>
+            <div class="timeline-title">The Court Declines</div>
+            <p>During a hearing, the litigant requests CART on the record: "I've been in speech therapy every week... I need speech accommodations to keep track of what is going on." The trial court responds: "We're not going to do that," and later issues a handwritten denial with no Title II analysis.</p>
+            <div class="timeline-cite">Reporter's Record Vol. 19 at 11, 24; Order on ADA Accommodations</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">May 31, 2024</span>
+            <div class="timeline-title">A Judgment Issues</div>
+            <p>The unaccommodated trial ends in loss of conservatorship, supervised visitation, and a six-figure fee judgment. The litigant states on the record: "I just lost — I have to start my brain back."</p>
+            <div class="timeline-cite">Reporter's Record Vol. 19 at 31-32; Final Order</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">January 21, 2025</span>
+            <div class="timeline-title">The Return Path is Barred</div>
+            <p>A prefiling order bars new pro se filings without the local administrative judge's permission, trapping the litigant. The clerk subsequently rejects notices of appeal three times, logging the reason as "Vexatious Litigant."</p>
+            <div class="timeline-cite">Prefiling Order; eFileTexas Return Notices (May 2026)</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">April 1, 2026</span>
+            <div class="timeline-title">The County's Written Admission</div>
+            <p>Assistant County Administrator confirms the lack of infrastructure: "I am not aware of how each court handles their request once they get notified... Since it is a court proceeding request and not falling under the County's ADA compliance the response and directing them to the court then considers the matter closed."</p>
+            <div class="timeline-cite">Email from Travis Yarbrough</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">June 4, 2026</span>
+            <div class="timeline-title">Federal Emergency Posture Begins</div>
+            <p>Emergency Application for Injunction filed with SCOTUS (Justice Alito) to freeze enforcement consequences pending the 5th Circuit appeal. This begins the current federal procedural track to address the structural failure.</p>
+            <div class="timeline-cite">SCOTUS Docket 25A1368</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">July 9, 2026</span>
+            <div class="timeline-title">The State Appeal Cannot Reach It</div>
+            <p>The state appellate court holds the ADA claim to be a suit against the trial court that was never filed — "the remedies... set forth in federal law" — while leaving the underlying judgment fully operative.</p>
+            <div class="timeline-cite">Mem. Op. No. 02-24-00278-CV (Tex. App.—Fort Worth)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="doctrinal-framework" class="card">
+      <h2>Doctrinal Framework</h2>
+      <p>The structural failure documented above implicates core ADA Title II and due process doctrines.</p>
+      <ul class="doctrinal-list">
+        <li><strong><em>Tennessee v. Lane</em> (2004):</strong> Access to courts is the core of Title II. The right to meaningful participation in judicial proceedings is a fundamental due process right.</li>
+        <li><strong><em>Crawford v. Hinds County</em> (5th Cir. 2021) & <em>Luke v. Texas</em> (5th Cir. 2022):</strong> These cases frame the structural-failure and participation-injury framework within the Fifth Circuit, establishing that systemic deficiencies can constitute actionable Title II violations.</li>
+        <li><strong><em>Strife</em> (5th Cir. 2025):</strong> Establishes that unjustifiable delay in processing or granting accommodations operates effectively as a denial.</li>
+        <li><strong><em>A.J.T. v. Osseo</em> (9th Cir. 2025):</strong> Clarifies that no heightened intent showing is required for structural failures; the failure to maintain required infrastructure is sufficient.</li>
+      </ul>
+      <div class="callout">
+        <strong>The Central Thesis:</strong> "A right without a route is not access." When a public entity fails to provide the administrative structure mandated by 28 C.F.R. § 35.107, it effectively forecloses the substantive rights protected by Title II.
+      </div>
+    </section>
+
+  </main>
+  
+  <footer>
+    <div class="wrap">
+      <p><strong>Important note:</strong> This page summarizes allegations, evidentiary materials, and procedural history for comprehensive review. It is not legal advice and not a substitute for reviewing the operative filings and docket.</p>
+      <p>Prepared July 2026 · <a href="index.html">Counsel Portal</a></p>
+    </div>
+  </footer>
+</body>
+</html>
