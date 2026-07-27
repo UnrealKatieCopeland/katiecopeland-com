@@ -3,306 +3,691 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copeland v. Tarrant County — Title II Access-to-Courts Case (No. 26-10389)</title>
+  <meta name="description" content="Counsel and amicus portal for Copeland v. Tarrant County, No. 26-10389 (5th Cir.) — a Title II access-to-courts civil rights case presenting the structural 'closed loop' question.">
   <meta name="robots" content="noindex, nofollow">
-  <title>Copeland v. Tarrant County — Title II Access to Courts</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="../assets/images/monogram_transparent_final.webp">
+
+  <!-- Shared Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/refinements.css">
+
   <style>
-    :root {
-      --ink: #172433;
-      --muted: #556575;
-      --navy: #193755;
-      --navy-2: #244f79;
-      --gold: #b99052;
-      --cream: #fbf7ef;
-      --paper: #ffffff;
-      --line: #d8dedf;
-      --soft: #eef3f5;
-      --warm: #fff8ed;
-      --shadow: 0 18px 45px rgba(23, 36, 51, 0.14);
-      --radius: 18px;
+    /* ── Page-specific overrides ──────────────────────────────── */
+
+    /* Hero */
+    .fc-hero {
+      background: linear-gradient(135deg, #16283C 0%, #1A3352 100%);
+      color: #F7F0E4;
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      border-bottom: 4px solid #8B1E2D;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
+    .fc-hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #F7F0E4;
+    }
+    .fc-hero .subtitle {
+      font-size: 1.1rem;
+      color: #D9B36C;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .fc-hero .intro-text {
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #F7F0E4;
+    }
+    .fc-hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .fc-hero-buttons a {
+      background: #F7F0E4;
+      color: #16283C;
+      font-weight: 700;
+      padding: 0.65rem 1.4rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .fc-hero-buttons a:hover { background: #D9B36C; color: #16283C; }
+
+    /* Shared section wrapper */
+    .fc-section {
+      padding: 3rem 2rem;
+      border-bottom: 1px solid #dde3ea;
+      background: #F7F9FB;
+    }
+    .fc-section:nth-child(even) { background: #fff; }
+    .fc-section:last-child { border-bottom: none; }
+
+    .fc-section .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .fc-section h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #16283C;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #D9B36C;
+    }
+
+    .fc-section h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #16283C;
+      margin: 1.75rem 0 0.75rem;
+    }
+
+    .fc-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #1A2432;
+      margin-bottom: 1rem;
+      max-width: 72ch;
+    }
+
+    /* Links on light backgrounds */
+    .fc-section a {
+      color: #8B1E2D;
+      text-decoration: underline;
+    }
+    .fc-section a:hover { color: #16283C; }
+
+    /* Snapshot table */
+    .fc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: #fff;
+      border: 1px solid #cdd5de;
+      font-size: 0.97rem;
+    }
+    .fc-table th {
+      background: #16283C;
+      color: #F7F0E4;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+    .fc-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #dde3ea;
+      color: #1A2432;
+      vertical-align: top;
+    }
+    .fc-table tr:last-child td { border-bottom: none; }
+    .fc-table tr:hover td { background: #f4f7fa; }
+
+    /* Pull-quote / blockquote */
+    .fc-blockquote {
+      border-left: 5px solid #8B1E2D;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      background: #fff;
+      border-radius: 0 4px 4px 0;
+    }
+    .fc-blockquote p {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #16283C;
       margin: 0;
-      font-family: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--cream);
-      line-height: 1.62;
     }
-    a { color: var(--navy-2); font-weight: 700; text-decoration: none; }
-    a:hover, a:focus { color: #0d253c; text-decoration: underline; }
-    .skip-link { position: absolute; left: -999px; top: 0; background: #fff; color: var(--navy); padding: 0.75rem 1rem; z-index: 99; }
-    .skip-link:focus { left: 1rem; top: 1rem; }
-    
-    header.hero {
-      background: linear-gradient(135deg, rgba(25, 55, 85, 0.98), rgba(36, 79, 121, 0.94));
-      color: #fff;
-      padding: 4.5rem 1.25rem 3.5rem;
+    .fc-blockquote cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #555;
+      font-style: normal;
     }
-    .wrap { max-width: 900px; margin: 0 auto; }
-    .eyebrow { letter-spacing: 0.13em; text-transform: uppercase; font-size: 0.82rem; font-weight: 700; color: #f4d9aa; margin-bottom: 1rem; }
-    
-    h1, h2, h3, h4 { font-family: "Cormorant Garamond", Georgia, serif; line-height: 1.1; margin: 0 0 1rem; color: inherit; }
-    h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 600; }
-    h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--navy); margin-top: 2rem; border-bottom: 1px solid var(--line); padding-bottom: 0.5rem; }
-    h3 { font-size: 1.35rem; color: var(--navy); margin-top: 1.5rem; }
-    
-    .hero-subtitle { font-size: 1.1rem; color: rgba(255,255,255,0.9); margin-top: 1rem; font-style: italic; }
-    .credentials { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; }
-    
-    nav.quick { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; box-shadow: 0 8px 24px rgba(23,36,51,0.07); }
-    nav.quick .wrap { display: flex; gap: 0.65rem; flex-wrap: wrap; padding: 0.75rem 1.25rem; align-items: center; }
-    nav.quick a { text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.85rem; font-size: 0.95rem; background: #fff; color: var(--navy); font-weight: 600; }
-    nav.quick a:hover { background: var(--soft); }
-    
-    main { padding: 2.5rem 1.25rem 4rem; }
-    section { margin: 0 auto 3rem; max-width: 900px; }
-    
-    .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 2rem; }
-    
-    blockquote { border-left: 4px solid var(--gold); margin: 1.5rem 0; padding: 0.5rem 0 0.5rem 1.5rem; font-size: 1.1rem; color: var(--navy); font-style: italic; background: var(--warm); border-radius: 0 8px 8px 0; }
-    
-    .img-wrap { text-align: center; margin: 2.5rem 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    .img-wrap img { max-width: 100%; height: auto; display: block; }
-    .img-caption { padding: 1rem; background: var(--soft); font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); font-weight: 500; }
-    
-    .doc-list { list-style: none; padding: 0; margin: 0 0 1.5rem 0; }
-    .doc-list li { margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative; }
-    .doc-list li::before { content: "📄"; position: absolute; left: 0; top: 2px; font-size: 0.9rem; }
-    
-    .candor-box { background: #fff; border: 1px solid var(--muted); border-left: 6px solid var(--muted); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; }
-    .candor-box strong { color: var(--ink); }
-    
-    .doctrinal-map { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 2rem; margin: 2rem 0; }
-    .doctrinal-map h2 { color: #fff; border-bottom-color: rgba(255,255,255,0.2); margin-top: 0; }
-    .doctrinal-map ul { list-style: none; padding: 0; margin: 0; }
-    .doctrinal-map li { margin-bottom: 1.25rem; padding-left: 1.5rem; position: relative; }
-    .doctrinal-map li::before { content: "§"; color: var(--gold); position: absolute; left: 0; top: 2px; font-weight: bold; }
-    .doctrinal-map .hook { background: rgba(255,255,255,0.1); padding: 1.25rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid var(--gold); }
-    
-    .asks-list { list-style: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem; }
-    .asks-list li { margin-bottom: 0.75rem; font-size: 1.05rem; }
-    
-    table.timeline { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem; }
-    table.timeline th { text-align: left; padding: 1rem; background: var(--soft); border-bottom: 2px solid var(--line); color: var(--navy); font-weight: 700; }
-    table.timeline td { padding: 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-    table.timeline tr:last-child td { border-bottom: none; }
-    
-    footer { border-top: 1px solid var(--line); background: #fff; padding: 2rem 1.25rem; color: var(--muted); font-size: 0.9rem; text-align: center; }
+
+    /* Candor / notice box */
+    .fc-notice {
+      background: #16283C;
+      color: #F7F0E4;
+      border-left: 5px solid #D9B36C;
+      padding: 1.5rem 1.75rem;
+      border-radius: 0 6px 6px 0;
+      margin: 2rem 0;
+    }
+    .fc-notice strong { color: #D9B36C; }
+    .fc-notice p { color: #F7F0E4; max-width: none; }
+    .fc-notice a { color: #D9B36C; text-decoration: underline; }
+    .fc-notice a:hover { color: #fff; }
+
+    /* Doctrinal map section — navy background */
+    .fc-doctrinal {
+      background: #16283C;
+      color: #F7F0E4;
+      padding: 3rem 2rem;
+      border-bottom: 1px solid #0e1d2c;
+    }
+    .fc-doctrinal .container { max-width: 900px; margin: 0 auto; }
+    .fc-doctrinal h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #F7F0E4;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #D9B36C;
+    }
+    .fc-doctrinal p { color: #D9D9D9; line-height: 1.8; max-width: 72ch; }
+
+    /* Case law list — links cream/gold on navy */
+    .fc-case-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+    .fc-case-list li {
+      display: flex;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      line-height: 1.6;
+      color: #F7F0E4;
+      font-size: 0.98rem;
+    }
+    .fc-case-list li:last-child { border-bottom: none; }
+    .fc-case-list .case-symbol {
+      color: #D9B36C;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    /* Links ON navy: cream underlined, hover white */
+    .fc-case-list a {
+      color: #F7F0E4;
+      text-decoration: underline;
+      font-style: italic;
+    }
+    .fc-case-list a:hover { color: #D9B36C; }
+
+    /* Open question callout within doctrinal section */
+    .fc-open-question {
+      border-left: 5px solid #D9B36C;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0 0;
+      background: rgba(255,255,255,0.06);
+      border-radius: 0 4px 4px 0;
+    }
+    .fc-open-question p { color: #F7F0E4; margin: 0; }
+    .fc-open-question strong { color: #D9B36C; }
+
+    /* Graphics / admissions section */
+    .fc-graphic-wrap {
+      margin: 2rem 0;
+    }
+    .fc-graphic-wrap a {
+      display: block;
+      text-decoration: none;
+    }
+    .fc-graphic-wrap img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #cdd5de;
+      display: block;
+    }
+    .fc-graphic-caption {
+      font-size: 0.85rem;
+      color: #555;
+      font-style: italic;
+      margin-top: 0.5rem;
+      padding: 0 0.25rem;
+    }
+
+    /* Timeline */
+    .fc-timeline {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+      border-left: 3px solid #D9B36C;
+      padding-left: 1.5rem;
+    }
+    .fc-timeline li {
+      position: relative;
+      margin-bottom: 1.25rem;
+      font-size: 0.97rem;
+      color: #1A2432;
+      line-height: 1.6;
+    }
+    .fc-timeline li::before {
+      content: '';
+      position: absolute;
+      left: -1.85rem;
+      top: 0.45rem;
+      width: 10px;
+      height: 10px;
+      background: #8B1E2D;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+    .fc-timeline .tl-date {
+      font-weight: 700;
+      color: #16283C;
+      display: block;
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.2rem;
+    }
+    .fc-timeline li.tl-collapse::before { background: #8B1E2D; }
+    .fc-timeline li.tl-collapse .tl-date { color: #8B1E2D; }
+
+    /* Document list */
+    .fc-doc-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0;
+    }
+    .fc-doc-list li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: baseline;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #dde3ea;
+      font-size: 0.97rem;
+      color: #1A2432;
+    }
+    .fc-doc-list li:last-child { border-bottom: none; }
+    .fc-doc-list .doc-icon { color: #8B1E2D; flex-shrink: 0; }
+    .fc-doc-list a { color: #8B1E2D; text-decoration: underline; }
+    .fc-doc-list a:hover { color: #16283C; }
+
+    /* Asks section */
+    .fc-asks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .fc-ask-card {
+      background: #fff;
+      border: 1px solid #cdd5de;
+      border-top: 4px solid #8B1E2D;
+      padding: 1.25rem;
+      border-radius: 4px;
+    }
+    .fc-ask-card h3 {
+      font-size: 1rem;
+      color: #16283C;
+      margin: 0 0 0.5rem;
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .fc-ask-card p {
+      font-size: 0.93rem;
+      color: #444;
+      margin: 0;
+      max-width: none;
+    }
+
+    /* Footer note */
+    .fc-footer-note {
+      background: #16283C;
+      color: #9BAAB8;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .fc-footer-note a { color: #D9B36C; text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      .fc-hero h1 { font-size: 1.7rem; }
+      .fc-hero-buttons { flex-direction: column; align-items: center; }
+      .fc-asks { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  
-  <header class="hero">
-    <div class="wrap">
-      <div class="eyebrow">QUESTION PRESENTED</div>
-      <h1>Whether a public entity satisfies Title II of the ADA by referring court-participation accommodation requests to individual judges...</h1>
-      <p class="hero-subtitle">...while maintaining no designated coordinator, no intake process, and no grievance procedure (28 C.F.R. § 35.107) — and whether proceedings may advance before any written accommodation determination issues.</p>
-      <p><em>Copeland v. Tarrant County, No. 26-10389 (5th Cir.) · Rule 22.4 renewal pending, No. 25A1368 (U.S. Sup. Ct.)</em></p>
-      <div class="credentials">
-        Kathryn Copeland · Texas Bar No. 24086056 · ABA-published on courtroom accessibility
-      </div>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo" aria-label="Katie Copeland — Home">
+        <img src="../assets/images/monogram_transparent_final.webp" alt="" aria-hidden="true" class="header-monogram">
+        <span class="header-wordmark-text" aria-label="Katie Copeland">Katie Copeland</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/publications.html">Work</a></li>
+          <li><a href="../index.html#resources">Resources</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
-  
-  <nav class="quick" aria-label="Page sections">
-    <div class="wrap">
-      <a href="#admissions">County's Admissions</a>
-      <a href="#closed-loop">The Closed Loop</a>
-      <a href="#record">The Record</a>
-      <a href="#doctrinal-map">Doctrinal Map</a>
-      <a href="#asks">Representation Asks</a>
-      <a href="#posture">Procedural Posture</a>
-    </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/about.html">About</a></li>
+      <li><a href="../pages/publications.html">Work</a></li>
+      <li><a href="../index.html#resources">Resources</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
   </nav>
 
-  <main id="main">
-    
-    <section id="admissions" class="card">
-      <h2>In the County's Own Words</h2>
-      <p><em>Every quotation below is verbatim from the County's written communications and open-records responses. Each image links to the underlying document.</em></p>
-      
-      <div class="img-wrap">
-        <a href="assets/Adjudicated-TheEntireTime(bedrock).webp" target="_blank">
-          <img src="assets/Adjudicated-TheEntireTime(bedrock).webp" alt="Adjudicated — The Entire Time: every request, denial, and collapse fell inside the period a federal judge later ruled was total disability.">
-        </a>
-        <div class="img-caption">Every event above the bedrock line occurred inside the period the SSA adjudicated as total disability (onset June 8, 2023). — ALJ Finding 11, fully favorable decision, April 10, 2026</div>
-      </div>
+  <main id="main-content">
 
-      <div class="img-wrap">
-        <a href="assets/QuoteCard(verbatim,clean).webp" target="_blank">
-          <img src="assets/QuoteCard(verbatim,clean).webp" alt="The County's own words: I am not aware of how each court handles their request...">
-        </a>
-      </div>
-
-      <div class="img-wrap">
-        <a href="assets/RequiredvsProduced(sourced,clean).webp" target="_blank">
-          <img src="assets/RequiredvsProduced(sourced,clean).webp" alt="Required since 1992 - Still missing in 2026. 5 obligations required, 0 produced.">
-        </a>
-      </div>
-
-      <div class="img-wrap">
-        <a href="assets/NoDoorLeadsOut(clean).webp" target="_blank">
-          <img src="assets/NoDoorLeadsOut(clean).webp" alt="No Door Leads Out - The Exhaustion Trap">
-        </a>
+    <!-- ── HERO ───────────────────────────────────────────────── -->
+    <section class="fc-hero" aria-label="Case introduction">
+      <h1>Copeland v. Tarrant County</h1>
+      <p class="subtitle">No. 26-10389 (5th Cir.) &nbsp;·&nbsp; No. 4:25-cv-00890-O (N.D. Tex.) &nbsp;·&nbsp; U.S. Sup. Ct. No. 25A1368</p>
+      <p class="intro-text">
+        This portal is prepared for civil-rights counsel, disability-rights advocates, and potential amici. It presents a structural Title II access-to-courts question — the "Closed Loop" — in which a county court system's documented absence of ADA administrative infrastructure made meaningful access to the courts unavailable to a disabled litigant, and the resulting exclusion was never reviewed on the merits at any level.
+      </p>
+      <div class="fc-hero-buttons">
+        <a href="#question">The Question</a>
+        <a href="#admissions">The Admissions</a>
+        <a href="#timeline">Procedural Timeline</a>
+        <a href="#doctrinal-map">Doctrinal Map</a>
+        <a href="#documents">Documents</a>
+        <a href="#asks">How to Help</a>
       </div>
     </section>
 
-    <section id="closed-loop" class="card">
-      <h2>The Closed Loop</h2>
-      <div class="img-wrap">
-        <a href="assets/The_Title_II_Closed_Loop.webp" target="_blank">
-          <img src="assets/The_Title_II_Closed_Loop.webp" alt="The Title II Closed Loop">
-        </a>
-        <div class="img-caption">Three years, in chronological order — each link in the institutions' own written words.</div>
+    <!-- ── 1. THE QUESTION PRESENTED ─────────────────────────── -->
+    <section class="fc-section" id="question">
+      <div class="container">
+        <h2>The Question Presented</h2>
+        <div class="fc-blockquote">
+          <p>Whether a county's failure to establish any of the administrative infrastructure required by 28 C.F.R. § 35.107 — a designated ADA coordinator, a self-evaluation, and a grievance procedure — constitutes a per se violation of Title II of the Americans with Disabilities Act, and whether a disabled litigant who was denied meaningful access to court proceedings as a result has standing to seek prospective injunctive relief without first exhausting a grievance process that does not exist.</p>
+        </div>
+        <p>No circuit has squarely decided whether § 35.107's administrative obligations — coordinator, intake, grievance — extend to court-participation accommodations. This record presents that question with the County's own written admissions as the evidentiary foundation.</p>
+        <p>The plaintiff is a licensed Texas attorney (State Bar No. 24086056) and ABA-published author on disability accommodation in state courts. The record has been organized for handoff to counsel. She is seeking representation precisely because she understands what this case requires — including that it should not be litigated from crisis mode, pro se.</p>
       </div>
     </section>
 
-    <section id="record" class="card">
-      <h2>The Record</h2>
-      
-      <p><strong><a href="assets/Copeland_TitleII_Packet_for_Ferleger_2026-07-27.pdf" target="_blank">Complete Indexed Record Packet (226 pp.)</a></strong></p>
-      
-      <h3>State trial court (231st Dist. Ct.)</h3>
-      <ul class="doc-list">
-        <li>Order on Second Amended Motion for ADA Accommodations (CR 758), May 6, 2024 <em>[Available on request]</em></li>
-        <li>Reporter's Record Vol. 19 excerpts (accommodation presentation & ruling), May 6, 2024 <em>[Available on request]</em></li>
-      </ul>
+    <!-- ── 2. THE ADMISSIONS WALL ─────────────────────────────── -->
+    <section class="fc-section" id="admissions">
+      <div class="container">
+        <h2>In the County's Own Words</h2>
+        <p>Every quotation in the graphics below is verbatim from the County's written communications and open-records responses, or from certified court transcripts. Click any graphic to view full size.</p>
 
-      <h3>Texas Court of Appeals (No. 02-24-00278-CV)</h3>
-      <ul class="doc-list">
-        <li>Memorandum Opinion, July 9, 2026</li>
-        <li>Judgment</li>
-        <li>Motion for Rehearing (filed July 23, 2026, pending)</li>
-      </ul>
+        <!-- Bedrock: Adjudicated the Entire Time -->
+        <div class="fc-graphic-wrap">
+          <a href="assets/Adjudicated-TheEntireTime(bedrock).webp" target="_blank" rel="noopener" aria-label="View full-size: Adjudicated — The Entire Time">
+            <img src="assets/Adjudicated-TheEntireTime(bedrock).webp"
+                 alt="Timeline graphic titled 'Adjudicated — The Entire Time.' Every accommodation request, denial, medical collapse, and adverse judgment is plotted above a navy bedrock band reading: 'Federally Adjudicated Total Disability — onset June 8, 2023.' ALJ Finding 11, fully favorable decision, April 10, 2026.">
+          </a>
+          <p class="fc-graphic-caption">Every event above this line occurred inside the period the Social Security Administration adjudicated as total disability (onset June 8, 2023). — ALJ Finding 11, fully favorable decision, April 10, 2026. Every quotation verbatim from filed documents and certified transcripts.</p>
+        </div>
 
-      <h3>Fifth Circuit (No. 26-10389)</h3>
-      <ul class="doc-list">
-        <li>Order of May 6, 2026 (Judge Haynes would grant temporarily)</li>
-        <li>Order of May 20, 2026 (Judge Haynes would grant reconsideration)</li>
-      </ul>
+        <!-- Quote Card: County's own words -->
+        <div class="fc-graphic-wrap">
+          <a href="assets/QuoteCard(verbatim,clean).webp" target="_blank" rel="noopener" aria-label="View full-size: The County's own words, April 1, 2026">
+            <img src="assets/QuoteCard(verbatim,clean).webp"
+                 alt="Quote card: Travis Yarbrough, Assistant County Administrator, Tarrant County, April 1, 2026 — 'I am not aware of how each court handles their request once they get notified.' 28 C.F.R. § 35.107 has required a designated coordinator and a functioning grievance process since January 26, 1992.">
+          </a>
+          <p class="fc-graphic-caption">Travis Yarbrough, Assistant County Administrator, Tarrant County — email of April 1, 2026, filed in Copeland v. Tarrant County, No. 4:25-cv-00890-O (N.D. Tex.), Appendix p. 047.</p>
+        </div>
 
-      <h3>Supreme Court (No. 25A1368)</h3>
-      <ul class="doc-list">
-        <li><a href="assets/SCOTUS_Emergency_Application_as_filed_2026-06-04_FULL.pdf" target="_blank">Emergency Application for an Injunction Pending Appeal as filed June 4, 2026</a></li>
-        <li>Rule 22.4 Renewal Letter, June 30/July 1, 2026</li>
-        <li><a href="https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/25a1368.html" target="_blank">Docket link</a></li>
-      </ul>
+        <!-- Required vs. Produced -->
+        <div class="fc-graphic-wrap">
+          <a href="assets/RequiredvsProduced(sourced,clean).webp" target="_blank" rel="noopener" aria-label="View full-size: Required Since 1992 — Still Missing in 2026">
+            <img src="assets/RequiredvsProduced(sourced,clean).webp"
+                 alt="Two-column table: five Title II obligations required since 1992 versus what the open-records response shows. All five columns in the 'What the Record Shows' column read: 'Unable to locate any responsive information.' Score: 5 required by federal law, 0 shown to exist in the record.">
+          </a>
+          <p class="fc-graphic-caption">Five Title II obligations required since January 26, 1992 — and what the County's open-records response (CDA-2026-897, April 21, 2026) shows for each. Every row sourced to its own document.</p>
+        </div>
 
-      <h3>Merits briefing</h3>
-      <ul class="doc-list">
-        <li>Appellant's First Amended Opening Brief (Aug. 15, 2025)</li>
-        <li>Appellees' Response Brief</li>
-      </ul>
-      
-      <div class="candor-box">
-        <p><strong>The claim, and what proves it.</strong> The structural claim is established by the County's own written admissions — no coordinator, no self-evaluation, no grievance procedure — and under <em>Luke v. Texas</em> the resulting lack of meaningful access "is itself the harm." The individual denial of access is documented by the proceedings themselves: accommodation requests beginning April 2023 (ten accommodations sought, before any trial); a medical collapse requiring emergency evaluation at the August 2023 trial; a default judgment entered three days after the amended ADA motion (later set aside); renewed requests denied at the May 2024 proceeding, followed by a documented cognitive collapse on the record ("I just lost — I have to start my brain back") and the court proceeding with the morning of day two in her absence — she reached the courtroom after the lunch recess with her personal care attendant's assistance and participated through the afternoon. The Social Security Administration has since adjudicated her totally disabled with onset June 8, 2023 — before the first trial and every collapse, and eleven months before the State argued on the record that she was "talking disabled when it's convenient." Treating-provider findings (speech-language pathology, 2023; physician certification of cognitive dysfunction impairing real-time oral communication, 2025) complete the foundation; counsel with views on further forensic communication evidence are invited to share them.</p>
+        <!-- No Door Leads Out -->
+        <div class="fc-graphic-wrap">
+          <a href="assets/NoDoorLeadsOut(clean).webp" target="_blank" rel="noopener" aria-label="View full-size: No Door Leads Out — The Exhaustion Trap">
+            <img src="assets/NoDoorLeadsOut(clean).webp"
+                 alt="Circuit diagram titled 'No Door Leads Out — The Exhaustion Trap.' Six nodes: The County (redirects to court), The Court (declines), The Prefiling Order (bars pro se filings), The Clerk (returns filings as 'Rejected — Vexatious Litigant'), The State's Answer (directs to local administrative judge), The Trap Closes (local administrative judge is a named defendant). Center: 'No Door Leads Out.' Every statement from the written record.">
+          </a>
+          <p class="fc-graphic-caption">Every station points to the next. None decides the question. Each statement is from the written record. — Copeland v. Tarrant County, No. 26-10389 (5th Cir.) · No. 4:25-cv-00890-O (N.D. Tex.)</p>
+        </div>
+
+        <!-- Closed Loop -->
+        <div class="fc-graphic-wrap">
+          <a href="assets/The_Title_II_Closed_Loop.webp" target="_blank" rel="noopener" aria-label="View full-size: The Title II Closed Loop">
+            <img src="assets/The_Title_II_Closed_Loop.webp"
+                 alt="Six-node circuit diagram titled 'The Title II Closed Loop.' Nodes: The Request (plaintiff's April 2023 ADA motion), The County Points Away, The Court Declines, A Judgment Issues, The Appeal Cannot Reach It, The Return Path Is Barred. Center thesis: 'A Right Without a Route Is Not Access.' Every link is lawful; the circuit is the violation.">
+          </a>
+          <p class="fc-graphic-caption">How a court user's request for access became the reason access was never reviewed — each link in the institutions' own words. Every quotation verbatim from filed documents and certified transcripts; citations available on request.</p>
+        </div>
+
+        <!-- Candor / Notice Box -->
+        <div class="fc-notice" role="note" aria-label="What the record shows and what strengthens it">
+          <p><strong>The claim, and what proves it.</strong> The structural claim is established by the County's own written admissions — no coordinator, no self-evaluation, no grievance procedure — and under <em>Luke v. Texas</em>, 46 F.4th 301 (5th Cir. 2022), the resulting lack of meaningful access "is itself the harm." The individual denial of access is documented by the proceedings themselves: accommodation requests beginning April 2023 (ten accommodations sought, before any trial); a medical collapse requiring emergency evaluation at the August 17, 2023 trial (RR Vol. 11–12); a default judgment entered three days after the amended ADA motion with a speech-language pathologist's evaluation attached (later set aside); renewed requests denied at the May 2024 proceeding with the court stating "We're not going to do that" (RR Vol. 19 at 24), followed by a documented cognitive collapse on the record ("I just lost — I have to start my brain back," RR Vol. 19 at 31–32); and the court proceeding with the morning of day two in her absence — she reached the courtroom after the lunch recess with her personal care attendant's assistance and participated through the afternoon (RR Vol. 20). The Social Security Administration has since adjudicated her totally disabled with onset June 8, 2023 — before the first trial and every collapse, and eleven months before the State argued on the record that she was "talking disabled when it's convenient" (RR Vol. 20 at 236). Treating-provider findings (speech-language pathology, 2023; physician certification of cognitive dysfunction impairing real-time oral communication, 2025) complete the foundation. Counsel with views on further forensic communication evidence are invited to share them.</p>
+        </div>
       </div>
     </section>
 
-    <section id="doctrinal-map" class="doctrinal-map">
-      <h2>Doctrinal Map</h2>
-      <ul>
-        <li><a href="documents/case-law/tennessee-v-lane-541-us-509-2004.pdf" target="_blank"><em>Tennessee v. Lane</em>, 541 U.S. 509 (2004)</a> — Title II applies with full force to access to the courts.</li>
-        <li><a href="documents/case-law/crawford-v-hinds-county-1-f4th-371-5cir-2021.pdf" target="_blank"><em>Crawford v. Hinds County</em>, 1 F.4th 371 (5th Cir. 2021)</a> — structural courthouse failures support prospective relief.</li>
-        <li><a href="documents/case-law/luke-v-texas-46-f4th-301-5cir-2022.pdf" target="_blank"><em>Luke v. Texas</em>, 46 F.4th 301 (5th Cir. 2022)</a> — lack of meaningful access "is itself the harm" under Title II; Texas counties are political subdivisions with no sovereign immunity.</li>
-        <li><a href="documents/case-law/strife-v-aldine-isd-138-f4th-237-5cir-2025.pdf" target="_blank"><em>Strife v. Aldine ISD</em>, 138 F.4th 237 (5th Cir. 2025)</a> — reversing dismissal: an unjustified six-month delay in granting an accommodation may itself constitute a failure to accommodate (employment context; principle argued by analogy).</li>
-        <li><a href="documents/case-law/ajt-v-osseo-area-schools-605-us-335-2025.pdf" target="_blank"><em>A.J.T. v. Osseo Area Schools</em>, 605 U.S. 335, 145 S. Ct. 1647 (2025)</a> — unanimously rejecting any heightened "bad faith or gross misjudgment" showing for ADA/§ 504 claims; ordinary disability-discrimination standards apply.</li>
-      </ul>
-      
-      <div class="hook">
-        <strong>The open question:</strong> no circuit has squarely decided whether § 35.107's administrative obligations — coordinator, intake, grievance — extend to court-participation accommodations. This record presents that question with the County's own written admissions.
+    <!-- ── 3. PROCEDURAL TIMELINE ─────────────────────────────── -->
+    <section class="fc-section" id="timeline">
+      <div class="container">
+        <h2>Procedural Timeline</h2>
+
+        <ul class="fc-timeline">
+          <li>
+            <span class="tl-date">April 2023</span>
+            First ADA accommodations motion filed — ten accommodations requested, before any trial. No interactive process; no written determination.
+          </li>
+          <li class="tl-collapse">
+            <span class="tl-date">August 17, 2023 — Collapse No. 1</span>
+            Medical collapse requiring emergency evaluation during trial. Blood-sugar reading documented on the record; ER discharge discussed the following morning (RR Vols. 11–12).
+          </li>
+          <li>
+            <span class="tl-date">November 10–13, 2023</span>
+            Amended ADA motion filed with speech-language pathologist's evaluation attached. Default judgment entered three days later — later set aside.
+          </li>
+          <li>
+            <span class="tl-date">April 17, 2024</span>
+            County ADA Administration, in writing: "Your ADA request would need to go directly through the court your case is assigned to."
+          </li>
+          <li class="tl-collapse">
+            <span class="tl-date">May 6, 2024 — Collapse No. 2</span>
+            Court states "We're not going to do that" (RR Vol. 19 at 24). Plaintiff suffers documented cognitive collapse on the record: "I just lost — I have to start my brain back" (RR Vol. 19 at 31–32). Court proceeds with morning of day two in plaintiff's absence; she returns after lunch with her personal care attendant and participates through the afternoon (RR Vol. 20).
+          </li>
+          <li>
+            <span class="tl-date">May 31, 2024</span>
+            Final judgment: conservatorship lost; supervised visitation; six-figure attorney's fee award.
+          </li>
+          <li>
+            <span class="tl-date">January 21, 2025</span>
+            Prefiling order entered. Pro se filings now require permission from the local administrative judge — who is a named defendant in the federal case.
+          </li>
+          <li>
+            <span class="tl-date">April 10, 2026</span>
+            Social Security Administration issues fully favorable SSDI determination: total disability with onset June 8, 2023 — before the first trial and every collapse.
+          </li>
+          <li>
+            <span class="tl-date">April 21, 2026</span>
+            Open-records response (CDA-2026-897): County is "unable to locate any responsive information" regarding a designated ADA coordinator, self-evaluation, or grievance procedure — all required since January 26, 1992.
+          </li>
+          <li>
+            <span class="tl-date">July 9, 2026</span>
+            Texas Second Court of Appeals affirms. Memorandum opinion holds ADA claim is a suit against the trial court — "the remedies … set forth in federal law" — while the judgment remains fully operative. Motion for rehearing pending.
+          </li>
+          <li>
+            <span class="tl-date">5th Circuit — No. 26-10389</span>
+            Two separate orders note Judge Haynes would have granted temporary relief. IFP for appeal denied ("not taken in good faith"). Emergency applications to preserve jurisdiction pending.
+          </li>
+          <li>
+            <span class="tl-date">U.S. Sup. Ct. No. 25A1368</span>
+            Emergency Application to Justice Alito denied June 11, 2026. Rule 22.4 Renewal to Justice Sotomayor filed July 1, 2026 — pending.
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section id="asks" class="card">
-      <h2>Representation Asks</h2>
-      <ol class="asks-list">
-        <li><strong>Amicus</strong> under FRAP 29 in No. 26-10389 (estimated 10–20 hours; the structural record is assembled).</li>
-        <li><strong>Consult or co-counsel</strong> on the Fifth Circuit merits briefing.</li>
-        <li><strong>One referral name</strong> — Texas trial-level counsel for a properly built Title II action against the County, or family-court counsel for a modification carrying post-judgment medical evidence.</li>
-      </ol>
-      <p>Reply by email; the complete indexed record goes out same-day: <a href="mailto:Katie@KatieCopeland.com">Katie@KatieCopeland.com</a></p>
+    <!-- ── 4. DOCTRINAL MAP ───────────────────────────────────── -->
+    <section class="fc-doctrinal" id="doctrinal-map">
+      <div class="container">
+        <h2>Doctrinal Map</h2>
+        <p>Five controlling and persuasive authorities frame the structural claim. Each case PDF is hosted below for counsel's convenience.</p>
+
+        <ul class="fc-case-list">
+          <li>
+            <span class="case-symbol">§</span>
+            <span>
+              <a href="documents/case-law/tennessee-v-lane-541-us-509-2004.pdf" target="_blank" rel="noopener"><em>Tennessee v. Lane</em>, 541 U.S. 509 (2004)</a>
+              — upholding Title II as valid § 5 legislation as applied to cases implicating the fundamental right of access to the courts.
+            </span>
+          </li>
+          <li>
+            <span class="case-symbol">§</span>
+            <span>
+              <a href="documents/case-law/crawford-v-hinds-county-1-f4th-371-5th-cir-2021.pdf" target="_blank" rel="noopener"><em>Crawford v. Hinds County</em>, 1 F.4th 371 (5th Cir. 2021)</a>
+              — disabled citizen had standing to seek injunctive relief against courthouse-accessibility barriers based on the risk of future exclusion.
+            </span>
+          </li>
+          <li>
+            <span class="case-symbol">§</span>
+            <span>
+              <a href="documents/case-law/luke-v-texas-46-f4th-301-5th-cir-2022.pdf" target="_blank" rel="noopener"><em>Luke v. Texas</em>, 46 F.4th 301 (5th Cir. 2022)</a>
+              — lack of meaningful access "is itself the harm" under Title II; Texas counties are political subdivisions with no sovereign immunity.
+            </span>
+          </li>
+          <li>
+            <span class="case-symbol">§</span>
+            <span>
+              <a href="documents/case-law/strife-v-aldine-isd-138-f4th-237-5th-cir-2025.pdf" target="_blank" rel="noopener"><em>Strife v. Aldine ISD</em>, 138 F.4th 237 (5th Cir. 2025)</a>
+              — reversing dismissal: an unjustified delay in granting an accommodation may itself constitute a failure to accommodate (employment context; principle argued by analogy).
+            </span>
+          </li>
+          <li>
+            <span class="case-symbol">§</span>
+            <span>
+              <a href="documents/case-law/ajt-v-osseo-area-schools-605-us-335-2025.pdf" target="_blank" rel="noopener"><em>A.J.T. v. Osseo Area Schools</em>, 605 U.S. 335, 145 S. Ct. 1647 (2025)</a>
+              — unanimously rejecting any heightened "bad faith or gross misjudgment" showing for ADA/§ 504 claims; ordinary disability-discrimination standards apply.
+            </span>
+          </li>
+        </ul>
+
+        <div class="fc-open-question">
+          <p><strong>The open question:</strong> No circuit has squarely decided whether § 35.107's administrative obligations — coordinator, intake, grievance — extend to court-participation accommodations. This record presents that question with the County's own written admissions, two dissents from Judge Haynes in the Fifth Circuit, and a fully favorable SSDI adjudication covering the entire period of the alleged violations.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="posture" class="card">
-      <h2>Procedural Posture</h2>
-      <div style="overflow-x: auto;">
-        <table class="timeline">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Court / Action</th>
-              <th>Impact</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>May 2024</td>
-              <td>State Trial Court (231st Dist. Ct.)</td>
-              <td>CART denied; judgment issued.</td>
-            </tr>
-            <tr>
-              <td>Jan 2025</td>
-              <td>State Trial Court (231st Dist. Ct.)</td>
-              <td>Prefiling order bars new pro se filings.</td>
-            </tr>
-            <tr>
-              <td>Apr 2026</td>
-              <td>Tarrant County Administration</td>
-              <td>Written admission of no ADA infrastructure.</td>
-            </tr>
-            <tr>
-              <td>May 2026</td>
-              <td>Fifth Circuit (No. 26-10389)</td>
-              <td>Emergency relief denied; Haynes dissents twice.</td>
-            </tr>
-            <tr>
-              <td>Jun 4, 2026</td>
-              <td>Supreme Court (No. 25A1368)</td>
-              <td>Emergency Application filed (Justice Alito).</td>
-            </tr>
-            <tr>
-              <td>Jun 11, 2026</td>
-              <td>Supreme Court (No. 25A1368)</td>
-              <td>Application denied.</td>
-            </tr>
-            <tr>
-              <td>Jun 30, 2026</td>
-              <td>Supreme Court (No. 25A1368)</td>
-              <td>Rule 22.4 Renewal filed (Justice Sotomayor).</td>
-            </tr>
-            <tr>
-              <td>Jul 9, 2026</td>
-              <td>Texas Court of Appeals (No. 02-24-00278-CV)</td>
-              <td>Affirmed; routed ADA claim to federal law.</td>
-            </tr>
-            <tr>
-              <td>Jul 23, 2026</td>
-              <td>Texas Court of Appeals (No. 02-24-00278-CV)</td>
-              <td>Motion for Rehearing filed (pending).</td>
-            </tr>
-            <tr>
-              <td>Pending</td>
-              <td>Supreme Court of Texas</td>
-              <td>Opens when rehearing is decided.</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- ── 5. DOCUMENTS ───────────────────────────────────────── -->
+    <section class="fc-section" id="documents">
+      <div class="container">
+        <h2>Document Packet</h2>
+        <p>The documents below are organized for counsel review. All are filed public-record documents. Documents bearing minor-children's names in case captions are available on request.</p>
+
+        <h3>SCOTUS Emergency Filings</h3>
+        <ul class="fc-doc-list">
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/counsel/doc-scotus-application-alito-2026-06-04.pdf" target="_blank" rel="noopener">Emergency Application to Justice Alito — filed June 4, 2026 (No. 25A1368)</a>
+          </li>
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/counsel/doc-scotus-renewal-sotomayor-2026-07-01.pdf" target="_blank" rel="noopener">Rule 22.4 Renewal to Justice Sotomayor — filed July 1, 2026</a>
+          </li>
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/counsel/doc-scotus-docket-25a1368.pdf" target="_blank" rel="noopener">SCOTUS Docket — No. 25A1368</a>
+          </li>
+        </ul>
+
+        <h3>Case Law (hosted for convenience)</h3>
+        <ul class="fc-doc-list">
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/case-law/tennessee-v-lane-541-us-509-2004.pdf" target="_blank" rel="noopener"><em>Tennessee v. Lane</em>, 541 U.S. 509 (2004)</a>
+          </li>
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/case-law/crawford-v-hinds-county-1-f4th-371-5th-cir-2021.pdf" target="_blank" rel="noopener"><em>Crawford v. Hinds County</em>, 1 F.4th 371 (5th Cir. 2021)</a>
+          </li>
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/case-law/luke-v-texas-46-f4th-301-5th-cir-2022.pdf" target="_blank" rel="noopener"><em>Luke v. Texas</em>, 46 F.4th 301 (5th Cir. 2022)</a>
+          </li>
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/case-law/strife-v-aldine-isd-138-f4th-237-5th-cir-2025.pdf" target="_blank" rel="noopener"><em>Strife v. Aldine ISD</em>, 138 F.4th 237 (5th Cir. 2025)</a>
+          </li>
+          <li>
+            <span class="doc-icon">↓</span>
+            <a href="documents/case-law/ajt-v-osseo-area-schools-605-us-335-2025.pdf" target="_blank" rel="noopener"><em>A.J.T. v. Osseo Area Schools</em>, 605 U.S. 335 (2025)</a>
+          </li>
+        </ul>
+
+        <h3>Additional Materials Available on Request</h3>
+        <p>The following are available to counsel who contact <a href="mailto:Katie@KatieCopeland.com">Katie@KatieCopeland.com</a>: certified reporter's record volumes (2022–2024); federal district court orders including the Magistrate Judge's FCR (ECF 68); 5th Circuit orders with Judge Haynes notations; amended opening brief and appellees' response; federal response brief; SSDI fully favorable decision; treating-provider evaluations.</p>
       </div>
-      <p style="font-size: 0.85rem; color: var(--muted); text-align: right; margin-top: 1rem;"><em>Last updated: July 27, 2026</em></p>
+    </section>
+
+    <!-- ── 6. THREE ASKS ──────────────────────────────────────── -->
+    <section class="fc-section" id="asks">
+      <div class="container">
+        <h2>How to Help</h2>
+        <p>Three bounded asks — any one of which would be meaningful:</p>
+
+        <div class="fc-asks">
+          <div class="fc-ask-card">
+            <h3>Co-Counsel or Referral</h3>
+            <p>The Fifth Circuit appeal (No. 26-10389) is the live vehicle. The structural § 35.107 claim is also appropriate for a standalone trial-level action with a fully built record. Fee-shifting available under 42 U.S.C. § 12205.</p>
+          </div>
+          <div class="fc-ask-card">
+            <h3>Amicus Participation</h3>
+            <p>FRAP 29 amicus participation is available in the Fifth Circuit. The open question — whether § 35.107's administrative obligations extend to court-participation accommodations — is ripe for a circuit-level statement.</p>
+          </div>
+          <div class="fc-ask-card">
+            <h3>Strategic Consultation</h3>
+            <p>A one-hour consult on the structural claim, the expert-record question, or the best vehicle for the § 35.107 issue would be welcomed. No obligation beyond the call.</p>
+          </div>
+        </div>
+
+        <p style="margin-top:1.5rem;">Contact: <a href="mailto:Katie@KatieCopeland.com">Katie@KatieCopeland.com</a> &nbsp;·&nbsp; (817) 789-8498</p>
+      </div>
     </section>
 
   </main>
-  
-  <footer>
-    <div class="wrap">
-      <p><strong>Important note:</strong> This page summarizes allegations, evidentiary materials, and procedural history for counsel evaluation. It is not legal advice.</p>
-    </div>
-  </footer>
+
+  <!-- Footer Note -->
+  <div class="fc-footer-note" role="contentinfo">
+    <p><strong>Copeland v. Tarrant County</strong>, No. 26-10389 (5th Cir.) &nbsp;·&nbsp; No. 4:25-cv-00890-O (N.D. Tex.) &nbsp;·&nbsp; U.S. Sup. Ct. No. 25A1368</p>
+    <p style="margin-top:0.5rem;">Every quotation is verbatim from filed documents, certified transcripts, adjudications, or written communications; citations available on request. Prepared July 2026 · <a href="https://katiecopeland.com/federal-case/">katiecopeland.com/federal-case</a></p>
+  </div>
+
+  <!-- Site JS -->
+  <script src="../js/main.js" defer></script>
+
 </body>
 </html>
