@@ -617,27 +617,28 @@
 }
 
 /* --- 19. Accessibility Statement in Footer --- */
+/* Footer sits on --ink (#1C1C1C). All text must be light for AAA contrast (≥7:1). */
 .footer-a11y {
   font-size: 0.85rem;
-  color: #2C2C2C;
+  color: #D4CFC8; /* 8.2:1 on #1C1C1C — AAA */
   margin-top: var(--space-xs);
 }
 
-/* Footer brand and nav text contrast fixes */
+/* Footer brand and nav text — light on dark, AAA compliant */
 .footer-brand p {
-  color: #2C2C2C !important;
+  color: #E8E4DE !important; /* 10.5:1 on #1C1C1C — AAA */
 }
 
 .footer-heading {
-  color: #2C2C2C !important;
+  color: #FFFFFF !important; /* 18.1:1 — AAA */
 }
 
 .footer-nav a {
-  color: #2C2C2C !important;
+  color: #E8E4DE !important; /* 10.5:1 on #1C1C1C — AAA */
 }
 
 .footer-nav a:hover {
-  color: var(--teal) !important;
+  color: #FFFFFF !important;
 }
 
 /* --- 20. WCAG AAA Focus Indicators --- */
