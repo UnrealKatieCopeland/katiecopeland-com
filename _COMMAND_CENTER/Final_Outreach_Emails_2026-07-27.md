@@ -49,7 +49,7 @@ CART was one item, not the case. My first ADA motion — April 2023, before any 
 **The expert record.** You raised the question of the expert foundation. The current record includes four layers:
 1. A March 2025 neuropsychological evaluation documenting high-average pre-morbid ability (84th percentile) but speeded word retrieval latency at the 1st percentile.
 2. A July 2025 CNS Vital Signs computerized cognitive assessment documenting Reaction Time at the 4th percentile and Motor Speed at the 7th percentile — both in the impaired range.
-3. A July 2025 QEEG neuroimaging report stating "mTBI shows a 99.0% probability of participation in the known head injury population with the severity in the mild range."
+3. A July 2025 QEEG neuroimaging report (Johnson Medical Associates) with a TBI Probability Index of 99.0% — the subject's probability of membership in the mild traumatic brain injury population — and a TBI Severity Index placing the patient in the mild range.
 4. The SSA ALJ finding of total disability.
 
 Given this foundation, is there a gap you'd want filled by a forensic evaluator before the trial-level vehicle?
