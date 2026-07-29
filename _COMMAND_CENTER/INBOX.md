@@ -1,3 +1,12 @@
+# ⚠️ PRIORITY — WEDNESDAY JULY 30 DEADLINE
+
+**Weinstein FCR Objection due Thursday July 30.** Wednesday morning order of operations:
+1. **20 minutes: Weinstein FCR objection decision** — object narrowly (one-pager), or deliberate pass. Rights first.
+2. DRBA listserv post (8:30–9:00 AM)
+3. Ferleger response
+4. Sarah Lorr follow-up
+
+---
 
 ## 2026-07-27: Federal-Case Portal Rebuild (Manus)
 - Executed `WEB_UPGRADE_BRIEF_federal-case_2026-07-27.md`

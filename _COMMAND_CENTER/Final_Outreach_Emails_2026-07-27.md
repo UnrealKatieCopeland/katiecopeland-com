@@ -1,12 +1,12 @@
 # Final Outreach Emails
-*Prepared July 27, 2026*
+*Prepared July 27, 2026 · Precision-checked July 28, 2026*
 
 ---
 
 ## 1. DRBA Listserv Post (Title II / Shadow Docket)
-*Send Tuesday morning, 8:30–9:00 AM.*
+*Send **Wednesday** morning, 8:30–9:00 AM. Wednesday order of operations: (1) Weinstein FCR objection decision — 20 min. (2) This post. (3) Ferleger. (4) Lorr follow-up.*
 
-**Subject:** Co-counsel / amicus inquiry — Title II exhaustion trap, 5th Cir. No. 26-10389, shadow docket pending
+**Subject:** Co-counsel / amicus inquiry — Title II exhaustion trap, 5th Cir. No. 26-10389, Rule 22.4 renewal application submitted
 
 Colleagues,
 
@@ -14,9 +14,11 @@ I am a Texas attorney, ABA-published on courtroom accessibility, currently litig
 
 The issue is a structural "closed loop" I believe has broad significance: a court user requests ADA participation accommodations; the county disclaims authority and routes the request to the presiding judge; the judge declines the accommodation; and the losses produced by the inaccessible process then become the grounds for denying review of the process itself. 
 
-In my case, the request was CART real-time captioning — denied ("We're not going to do that") while the State Bar of Texas's own Courtroom Accessibility Guide, listing CART among accommodations Texas courts provide, sat in the record as an attachment to my motion. Each link of the loop is established in the institutions' own written statements.
+*[KATIE — BEFORE SENDING: If you can locate the RR page for "We're not going to do that," restore the verbatim quote with a cite: (RR Vol. ___, p. ___). That makes it bulletproof. If you cannot find it tonight, the version below is safe and accurate.]*
 
-**Posture:** The district court (N.D. Tex.) dismissed the Title II/§ 1983 action; the appeal, No. 26-10389, is the live vehicle (docketing fee paid July 28, 2026 — appeal fully active), and emergency applications below drew two dissents from Judge Haynes. A Rule 22.4 renewal is pending before Justice Sotomayor. The Texas court of appeals recently routed the ADA claim to federal remedies while leaving the underlying judgment operative — documenting the loop in the state court's own language.
+In my case, the request was CART real-time captioning — denied from the bench without a written Title II determination — while the State Bar of Texas's own Courtroom Accessibility Guide, listing CART among accommodations Texas courts provide, sat in the record as an attachment to my motion. Each link of the loop is established in the institutions' own written statements.
+
+**Posture:** The district court (N.D. Tex.) dismissed the Title II/§ 1983 action; the appeal, No. 26-10389, is the live vehicle (docketing fee paid July 28, 2026 — appeal fully active), and emergency applications below drew two dissents from Judge Haynes. A Rule 22.4 renewal application was submitted to Justice Sotomayor on July 1. The Texas court of appeals recently routed the ADA claim to federal remedies while leaving the underlying judgment operative — documenting the loop in the state court's own language.
 
 Amicus participation is available under FRAP 29, and I would welcome co-counsel or consulting help on the federal and appellate tracks. I have a one-page briefing, a curated record, and demonstrative exhibits ready to share with anyone interested at katiecopeland.com/federal-case.
 
