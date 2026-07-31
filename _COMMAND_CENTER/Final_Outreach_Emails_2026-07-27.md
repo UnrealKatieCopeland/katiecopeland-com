@@ -91,29 +91,54 @@ Attorney · Author · Access Architect
 
 ---
 
-## 4. Initial Outreach to Sarah Tomiyo Stoner (Undaunted Law Firm)
-*Send anytime.*
+## 4. Email to S. Tomiyo Stoner — Undaunted Law Firm
+*FINAL — Version 2 (July 31, 2026). All five checks closed.*
 
-**Subject:** Martinez v. Alameda County / Tarrant County Title II appeal
+**To:** tstoner@undauntedlaw.com *(direct — confirmed from PACER filing, Ayangbile v. Children's Health Services of Texas, N.D. Tex.)*
+**Subject:** *Martinez v. Alameda* — the same failure, in writing, in Tarrant County
+**Attachment:** Twenty-Eight Minutes (one page) — katiecopeland.com/federal-case/twenty-eight-minutes/
 
-Sarah,
+---
 
-I am a Texas attorney currently litigating my own Title II access-to-courts appeal in the Fifth Circuit (*Copeland v. Tarrant County*, No. 26-10389). I am writing to you because of your work in *Martinez v. County of Alameda*.
+Dear Tomiyo,
 
-The defense you defeated in *Martinez* — that the county is not liable because its clerks were following policy in good faith — is the exact defense Tarrant County is running in the Fifth Circuit. The difference is that Tarrant County's policy is to route all accommodation requests to the presiding judge, and then close the matter. 
+Michael Stein suggested I reach out to you.
 
-I have built the record to challenge that structural "closed loop." The County's written admissions — "Since it is a court proceeding request and not falling under the County's ADA compliance the response and directing them to the court then considers the matter closed" (April 1, 2026) — are in the record. The Fifth Circuit has not yet answered whether a public entity can discharge its § 12132 obligations by carving courtrooms out of its Title II infrastructure.
+I read your closing argument in *Martinez v. County of Alameda*, and then I read Judge Hixson's June 2 order denying the County's renewed motion. I'm writing because I think I'm living the sequel, and I'd like twenty minutes of your time to tell you about it.
 
-I know you are in Irving, and I know you know how to try this theory. I am looking for co-counsel to handle the Fifth Circuit appeal (Appellant's brief due August 31, 2026). I am asking you because, as a practical matter, only counsel can bring it — a state prefiling order bars my pro se filings, and a counsel-built complaint avoids the traps my record has had to fight. I'm not looking to co-pilot from the back seat — if the right lawyer takes it, it's theirs.
+**What you proved.** Alameda's defense was that its clerks were following county policy in good faith. The court's answer was that your client "was not … required to show that Ms. Moran and Ms. Briones personally believed that CRO policy violated the ADA." The County had an ADA coordinator. No one called it.
 
-I have attached a one-page comparison of *Martinez* and *Copeland*, the three one-page exhibits containing the County's written admissions, and a timeline of the "twenty-eight minutes" that established the closed loop on the record.
+**What Tarrant County did instead.** Tarrant County has an ADA Coordinator, and publishes written grievance procedures — filing window, investigation deadlines, written determination, appeal to a County ADA Committee. Its published policy then removes court proceedings from all of it: a decision to accommodate a litigant "relates to a judge's adjudicative responsibilities and is within a judge's sole discretion."
 
-If this interests you, I would value a conversation.
+In January the district court ordered the parties to confer about my accommodation requests. The County's civil division chief answered my counsel in writing: "Tarrant County has no authority or control over state district judges, so **there is nothing I can do** concerning her issues in the 236th or 141st courts. As to the JP matters, **the judge is the decisionmaker on accommodation requests.** I suggest your client contact each judge's court manager in writing." That was the County's response to a court-ordered conferral.
+
+Alameda had a coordinator nobody called. Tarrant County's coordinator was called — and answered.
+
+**One afternoon, in writing.** On April 17, 2024 at 2:29 p.m., I wrote to the Local Administrative Judge's office because no family court judge would hear my emergency motions — I was told only the assigned judge could rule, and she was out of town for weeks. At 2:57 p.m., twenty-eight minutes later, the County ADA office wrote that my ADA request "would need to go directly through the court your case is assigned to." Six weeks later I asked that office, in writing, whether there was an escalation process and how to file a formal complaint. The reply answered neither question.
+
+**Where it stands, honestly.** The district court dismissed at § 1915 screening before any defendant was served, and certified that my appeal was not taken in good faith. I paid the filing fee on July 28. My opening brief in the Fifth Circuit is due August 31. I've been doing this pro se because I ran out of alternatives, and I know that means the record wasn't built the way a firm would have built it. I'm a Texas lawyer with an acquired brain injury. I'm not looking to co-pilot from the back seat — if the right lawyer takes this, it's theirs.
+
+**What I'd actually ask you for.** First, a conversation. Beyond that: the natural trial-level vehicle here is a Texas state court, and a state prefiling order bars me from filing there pro se — counsel is exempt from it. So it is literally a case I cannot bring and you can, forty minutes from your office, on the theory you already took to a verdict. There is a preclusion question created by the federal dismissal that I'd rather walk you through than gloss over; it turns on how the appeal comes out. If the appeal itself interests you as consulting counsel or amicus, I'd welcome that, though I know appellate work isn't the center of your practice.
+
+I've attached one page — the twenty-eight minutes. Every quotation in it comes from a dated document and I can send you the underlying record for any of it.
+
+Thank you for reading this. Your Martinez closing is the clearest statement I've found of the thing I've been trying to describe for three years.
 
 Warmly,
 
-Katie
-
 Kathryn "Katie" Copeland
-Attorney · Author · Access Architect
-(817) 789-8498 | Katie@KatieCopeland.com | KatieCopeland.com
+Texas Bar No. 24086056
+Katie@KatieCopeland.com · 817-789-8498
+
+---
+
+### Verified cites (if she asks on the call)
+- *Martinez*: 2025 WL 1556410 (N.D. Cal. June 2, 2025) (Hixson, M.J.), No. 20-cv-06570-TSH — no negative treatment.
+- Lund e-mail: Stephen A. Lund, Assistant District Attorney, Civil Division, to John Douglas, Jan. 13, 2026, 2:08:44 p.m. CST, cc Polly S. Maxwell — sent in response to the conferral ordered at ECF Nos. 25 and 28.
+- April 17, 2024 pair: K. Copeland to T.H. Kemp, 2:29:09 p.m. CDT; ADM–ADA Requests to K. Copeland, 2:57:27 p.m. CDT.
+
+### Before you send
+1. Delete any branded signature block with social icons. Plain text only, as above.
+2. Attach the "Twenty-eight minutes" page. One attachment, not five. If she asks for more, send the ten-forum map next.
+3. Do not say "clean vehicle." It isn't in this draft; keep it that way.
+4. The *Lonberg* / post-*Loper Bright* point is deliberately left out. Save it for the call.
