@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Graphic 1: The Administrative Gap — Copeland v. Tarrant County</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:    #FAF8F2;
+      --cream-dk: #F0EBE0;
+      --navy:     #1D2D44;
+      --navy-lt:  #2A3F5F;
+      --red:      #8B1A1A;
+      --gold:     #C9A84C;
+      --ink:      #1C1C1C;
+      --gray:     #5A5A5A;
+      --rule:     #D5CEBC;
+      --white:    #FFFFFF;
+      --green:    #1A5C3A;
+    }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    .page-header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 3.5rem 2rem 3rem;
+      text-align: center;
+    }
+    .page-header .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+      color: var(--white);
+    }
+    .page-header .subtitle {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.82);
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Main ── */
+    .main-content {
+      padding: 3.5rem 0 4rem;
+    }
+
+    /* ── Two-column diagram ── */
+    .diagram-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(29,45,68,0.09);
+      margin-bottom: 2.5rem;
+    }
+
+    /* Column headers */
+    .col-header {
+      padding: 1.1rem 1.5rem;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .col-header.law  { background: var(--green); color: var(--white); border-right: 1px solid rgba(255,255,255,0.15); }
+    .col-header.reality { background: var(--red); color: var(--white); }
+
+    /* Column bodies */
+    .col-body {
+      background: var(--white);
+      padding: 2rem 1.75rem 2.5rem;
+    }
+    .col-body.law-body    { border-right: 2px solid var(--rule); }
+    .col-body.reality-body { }
+
+    /* Flow steps */
+    .flow-step {
+      position: relative;
+      margin-bottom: 0;
+    }
+    .step-box {
+      border: 1.5px solid var(--rule);
+      border-radius: 3px;
+      padding: 0.85rem 1.1rem;
+      background: var(--cream);
+      text-align: center;
+    }
+    .step-box .step-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 0.3rem;
+    }
+    .step-box .step-text {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+    .step-box .step-cite {
+      font-size: 0.74rem;
+      color: var(--gray);
+      margin-top: 0.35rem;
+      font-style: italic;
+    }
+
+    /* Law column — green accent */
+    .col-body.law-body .step-box {
+      border-color: #B8D8C8;
+      background: #F2FAF6;
+    }
+    .col-body.law-body .step-box .step-text { color: var(--green); }
+
+    /* Reality column — red accent */
+    .col-body.reality-body .step-box {
+      border-color: #E8C4C4;
+      background: #FDF5F5;
+    }
+    .col-body.reality-body .step-box .step-text { color: var(--red); }
+
+    /* Special: verbatim quote box */
+    .step-box.verbatim-box {
+      border-color: var(--red);
+      background: #FBF0F0;
+    }
+    .step-box.verbatim-box .step-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--red);
+    }
+
+    /* Arrow connector */
+    .arrow-down {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.55rem 0;
+      color: var(--gray);
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    .col-body.law-body .arrow-down { color: var(--green); }
+    .col-body.reality-body .arrow-down { color: var(--red); }
+
+    /* Terminal box */
+    .step-box.terminal-law {
+      border-color: var(--green);
+      background: var(--green);
+    }
+    .step-box.terminal-law .step-text { color: var(--white); font-size: 1rem; }
+    .step-box.terminal-law .step-label { color: rgba(255,255,255,0.75); }
+
+    .step-box.terminal-reality {
+      border-color: var(--red);
+      background: var(--red);
+    }
+    .step-box.terminal-reality .step-text { color: var(--white); font-size: 1rem; }
+    .step-box.terminal-reality .step-label { color: rgba(255,255,255,0.75); }
+
+    /* ── The Open Question ── */
+    .open-question {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2.25rem 2.5rem;
+      border-radius: 4px;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .open-question .oq-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.85rem;
+    }
+    .open-question p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+      font-weight: 600;
+      line-height: 1.55;
+      color: var(--white);
+      max-width: 700px;
+      margin: 0 auto 1rem;
+    }
+    .open-question .oq-sub {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.72);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── Already decided strip ── */
+    .decided-strip {
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: var(--white);
+      padding: 1.75rem 2rem;
+      margin-bottom: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .decided-col h3 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+    }
+    .decided-col.settled h3 { color: var(--green); }
+    .decided-col.open h3    { color: var(--red); }
+
+    .decided-col ul {
+      list-style: none;
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+    .decided-col.settled ul li::before { content: "✓ "; color: var(--green); font-weight: 700; }
+    .decided-col.open ul li::before    { content: "? "; color: var(--red); font-weight: 700; }
+
+    /* ── Nav ── */
+    .page-nav {
+      padding: 1.25rem 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+    .page-nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .page-nav a:hover { text-decoration: underline; }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .diagram-grid { grid-template-columns: 1fr; }
+      .col-body.law-body { border-right: none; border-bottom: 2px solid var(--rule); }
+      .decided-strip { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: white; }
+      .page-header, .open-question { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .col-header.law, .col-header.reality { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .step-box.terminal-law, .step-box.terminal-reality { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="eyebrow">Graphic 1 of 4 · Copeland v. Tarrant County · No. 26-10389 (5th Cir.)</p>
+      <h1>The Administrative Gap</h1>
+      <p class="subtitle">What Title II requires. What Tarrant County provided. The question no court has answered.</p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Two-column diagram -->
+      <div class="diagram-grid" role="img" aria-label="Side-by-side comparison: what Title II requires on the left, what Tarrant County provided on the right">
+
+        <!-- Left: Law -->
+        <div>
+          <div class="col-header law">Title II Requires</div>
+          <div class="col-body law-body">
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Public Entity</div>
+                <div class="step-text">Tarrant County</div>
+                <div class="step-cite">42 U.S.C. § 12132</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Step 1</div>
+                <div class="step-text">Designated ADA Coordinator</div>
+                <div class="step-cite">28 C.F.R. § 35.107(a) · Since Jan. 26, 1992</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Step 2</div>
+                <div class="step-text">Intake Process for Accommodation Requests</div>
+                <div class="step-cite">28 C.F.R. § 35.107(b)</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Step 3</div>
+                <div class="step-text">Written Accommodation Determination</div>
+                <div class="step-cite">28 C.F.R. § 35.107(b); <em>Tennessee v. Lane</em></div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Step 4</div>
+                <div class="step-text">Grievance Review by Responsible Official</div>
+                <div class="step-cite">28 C.F.R. § 35.107(b)</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box terminal-law">
+                <div class="step-label">Result</div>
+                <div class="step-text">Meaningful access to court proceedings</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Reality -->
+        <div>
+          <div class="col-header reality">What Tarrant County Provided</div>
+          <div class="col-body reality-body">
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Accommodation Request Filed</div>
+                <div class="step-text">CART real-time captioning requested pre-trial</div>
+                <div class="step-cite">Second Amended ADA Motion · May 2024</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box verbatim-box">
+                <div class="step-label">County ADA Office Response</div>
+                <div class="step-text">"Court participation accommodation requests are not falling under the County's ADA compliance… the matter [is] closed."</div>
+                <div class="step-cite">Travis Yarbrough, Tarrant County · Appendix F</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box verbatim-box">
+                <div class="step-label">Court Response on the Record</div>
+                <div class="step-text">"Okay. Well, we're not going to do that."</div>
+                <div class="step-cite">RR Vol. 19, p. 24, ll. 1–7 (May 6, 2024)</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Grievance Pathway</div>
+                <div class="step-text">"Unable to locate any responsive information."</div>
+                <div class="step-cite">Open Records Response · Appendix H</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box">
+                <div class="step-label">Coordinator Identified?</div>
+                <div class="step-text">"Unable to locate any responsive information."</div>
+                <div class="step-cite">Open Records Response · Appendix H</div>
+              </div>
+            </div>
+            <div class="arrow-down">↓</div>
+
+            <div class="flow-step">
+              <div class="step-box terminal-reality">
+                <div class="step-label">Result</div>
+                <div class="step-text">No responsible official. No written decision. No review. Proceedings continued.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /diagram-grid -->
+
+      <!-- Open Question -->
+      <div class="open-question">
+        <p class="oq-label">The Open Question — Fifth Circuit</p>
+        <p>Can a public entity satisfy Title II simply by routing every court-participation accommodation request to the presiding judge — with no coordinator, no written determination, and no grievance pathway?</p>
+        <p class="oq-sub">The Fifth Circuit has never answered this question. The County's own written admissions present it on a clean record.</p>
+      </div>
+
+      <!-- Already decided / open -->
+      <div class="decided-strip">
+        <div class="decided-col settled">
+          <h3>Already Decided</h3>
+          <ul>
+            <li><em>Tennessee v. Lane</em>, 541 U.S. 509 (2004) — Title II applies to court proceedings</li>
+            <li><em>Crawford v. Hinds County</em> (5th Cir.) — entity-level Title II obligations</li>
+            <li><em>Luke v. Texas</em> (5th Cir.) — access to courts under Title II</li>
+            <li>28 C.F.R. § 35.107 — coordinator and grievance required since 1992</li>
+          </ul>
+        </div>
+        <div class="decided-col open">
+          <h3>Open Question</h3>
+          <ul>
+            <li>Whether Title II's administrative-infrastructure obligations reach court-participation accommodations</li>
+            <li>Whether routing requests to a judge satisfies the entity's § 35.107 obligations</li>
+            <li>Whether denial of accommodation without a written entity-level determination triggers § 12132 liability</li>
+            <li>Whether the "closed loop" exhaustion trap constitutes interference under § 12203</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="page-nav" aria-label="Page navigation">
+        <a href="/federal-case/">← Counsel Portal</a>
+        <a href="/federal-case/evidence-matrix/">Evidence Matrix</a>
+        <a href="/federal-case/why-this-matters/">Why This Matters</a>
+      </nav>
+
+    </div>
+  </main>
+
+</body>
+</html>

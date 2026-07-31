@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Evidence Matrix — Copeland v. Tarrant County · ADA Title II Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:    #FAF8F2;
+      --cream-dk: #F0EBE0;
+      --navy:     #1D2D44;
+      --navy-lt:  #2A3F5F;
+      --red:      #8B1A1A;
+      --gold:     #C9A84C;
+      --ink:      #1C1C1C;
+      --gray:     #4A4A4A;
+      --rule:     #D5CEBC;
+      --white:    #FFFFFF;
+    }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    .page-header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 3.5rem 2rem 3rem;
+      text-align: center;
+    }
+    .page-header .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+    .page-header .subtitle {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.85);
+      max-width: 640px;
+      margin: 0 auto 1.5rem;
+    }
+    .header-cite {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      font-style: italic;
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Doctrine strip ── */
+    .doctrine-strip {
+      background: var(--cream-dk);
+      border-top: 3px solid var(--gold);
+      border-bottom: 1px solid var(--rule);
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    .doctrine-strip p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--navy);
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .doctrine-strip cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.8rem;
+      font-style: normal;
+      color: var(--gray);
+    }
+
+    /* ── Main content ── */
+    .main-content {
+      padding: 3rem 0 4rem;
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── Matrix table ── */
+    .matrix-wrap {
+      overflow-x: auto;
+      margin-bottom: 3rem;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      box-shadow: 0 2px 12px rgba(29,45,68,0.07);
+    }
+
+    table.matrix {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      font-size: 0.93rem;
+    }
+
+    table.matrix thead tr {
+      background: var(--navy);
+    }
+    table.matrix thead th {
+      padding: 1rem 1.25rem;
+      text-align: left;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--white);
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    table.matrix thead th:last-child { border-right: none; }
+
+    table.matrix tbody tr {
+      border-bottom: 1px solid var(--rule);
+    }
+    table.matrix tbody tr:last-child { border-bottom: none; }
+    table.matrix tbody tr:nth-child(even) td { background: #F7F4EE; }
+
+    table.matrix tbody td {
+      padding: 1.1rem 1.25rem;
+      vertical-align: top;
+      border-right: 1px solid var(--rule);
+      line-height: 1.55;
+    }
+    table.matrix tbody td:last-child { border-right: none; }
+
+    /* Column 1 — requirement */
+    table.matrix td.col-req {
+      font-weight: 600;
+      color: var(--navy);
+      width: 26%;
+    }
+    table.matrix td.col-req .reg-cite {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--gray);
+      margin-top: 0.3rem;
+    }
+
+    /* Column 2 — county response */
+    table.matrix td.col-county {
+      width: 37%;
+    }
+    table.matrix td.col-county .verbatim {
+      font-style: italic;
+      color: var(--red);
+      font-size: 0.9rem;
+    }
+    table.matrix td.col-county .doc-cite {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-top: 0.4rem;
+    }
+
+    /* Column 3 — what happened */
+    table.matrix td.col-result {
+      width: 37%;
+      color: var(--ink);
+    }
+    table.matrix td.col-result .outcome-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.2em 0.7em;
+      border-radius: 2px;
+      margin-bottom: 0.5rem;
+    }
+    .tag-gap    { background: #F5E6E6; color: var(--red); }
+    .tag-none   { background: #EEF0F5; color: var(--navy); }
+    .tag-denied { background: #FDF3E3; color: #7A4F00; }
+
+    /* ── Closing statement ── */
+    .closing-statement {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2rem 2.5rem;
+      border-radius: 4px;
+      margin-bottom: 3rem;
+    }
+    .closing-statement p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: var(--white);
+      max-width: 760px;
+    }
+    .closing-statement strong {
+      color: var(--gold);
+    }
+
+    /* ── Source key ── */
+    .source-key {
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 1.5rem 2rem;
+      background: var(--white);
+      margin-bottom: 3rem;
+    }
+    .source-key h3 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .source-key ol {
+      margin-left: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+    .source-key ol li { margin-bottom: 0.4rem; }
+    .source-key em { color: var(--ink); font-style: normal; font-weight: 600; }
+
+    /* ── Nav ── */
+    .page-nav {
+      padding: 1.25rem 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+    .page-nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .page-nav a:hover { text-decoration: underline; }
+
+    /* ── Print ── */
+    @media print {
+      body { background: white; }
+      .page-header { background: var(--navy) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      table.matrix thead tr { background: var(--navy) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .closing-statement { background: var(--navy) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page-nav { display: none; }
+    }
+
+    @media (max-width: 680px) {
+      .page-header { padding: 2.5rem 1.25rem 2rem; }
+      table.matrix { font-size: 0.85rem; }
+      table.matrix tbody td, table.matrix thead th { padding: 0.85rem 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="eyebrow">Copeland v. Tarrant County · ADA Title II · No. 26-10389 (5th Cir.)</p>
+      <h1>Evidence Matrix:<br>What Federal Law Requires vs. What Tarrant County Said</h1>
+      <p class="subtitle">Each row traces a specific Title II administrative obligation to the County's documented response and the resulting gap in meaningful access. Every entry cites a record source.</p>
+      <p class="header-cite">Prepared for counsel review · katiecopeland.com/federal-case</p>
+    </div>
+  </header>
+
+  <div class="doctrine-strip">
+    <div class="container">
+      <p>"A public entity shall designate at least one responsible employee to coordinate its efforts to comply with and carry out its responsibilities under this part, including any investigation of any complaint communicated to it alleging its noncompliance with the part or alleging any actions that would be prohibited by this part."</p>
+      <cite>28 C.F.R. § 35.107(a) · Required since January 26, 1992</cite>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <div class="container">
+
+      <p class="section-label">Documentary Record</p>
+
+      <div class="matrix-wrap">
+        <table class="matrix" aria-label="Evidence Matrix: Federal law requirement, County response, and outcome">
+          <thead>
+            <tr>
+              <th scope="col">What Federal Law Requires</th>
+              <th scope="col">What Tarrant County Said</th>
+              <th scope="col">What Happened</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td class="col-req">
+                Designated ADA Coordinator
+                <span class="reg-cite">28 C.F.R. § 35.107(a)<br>Required since Jan. 26, 1992</span>
+              </td>
+              <td class="col-county">
+                <span class="verbatim">"Unable to locate any responsive information."</span>
+                <span class="doc-cite">Tarrant County Open Records Response · Appendix H [2]</span>
+              </td>
+              <td class="col-result">
+                <span class="outcome-tag tag-gap">Infrastructure Gap</span><br>
+                No coordinator identified in response to formal open-records request. Accommodation requests had no designated recipient within the County's ADA compliance structure.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-req">
+                Intake Process for Accommodation Requests
+                <span class="reg-cite">28 C.F.R. § 35.107(b)<br>ADA Title II, 42 U.S.C. § 12132</span>
+              </td>
+              <td class="col-county">
+                <span class="verbatim">"Court participation accommodation requests are not falling under the County's ADA compliance… the matter [is] closed."</span>
+                <span class="doc-cite">Travis Yarbrough, Tarrant County · Appendix F [1]</span>
+              </td>
+              <td class="col-result">
+                <span class="outcome-tag tag-denied">Request Redirected</span><br>
+                County ADA office disclaimed responsibility for court-participation accommodations and closed the matter without identifying an alternative pathway or responsible official.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-req">
+                Written Accommodation Determination
+                <span class="reg-cite">28 C.F.R. § 35.107(b)<br><em>Tennessee v. Lane</em>, 541 U.S. 509 (2004)</span>
+              </td>
+              <td class="col-county">
+                <span class="verbatim">"Okay. Well, we're not going to do that."</span>
+                <span class="doc-cite">The Court · RR Vol. 19, p. 24, ll. 1–7 (May 6, 2024) [3]</span>
+              </td>
+              <td class="col-result">
+                <span class="outcome-tag tag-gap">No Written Decision</span><br>
+                No written Title II determination was issued. No entity-level process produced a reviewable accommodation decision before proceedings continued.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-req">
+                Grievance Procedure
+                <span class="reg-cite">28 C.F.R. § 35.107(b)<br>Required for entities with 50+ employees</span>
+              </td>
+              <td class="col-county">
+                <span class="verbatim">"Unable to locate any responsive information"</span> regarding a grievance procedure for denied accommodations.
+                <span class="doc-cite">Tarrant County Open Records Response · Appendix H [2]</span>
+              </td>
+              <td class="col-result">
+                <span class="outcome-tag tag-none">No Procedure Located</span><br>
+                No grievance pathway was identified. Denial of accommodation produced no reviewable administrative record and no avenue for pre-proceeding relief.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-req">
+                Self-Evaluation of Access Barriers
+                <span class="reg-cite">28 C.F.R. § 35.105<br>Required since Jan. 26, 1992</span>
+              </td>
+              <td class="col-county">
+                <span class="verbatim">"Unable to locate any responsive information"</span> regarding a self-evaluation of court-access barriers.
+                <span class="doc-cite">Tarrant County Open Records Response · Appendix H [2]</span>
+              </td>
+              <td class="col-result">
+                <span class="outcome-tag tag-none">No Record Located</span><br>
+                No self-evaluation of court-user access barriers was produced in response to a formal public-records request covering the period since 1992.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-req">
+                Notice of ADA Rights and Procedures
+                <span class="reg-cite">28 C.F.R. § 35.106<br>Required for public entities</span>
+              </td>
+              <td class="col-county">
+                State's trial counsel argued on the record: <span class="verbatim">"There is no actual legal authority stated within her motion… that this courtroom, this court, is actually subject to the ADA."</span>
+                <span class="doc-cite">RR Vol. 19, p. 15 (May 6, 2024) [3]</span>
+              </td>
+              <td class="col-result">
+                <span class="outcome-tag tag-gap">Obligation Disputed</span><br>
+                The court's own applicability to Title II was disputed on the record — twenty years after <em>Tennessee v. Lane</em> established that Title II applies to court proceedings. The presiding judge stated: <em>"I'm not sure if we are or not."</em>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="col-req">
+                Transition Plan / Barrier Removal
+                <span class="reg-cite">28 C.F.R. § 35.150<br>For structural access barriers</span>
+              </td>
+              <td class="col-county">
+                <span class="verbatim">"Unable to locate any responsive information"</span> regarding a transition plan.
+                <span class="doc-cite">Tarrant County Open Records Response · Appendix H [2]</span>
+              </td>
+              <td class="col-result">
+                <span class="outcome-tag tag-none">No Plan Located</span><br>
+                No transition plan for court-access barriers was produced. The State Bar of Texas Courtroom Accessibility Guide — listing CART among available accommodations — was attached to the ADA motion and sat in the record unaddressed.
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Closing statement -->
+      <div class="closing-statement">
+        <p>This is not a dispute about whether a judge made a bad decision. <strong>The question is whether any entity ever accepted responsibility for deciding an accommodation request through an ADA process</strong> — with a coordinator, a written determination, and a grievance route — before proceedings affecting the applicant's legal rights continued. The County's own documents answer that question.</p>
+      </div>
+
+      <!-- Source key -->
+      <div class="source-key">
+        <h3>Document Sources</h3>
+        <ol>
+          <li><em>[1] Appendix F</em> — Travis Yarbrough email, Tarrant County ADA Office. Filed as Appendix F to Emergency Application to Justice Alito, No. 25A1368 (June 4, 2026).</li>
+          <li><em>[2] Appendix H</em> — Tarrant County Open Records Response. Filed as Appendix H to Emergency Application to Justice Alito, No. 25A1368 (June 4, 2026). Response states inability to locate coordinator, intake process, grievance procedure, self-evaluation, or transition plan.</li>
+          <li><em>[3] RR Vol. 19</em> — Reporter's Record, Vol. 19, Cause No. 231-686108-20, 231st District Court, Tarrant County, Texas. Trial proceedings of May 6, 2024.</li>
+          <li><em>[4] State Bar Guide</em> — State Bar of Texas Courtroom Accessibility Guide. Attached as exhibit to Second Amended ADA Motion (filed May 2024). Lists CART as an accommodation available in Texas courts.</li>
+        </ol>
+      </div>
+
+      <nav class="page-nav" aria-label="Page navigation">
+        <a href="/federal-case/">← Counsel Portal</a>
+        <a href="/federal-case/why-this-matters/">Why This Matters</a>
+        <a href="/federal-case/administrative-gap/">Graphic 1: The Administrative Gap →</a>
+      </nav>
+
+    </div>
+  </main>
+
+</body>
+</html>
