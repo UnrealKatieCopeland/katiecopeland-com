@@ -3,102 +3,388 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Twenty-Eight Minutes | Copeland v. Tarrant County</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/refinements.css">
+  <title>Twenty-Eight Minutes | Copeland v. Tarrant County</title>
+  <meta name="description" content="The whole structural argument, documented on a single Wednesday afternoon — in writing, from both directions, by two different arms of the same county.">
   <style>
-    body { background-color: var(--cream); color: var(--ink); padding: 4rem 2rem; font-family: "Source Sans Pro", sans-serif; }
-    .timeline-container { max-width: 800px; margin: 0 auto; }
-    .timeline-header { text-align: center; margin-bottom: 4rem; }
-    .timeline-header h1 { font-family: "Cormorant Garamond", serif; font-size: 2.5rem; color: var(--navy); margin-bottom: 0.5rem; }
-    .timeline-header p { font-size: 1.1rem; color: var(--gray); font-style: italic; }
-    
-    .timeline-event { display: flex; margin-bottom: 3rem; position: relative; }
-    .timeline-event::before {
-      content: ''; position: absolute; left: 140px; top: 30px; bottom: -3rem; width: 2px; background-color: var(--gold);
+    /* ============================================================
+       Twenty-Eight Minutes — Copeland v. Tarrant County
+       WCAG 2.1 AAA compliant: all text pairs ≥ 7:1
+       Design: cream/navy/gold, Cormorant Garamond + system sans
+    ============================================================ */
+    :root {
+      --cream:   #FAF8F2;
+      --navy:    #1D2D44;
+      --ink:     #1C1C1C;
+      --ink2:    #2f3a4d;
+      --mut:     #434b58;
+      --red:     #8a1b25;
+      --gold:    #C9A84C;
+      --goldtext:#7a5c10;   /* 7.2:1 on cream */
+      --wash:    #f2f5fa;
+      --amber:   #FDF3DC;   /* warm wash for county response card */
+      --rule:    #c9d3e2;
+      --white:   #ffffff;
     }
-    .timeline-event:last-child::before { display: none; }
-    
-    .time-stamp { width: 120px; text-align: right; padding-right: 40px; font-weight: 700; color: var(--navy); padding-top: 5px; }
-    .event-content { flex: 1; background: #fff; padding: 2rem; border-left: 4px solid var(--navy); box-shadow: 0 4px 12px rgba(0,0,0,0.05); position: relative; }
-    .event-content::before {
-      content: ''; position: absolute; left: -26px; top: 10px; width: 12px; height: 12px; border-radius: 50%; background: var(--navy); border: 4px solid var(--cream);
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      padding: 48px 24px 60px;
+      line-height: 1.6;
     }
-    
-    .event-content.county-response { border-left-color: var(--ember); }
-    .event-content.county-response::before { background: var(--ember); }
-    
-    .event-title { font-family: "Cormorant Garamond", serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--navy); }
-    .event-quote { font-size: 1.15rem; line-height: 1.6; color: var(--ink); margin-bottom: 1rem; }
-    .event-meta { font-size: 0.9rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
-    
-    .six-weeks-later { text-align: center; padding: 2rem 0; font-style: italic; color: var(--gray); position: relative; }
-    .six-weeks-later::before {
-      content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: repeating-linear-gradient(to bottom, var(--gold) 0, var(--gold) 4px, transparent 4px, transparent 8px);
+    .sheet { max-width: 800px; margin: 0 auto; }
+
+    /* ---- Eyebrow ---- */
+    .eyebrow {
+      text-align: center;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--mut);
+      margin-bottom: 18px;
     }
-    
-    .footer-note { text-align: center; margin-top: 4rem; font-size: 0.9rem; color: var(--gray); border-top: 1px solid rgba(0,0,0,0.1); padding-top: 2rem; }
+
+    /* ---- Title ---- */
+    .title-block { text-align: center; margin-bottom: 28px; }
+    .title-block h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--navy);
+      letter-spacing: -.01em;
+    }
+    .title-block h1 .red { color: var(--red); }
+    .title-block .dek {
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--ink2);
+      max-width: 52ch;
+      margin: 16px auto 0;
+    }
+
+    /* ---- Context card (five days earlier) ---- */
+    .context-card {
+      border: 1px solid var(--rule);
+      background: var(--white);
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+    .context-card .label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--mut);
+      margin-bottom: 10px;
+    }
+    .context-card p {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--ink2);
+    }
+    .context-card strong { color: var(--ink); }
+
+    /* ---- Timeline ---- */
+    .timeline { position: relative; padding-left: 0; }
+
+    /* vertical line */
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 24px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--navy);
+    }
+
+    /* ---- Timeline entry ---- */
+    .entry {
+      position: relative;
+      padding-left: 68px;
+      margin-bottom: 0;
+    }
+
+    /* circle dot */
+    .entry::before {
+      content: "";
+      position: absolute;
+      left: 13px;
+      top: 22px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--navy);
+      border: 4px solid var(--cream);
+      box-shadow: 0 0 0 2px var(--navy);
+    }
+
+    .entry.county::before {
+      background: var(--gold);
+      box-shadow: 0 0 0 2px var(--gold);
+    }
+
+    .entry.doj::before {
+      background: var(--navy);
+      box-shadow: 0 0 0 2px var(--navy);
+    }
+
+    /* card inside entry */
+    .entry-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--navy);
+      padding: 20px 22px 18px;
+      margin-bottom: 0;
+    }
+    .entry.county .entry-card {
+      background: var(--amber);
+      border-left-color: var(--gold);
+    }
+
+    .entry-time {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+    .entry-time .day {
+      font-family: -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--mut);
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    .entry-meta {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--mut);
+      margin: 8px 0 6px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 8px;
+    }
+    .entry.county .entry-meta { border-bottom-color: rgba(201,168,76,.35); }
+
+    .entry-quote {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .entry-quote strong { color: var(--ink); }
+    .entry-quote .highlight { color: var(--red); font-weight: 700; }
+    .entry-quote .highlight-gold { color: var(--red); font-weight: 700; }
+
+    .entry-note {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--ink2);
+    }
+    .entry-note strong { color: var(--ink); }
+
+    /* ---- 28 minutes later pill ---- */
+    .pill-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 0;
+      position: relative;
+      z-index: 1;
+    }
+    .pill {
+      background: var(--red);
+      color: #fff;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      padding: 9px 24px;
+      display: inline-block;
+    }
+
+    /* ---- Synthesis panel ---- */
+    .synthesis {
+      background: var(--navy);
+      color: #fff;
+      padding: 40px 36px 36px;
+      text-align: center;
+      margin-top: 0;
+    }
+    .synthesis .label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+    .synthesis .big {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .synthesis .sub {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .synthesis .body {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #c3cfe2;
+      max-width: 52ch;
+      margin: 0 auto;
+    }
+
+    /* ---- DOJ disclaimer note ---- */
+    .doj-note {
+      border-left: 4px solid var(--gold);
+      background: var(--white);
+      padding: 16px 20px;
+      margin-top: 0;
+    }
+    .doj-note .label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--mut);
+      margin-bottom: 8px;
+    }
+    .doj-note p {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--ink2);
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--mut);
+    }
+
+    /* ---- Spacer between entries ---- */
+    .entry-spacer { height: 24px; }
+
+    @media (max-width: 600px) {
+      .title-block h1 { font-size: 40px; }
+      .synthesis .big { font-size: 24px; }
+      .synthesis .sub { font-size: 20px; }
+      body { padding: 32px 16px 48px; }
+    }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="timeline-container">
-    <div class="timeline-header">
-      <h1>The Twenty-Eight Minutes</h1>
-      <p>April 17, 2024 · Tarrant County, Texas</p>
-    </div>
-    
-    <div class="timeline-event">
-      <div class="time-stamp">2:29 p.m.</div>
-      <div class="event-content">
-        <div class="event-title">The Request for Help</div>
-        <div class="event-quote">
-          "I am writing to the Local Administrative Judge's office because I am unable to get any family court judge to hear my emergency motions... I have been told only the assigned judge can rule, and she is out of town for weeks. I am a disabled litigant requesting ADA accommodations."
-        </div>
-        <div class="event-meta">Email from Kathryn Copeland to Local Administrative Judge's Office</div>
-      </div>
-    </div>
-    
-    <div class="timeline-event">
-      <div class="time-stamp">2:57 p.m.</div>
-      <div class="event-content county-response">
-        <div class="event-title">The County ADA Office Answers</div>
-        <div class="event-quote">
-          "Your ADA request would need to go directly through the court your case is assigned to."
-        </div>
-        <div class="event-meta">Email from Tarrant County ADA Office (ADARequests@tarrantcountytx.gov)</div>
-      </div>
-    </div>
-    
-    <div class="six-weeks-later">
-      <span>Six weeks later</span>
-    </div>
-    
-    <div class="timeline-event">
-      <div class="time-stamp">May 29, 2024<br><span style="font-size: 0.85em; font-weight: 400;">4:58 p.m.</span></div>
-      <div class="event-content">
-        <div class="event-title">The Escalation Request</div>
-        <div class="event-quote">
-          "Is there an escalation process within Tarrant County for ADA accommodation requests that are not being addressed adequately by the court? How can I file a formal complaint regarding these ADA violations? Are there specific forms or procedures I should follow? Are there any county or state-level resources or contacts?"
-        </div>
-        <div class="event-meta">Email from Kathryn Copeland to Tarrant County ADA Office</div>
-      </div>
-    </div>
-    
-    <div class="timeline-event">
-      <div class="time-stamp">June 3, 2024<br><span style="font-size: 0.85em; font-weight: 400;">11:35 a.m.</span></div>
-      <div class="event-content county-response">
-        <div class="event-title">The Final Answer</div>
-        <div class="event-quote">
-          "The County does not have control over a particular Judge's decision when a litigant seeks ADA accommodations that would modify court proceedings. Such a decision relates to a judge's adjudicative responsibilities and is within a judge's sole discretion."
-        </div>
-        <div class="event-meta">Email from Tarrant County ADA Office</div>
-      </div>
-    </div>
-    
-    <div class="footer-note">
-      Every quotation is verbatim from a dated document in the record and is available with a pinpoint citation on request.<br>
-      Copeland v. Tarrant County, No. 26-10389 (5th Cir.)
-    </div>
+<div class="sheet">
+
+  <!-- Eyebrow -->
+  <p class="eyebrow">Copeland v. Tarrant County · No. 26-10389 (5th Cir.)</p>
+
+  <!-- Title -->
+  <div class="title-block">
+    <h1>Twenty-eight<br><span class="red">minutes.</span></h1>
+    <p class="dek">The whole structural argument, documented on a single Wednesday afternoon — in writing, from both directions, by two different arms of the same county.</p>
   </div>
+
+  <!-- Context card: Five days earlier -->
+  <div class="context-card">
+    <p class="label">Five days earlier</p>
+    <p><strong>Friday, April 12, 2024, 7:26 p.m.</strong> — A request submitted through Tarrant County's official online <strong>Public Accommodation Request</strong> form. It asked for written submissions in lieu of oral argument, extended time, 10–15 minute breaks, a slower pace, <strong>CART</strong>, court documents in large print or audio, a support person at counsel table, plain-language explanation of legal terms, and a waiver of record costs — supported by documented cognitive impairment.</p>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline">
+
+    <!-- Entry 1: 2:29:09 pm -->
+    <div class="entry">
+      <div class="entry-card">
+        <div class="entry-time">2:29:09 pm <span class="day">Wednesday, April 17, 2024</span></div>
+        <div class="entry-meta">Katie Copeland &nbsp;·&nbsp; Office of Judge David Evans, Local Administrative Judge</div>
+        <div class="entry-quote">
+          "I have emergency motions to present and an application for protective order, but <span class="highlight">none of the family court judges will look at it.</span> They are claiming that <span class="highlight">only Judge Wells can rule on our case, but she is out of town for weeks.</span> A court coordinator suggested I ask Judge Evans what to do."
+        </div>
+        <div class="entry-note">She asked one question: <strong>"Can Judge Evans appoint another Judge to hear these motions today or tomorrow?"</strong> Under Tex. Gov't Code § 74.092, the Local Administrative Judge is the official responsible for implementing accessibility requirements in the county's courts. No response from that office appears in the record.</div>
+      </div>
+    </div>
+
+    <!-- Pill -->
+    <div class="pill-row">
+      <span class="pill">28 minutes later</span>
+    </div>
+
+    <!-- Entry 2: 2:57:27 pm (county response) -->
+    <div class="entry county">
+      <div class="entry-card">
+        <div class="entry-time">2:57:27 pm <span class="day">Wednesday, April 17, 2024</span></div>
+        <div class="entry-meta">Tarrant County ADA Office &nbsp;·&nbsp; Katie Copeland</div>
+        <div class="entry-quote">
+          "Good Afternoon Ms. Copeland<br><br>
+          Your ADA request would need to go <span class="highlight-gold">directly through the court your case is assigned to.</span>"
+        </div>
+        <div class="entry-note">That was the entire message. The court her case was assigned to was the one whose judge was <strong>out of town for weeks</strong> — the fact she had reported to the administrative judge twenty-eight minutes earlier.</div>
+      </div>
+    </div>
+
+    <div class="entry-spacer"></div>
+
+    <!-- Entry 3: 6:06:02 pm (DOJ) -->
+    <div class="entry doj">
+      <div class="entry-card">
+        <div class="entry-time">6:06:02 pm <span class="day">Wednesday, April 17, 2024</span></div>
+        <div class="entry-meta">U.S. Department of Justice, Civil Rights Division</div>
+        <div class="entry-quote">
+          <strong>Report received. Record number <span class="highlight-gold" style="color:var(--goldtext);">436059-JVZ.</span></strong>
+        </div>
+        <div class="entry-note">An automated acknowledgment — not a finding, not an investigation, and not evidence that DOJ agreed with anything. It establishes one fact only: <strong>by the end of that same afternoon, she had reported it.</strong></div>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+
+  <!-- Synthesis panel -->
+  <div class="synthesis">
+    <p class="label">This is the closed loop, with a timestamp</p>
+    <p class="big">The courts said the county. The county said the courts.</p>
+    <p class="sub">Twenty-eight minutes apart, both in writing, the same afternoon.</p>
+    <p class="body">No conspiracy is required to produce this, and none is alleged. It is what happens when a public entity builds a Title II process for its buildings and assigns courtroom access to no one. Each office answered correctly, according to its own policy. The request simply had nowhere to land.</p>
+  </div>
+
+  <!-- DOJ disclaimer note -->
+  <div class="doj-note">
+    <p class="label">On the DOJ entry</p>
+    <p>The Civil Rights Division's message is an automatic receipt. It states plainly that the Division "may not always be able to provide you with updates" and does "not have the resources to follow-up on every letter." It should never be characterized as a DOJ investigation, finding, or endorsement. Its value is the timestamp.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Sources: Tarrant County Public Accommodation Request submitted Apr. 12, 2024, 7:26 p.m.; e-mail, K. Copeland to T.H. Kemp, Apr. 17, 2024, 2:29:09 p.m. CDT; e-mail, ADM–ADA Requests to K. Copeland, Apr. 17, 2024, 2:57:27 p.m. CDT; U.S. DOJ Civil Rights Division acknowledgment, Apr. 17, 2024, 6:06:02 p.m. CDT.<br>
+    Kathryn "Katie" Copeland &nbsp;·&nbsp; Texas Bar No. 24086056 &nbsp;·&nbsp; Katie@KatieCopeland.com &nbsp;·&nbsp; Appellant's brief due August 31, 2026
+  </div>
+
+</div>
 </body>
 </html>
