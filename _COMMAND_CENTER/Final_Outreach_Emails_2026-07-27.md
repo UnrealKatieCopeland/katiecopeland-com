@@ -88,3 +88,32 @@ Katie
 Kathryn "Katie" Copeland
 Attorney · Author · Access Architect
 (817) 789-8498 | Katie@KatieCopeland.com | KatieCopeland.com
+
+---
+
+## 4. Initial Outreach to Sarah Tomiyo Stoner (Undaunted Law Firm)
+*Send anytime.*
+
+**Subject:** Martinez v. Alameda County / Tarrant County Title II appeal
+
+Sarah,
+
+I am a Texas attorney currently litigating my own Title II access-to-courts appeal in the Fifth Circuit (*Copeland v. Tarrant County*, No. 26-10389). I am writing to you because of your work in *Martinez v. County of Alameda*.
+
+The defense you defeated in *Martinez* — that the county is not liable because its clerks were following policy in good faith — is the exact defense Tarrant County is running in the Fifth Circuit. The difference is that Tarrant County's policy is to route all accommodation requests to the presiding judge, and then close the matter. 
+
+I have built the record to challenge that structural "closed loop." The County's written admissions — "Since it is a court proceeding request and not falling under the County's ADA compliance the response and directing them to the court then considers the matter closed" (April 1, 2026) — are in the record. The Fifth Circuit has not yet answered whether a public entity can discharge its § 12132 obligations by carving courtrooms out of its Title II infrastructure.
+
+I know you are in Irving, and I know you know how to try this theory. I am looking for co-counsel to handle the Fifth Circuit appeal (Appellant's brief due August 31, 2026). I am asking you because, as a practical matter, only counsel can bring it — a state prefiling order bars my pro se filings, and a counsel-built complaint avoids the traps my record has had to fight. I'm not looking to co-pilot from the back seat — if the right lawyer takes it, it's theirs.
+
+I have attached a one-page comparison of *Martinez* and *Copeland*, the three one-page exhibits containing the County's written admissions, and a timeline of the "twenty-eight minutes" that established the closed loop on the record.
+
+If this interests you, I would value a conversation.
+
+Warmly,
+
+Katie
+
+Kathryn "Katie" Copeland
+Attorney · Author · Access Architect
+(817) 789-8498 | Katie@KatieCopeland.com | KatieCopeland.com

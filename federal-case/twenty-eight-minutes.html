@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Twenty-Eight Minutes | Copeland v. Tarrant County</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/refinements.css">
+  <style>
+    body { background-color: var(--cream); color: var(--ink); padding: 4rem 2rem; font-family: "Source Sans Pro", sans-serif; }
+    .timeline-container { max-width: 800px; margin: 0 auto; }
+    .timeline-header { text-align: center; margin-bottom: 4rem; }
+    .timeline-header h1 { font-family: "Cormorant Garamond", serif; font-size: 2.5rem; color: var(--navy); margin-bottom: 0.5rem; }
+    .timeline-header p { font-size: 1.1rem; color: var(--gray); font-style: italic; }
+    
+    .timeline-event { display: flex; margin-bottom: 3rem; position: relative; }
+    .timeline-event::before {
+      content: ''; position: absolute; left: 140px; top: 30px; bottom: -3rem; width: 2px; background-color: var(--gold);
+    }
+    .timeline-event:last-child::before { display: none; }
+    
+    .time-stamp { width: 120px; text-align: right; padding-right: 40px; font-weight: 700; color: var(--navy); padding-top: 5px; }
+    .event-content { flex: 1; background: #fff; padding: 2rem; border-left: 4px solid var(--navy); box-shadow: 0 4px 12px rgba(0,0,0,0.05); position: relative; }
+    .event-content::before {
+      content: ''; position: absolute; left: -26px; top: 10px; width: 12px; height: 12px; border-radius: 50%; background: var(--navy); border: 4px solid var(--cream);
+    }
+    
+    .event-content.county-response { border-left-color: var(--ember); }
+    .event-content.county-response::before { background: var(--ember); }
+    
+    .event-title { font-family: "Cormorant Garamond", serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--navy); }
+    .event-quote { font-size: 1.15rem; line-height: 1.6; color: var(--ink); margin-bottom: 1rem; }
+    .event-meta { font-size: 0.9rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
+    
+    .six-weeks-later { text-align: center; padding: 2rem 0; font-style: italic; color: var(--gray); position: relative; }
+    .six-weeks-later::before {
+      content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: repeating-linear-gradient(to bottom, var(--gold) 0, var(--gold) 4px, transparent 4px, transparent 8px);
+    }
+    
+    .footer-note { text-align: center; margin-top: 4rem; font-size: 0.9rem; color: var(--gray); border-top: 1px solid rgba(0,0,0,0.1); padding-top: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    <div class="timeline-header">
+      <h1>The Twenty-Eight Minutes</h1>
+      <p>April 17, 2024 · Tarrant County, Texas</p>
+    </div>
+    
+    <div class="timeline-event">
+      <div class="time-stamp">2:29 p.m.</div>
+      <div class="event-content">
+        <div class="event-title">The Request for Help</div>
+        <div class="event-quote">
+          "I am writing to the Local Administrative Judge's office because I am unable to get any family court judge to hear my emergency motions... I have been told only the assigned judge can rule, and she is out of town for weeks. I am a disabled litigant requesting ADA accommodations."
+        </div>
+        <div class="event-meta">Email from Kathryn Copeland to Local Administrative Judge's Office</div>
+      </div>
+    </div>
+    
+    <div class="timeline-event">
+      <div class="time-stamp">2:57 p.m.</div>
+      <div class="event-content county-response">
+        <div class="event-title">The County ADA Office Answers</div>
+        <div class="event-quote">
+          "Your ADA request would need to go directly through the court your case is assigned to."
+        </div>
+        <div class="event-meta">Email from Tarrant County ADA Office (ADARequests@tarrantcountytx.gov)</div>
+      </div>
+    </div>
+    
+    <div class="six-weeks-later">
+      <span>Six weeks later</span>
+    </div>
+    
+    <div class="timeline-event">
+      <div class="time-stamp">May 29, 2024<br><span style="font-size: 0.85em; font-weight: 400;">4:58 p.m.</span></div>
+      <div class="event-content">
+        <div class="event-title">The Escalation Request</div>
+        <div class="event-quote">
+          "Is there an escalation process within Tarrant County for ADA accommodation requests that are not being addressed adequately by the court? How can I file a formal complaint regarding these ADA violations? Are there specific forms or procedures I should follow? Are there any county or state-level resources or contacts?"
+        </div>
+        <div class="event-meta">Email from Kathryn Copeland to Tarrant County ADA Office</div>
+      </div>
+    </div>
+    
+    <div class="timeline-event">
+      <div class="time-stamp">June 3, 2024<br><span style="font-size: 0.85em; font-weight: 400;">11:35 a.m.</span></div>
+      <div class="event-content county-response">
+        <div class="event-title">The Final Answer</div>
+        <div class="event-quote">
+          "The County does not have control over a particular Judge's decision when a litigant seeks ADA accommodations that would modify court proceedings. Such a decision relates to a judge's adjudicative responsibilities and is within a judge's sole discretion."
+        </div>
+        <div class="event-meta">Email from Tarrant County ADA Office</div>
+      </div>
+    </div>
+    
+    <div class="footer-note">
+      Every quotation is verbatim from a dated document in the record and is available with a pinpoint citation on request.<br>
+      Copeland v. Tarrant County, No. 26-10389 (5th Cir.)
+    </div>
+  </div>
+</body>
+</html>
