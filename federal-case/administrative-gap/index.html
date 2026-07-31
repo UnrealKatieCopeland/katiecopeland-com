@@ -17,9 +17,9 @@
       --navy:     #1D2D44;
       --navy-lt:  #2A3F5F;
       --red:      #8B1A1A;
-      --gold:     #C9A84C;
+      --gold:     #FFFFFF;       /* White on navy: 13.9:1 AAA — was #C9A84C (6.08:1 AA only) */
       --ink:      #1C1C1C;
-      --gray:     #5A5A5A;
+      --gray:     #4A4A4A;       /* AAA on cream: 7.9:1 — was #5A5A5A (6.49:1 AA only) */
       --rule:     #D5CEBC;
       --white:    #FFFFFF;
       --green:    #1A5C3A;
@@ -58,7 +58,7 @@
     .page-header .subtitle {
       font-size: 1rem;
       font-weight: 300;
-      color: rgba(255,255,255,0.82);
+      color: rgba(255,255,255,0.90);  /* Raised from 0.82 for AAA on navy */
       max-width: 580px;
       margin: 0 auto;
     }
@@ -185,14 +185,14 @@
       background: var(--green);
     }
     .step-box.terminal-law .step-text { color: var(--white); font-size: 1rem; }
-    .step-box.terminal-law .step-label { color: rgba(255,255,255,0.75); }
+      .step-box.terminal-law .step-label { color: rgba(255,255,255,0.90); }  /* Raised for AAA */
 
     .step-box.terminal-reality {
       border-color: var(--red);
       background: var(--red);
     }
     .step-box.terminal-reality .step-text { color: var(--white); font-size: 1rem; }
-    .step-box.terminal-reality .step-label { color: rgba(255,255,255,0.75); }
+      .step-box.terminal-reality .step-label { color: rgba(255,255,255,0.90); }  /* Raised for AAA */
 
     /* ── The Open Question ── */
     .open-question {
@@ -224,7 +224,7 @@
       font-family: 'Source Sans 3', sans-serif;
       font-size: 0.85rem;
       font-weight: 400;
-      color: rgba(255,255,255,0.72);
+      color: rgba(255,255,255,0.87);  /* Raised from 0.72 for AAA on navy */
       max-width: 600px;
       margin: 0 auto;
     }
