@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Policy Change | Copeland v. Tarrant County</title>
+  <meta name="description" content="Tarrant County's ADA accommodation policy, documented across five captures from March 2023 through July 2026. The carve-out assigning courtroom access to a judge's sole discretion did not exist until June 18, 2026 — while the Fifth Circuit appeal was pending.">
+  <style>
+    /* WCAG 2.1 AAA — all text pairs ≥ 7:1 */
+    :root {
+      --paper:   #ffffff;
+      --cream:   #FAF8F2;
+      --wash:    #f2f5fa;
+      --navy:    #1D2D44;
+      --ink:     #1C1C1C;
+      --body:    #2b3546;
+      --mut:     #434b58;
+      --red:     #8a1b25;
+      --gold:    #C9A84C;
+      --goldtext: #7a5c10;
+      --goldwash: #fdf7e6;
+      --rule:    #c9d3e2;
+      --deleted: #fef2f2;
+      --added:   #f0fdf4;
+      --deleted-border: #dc2626;
+      --added-border:   #16a34a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      padding: 48px 24px 64px;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .sheet { max-width: 1100px; margin: 0 auto; }
+
+    /* ---- Eyebrow + Title ---- */
+    .eyebrow {
+      text-align: center;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--mut);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 44px;
+      font-weight: 700;
+      color: var(--navy);
+      text-align: center;
+      line-height: 1.1;
+      letter-spacing: -.01em;
+    }
+    h1 .em { color: var(--red); }
+    .dek {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--body);
+      max-width: 64ch;
+      margin: 14px auto 36px;
+    }
+
+    /* ---- Summary box ---- */
+    .summary {
+      background: var(--navy);
+      color: #fff;
+      padding: 28px 32px;
+      margin-bottom: 40px;
+    }
+    .summary .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .summary p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #dbe3ef;
+    }
+    .summary strong { color: #fff; }
+
+    /* ---- Section heading ---- */
+    .section-head {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--mut);
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 8px;
+      margin: 40px 0 20px;
+    }
+
+    /* ---- Five-column evolution table ---- */
+    .evo-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      line-height: 1.55;
+    }
+    .evo-table th {
+      background: var(--navy);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+      border-right: 1px solid rgba(255,255,255,.15);
+    }
+    .evo-table th:last-child { border-right: none; }
+    .evo-table th .date {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .evo-table th .sub {
+      font-size: 10px;
+      color: #9fb0c9;
+      font-weight: 400;
+      letter-spacing: .08em;
+    }
+    .evo-table td {
+      padding: 14px 14px;
+      vertical-align: top;
+      border: 1px solid var(--rule);
+      color: var(--body);
+    }
+    .evo-table tr:nth-child(even) td { background: var(--wash); }
+    .evo-table tr:nth-child(odd) td { background: var(--paper); }
+
+    /* Row label column */
+    .evo-table td.row-label {
+      background: var(--navy) !important;
+      color: #dbe3ef;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      width: 130px;
+      min-width: 130px;
+    }
+
+    /* Present / absent chips */
+    .chip {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 2px;
+    }
+    .chip.yes { background: #dcfce7; color: #15803d; }
+    .chip.no  { background: #fee2e2; color: #b91c1c; }
+    .chip.changed { background: #fef9c3; color: #854d0e; }
+
+    /* Deleted text highlight */
+    .del {
+      background: var(--deleted);
+      border-left: 3px solid var(--deleted-border);
+      padding: 8px 12px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--body);
+      margin-top: 6px;
+    }
+    .del .del-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--deleted-border);
+      margin-bottom: 4px;
+    }
+
+    /* Added text highlight */
+    .add {
+      background: var(--added);
+      border-left: 3px solid var(--added-border);
+      padding: 8px 12px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--body);
+      margin-top: 6px;
+    }
+
+    /* Quote block */
+    .q {
+      font-style: italic;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--body);
+    }
+    .q strong { font-style: normal; color: var(--ink); }
+
+    /* ---- Two-version diff panel ---- */
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 2px solid var(--navy);
+      margin: 20px 0 32px;
+    }
+    .diff-col {
+      padding: 20px 22px;
+    }
+    .diff-col + .diff-col {
+      border-left: 2px solid var(--navy);
+    }
+    .diff-col .col-head {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--mut);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .diff-col .col-head .date { color: var(--navy); font-size: 13px; display: block; margin-top: 2px; }
+    .diff-col p { font-size: 13.5px; line-height: 1.65; color: var(--body); margin-bottom: 10px; }
+    .diff-col p:last-child { margin-bottom: 0; }
+    .diff-col .removed { background: var(--deleted); border-left: 3px solid var(--deleted-border); padding: 8px 10px; }
+    .diff-col .added   { background: var(--added);   border-left: 3px solid var(--added-border);   padding: 8px 10px; }
+
+    /* ---- Consequence panel ---- */
+    .consequence {
+      background: var(--goldwash);
+      border-left: 5px solid var(--goldtext);
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .consequence .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--goldtext);
+      margin-bottom: 10px;
+    }
+    .consequence p {
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: var(--body);
+      margin-bottom: 8px;
+    }
+    .consequence p:last-child { margin-bottom: 0; }
+    .consequence strong { color: var(--ink); }
+
+    /* ---- Word marker note ---- */
+    .word-marker {
+      background: var(--wash);
+      border: 1px solid var(--rule);
+      border-left: 4px solid var(--navy);
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+    .word-marker .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--mut);
+      margin-bottom: 8px;
+    }
+    .word-marker p { font-size: 13.5px; line-height: 1.65; color: var(--body); }
+    .word-marker code {
+      background: #e8edf5;
+      color: var(--navy);
+      font-size: 13px;
+      padding: 2px 6px;
+      font-family: "Courier New", monospace;
+      font-weight: 700;
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      font-size: 12px;
+      line-height: 1.75;
+      color: var(--mut);
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 32px; }
+      .diff-grid { grid-template-columns: 1fr; }
+      .diff-col + .diff-col { border-left: none; border-top: 2px solid var(--navy); }
+      .evo-table { font-size: 12px; }
+      .evo-table td.row-label { width: 90px; min-width: 90px; font-size: 10px; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sheet">
+
+  <!-- Eyebrow + Title -->
+  <p class="eyebrow">Copeland v. Tarrant County · No. 26-10389 (5th Cir.)</p>
+  <h1>The Policy <span class="em">Change.</span></h1>
+  <p class="dek">Tarrant County's ADA accommodation page, documented across five captures from March 2023 through July 2026. The carve-out placing courtroom access within "a judge's sole discretion" did not exist until June 18, 2026 — while the Fifth Circuit appeal was pending.</p>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p class="label">What the record shows</p>
+    <p>From <strong>March 2023 through September 2025</strong>, the County's published policy promised: the ADA Officer reviews your request and responds within 10 business days; if you disagree, you may appeal to the County Administrator within ten business days. <strong>No exception for courts. No mention of judges. No sole discretion.</strong></p>
+    <p style="margin-top:12px;">On <strong>June 18, 2026</strong> — four months after the district court dismissed this case, and while the Fifth Circuit appeal was pending — the page was replaced with a new version. The 10-business-day review, the County Administrator appeal, and the "Request Review" form were deleted. In their place: a sentence declaring that courtroom accommodation decisions "relate to a judge's adjudicative responsibilities and is within a judge's sole discretion."</p>
+    <p style="margin-top:12px;">On <strong>July 1, 2026</strong>, the page was modified again. The direct ADA Officer phone number (817-884-1111) and the Relay Texas TDD number (1-800-735-2989) — the only contact methods for deaf and hard-of-hearing callers — were removed.</p>
+  </div>
+
+  <!-- Five-version evolution table -->
+  <p class="section-head">Policy evolution — five captures</p>
+
+  <table class="evo-table" role="table" aria-label="Tarrant County ADA policy evolution across five captures">
+    <thead>
+      <tr>
+        <th style="width:130px;"><span class="date">Feature</span></th>
+        <th><span class="date">Mar. 3, 2023</span><span class="sub">Wayback: Jan. 9, 2025</span></th>
+        <th><span class="date">Apr. 16, 2025</span><span class="sub">Wayback: Sep. 18, 2025</span></th>
+        <th><span class="date">Sep. 26, 2025</span><span class="sub">Live on Jun. 17, 2026 at 5:59 p.m.</span></th>
+        <th><span class="date">Jun. 18, 2026</span><span class="sub">First version with carve-out</span></th>
+        <th><span class="date">Jul. 1, 2026</span><span class="sub">Current version</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="row-label">Courtroom carve-out</td>
+        <td><span class="chip no">Absent</span></td>
+        <td><span class="chip no">Absent</span></td>
+        <td><span class="chip no">Absent</span></td>
+        <td><span class="chip changed">Appears</span><div class="add" style="margin-top:8px;">"The County does not have control over a particular Judge's decision when a litigant seeks ADA accommodations that would modify court proceedings. Such a decision relates to a judge's adjudicative responsibilities and is within a judge's sole discretion."</div></td>
+        <td><span class="chip changed">Present</span><p style="margin-top:6px;font-size:12.5px;color:var(--mut);">Identical language retained.</p></td>
+      </tr>
+      <tr>
+        <td class="row-label">ADA Officer 10-day review</td>
+        <td><span class="chip yes">Present</span><p style="margin-top:6px;font-size:12.5px;">"The ADA Officer will review your request … and will respond within 10 business days."</p></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip no">Deleted</span><div class="del" style="margin-top:8px;"><div class="del-label">Removed</div>ADA Officer 10-business-day review promise and process description.</div></td>
+        <td><span class="chip no">Absent</span></td>
+      </tr>
+      <tr>
+        <td class="row-label">County Administrator appeal</td>
+        <td><span class="chip yes">Present</span><p style="margin-top:6px;font-size:12.5px;">"If you disagree with the ADA Officer's response, you may request that the Tarrant County Administrator review your request."</p></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip no">Deleted</span><div class="del" style="margin-top:8px;"><div class="del-label">Removed</div>County Administrator review right and 10-business-day response deadline.</div></td>
+        <td><span class="chip no">Absent</span></td>
+      </tr>
+      <tr>
+        <td class="row-label">"Request Review" form</td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip no">Deleted</span></td>
+        <td><span class="chip no">Absent</span></td>
+      </tr>
+      <tr>
+        <td class="row-label">ADA Officer direct phone</td>
+        <td><span class="chip yes">Present</span><p style="margin-top:6px;font-size:12.5px;">817-212-6935</p></td>
+        <td><span class="chip yes">Present</span><p style="margin-top:6px;font-size:12.5px;">817-884-1501</p></td>
+        <td><span class="chip yes">Present</span><p style="margin-top:6px;font-size:12.5px;">817-884-1111</p></td>
+        <td><span class="chip yes">Present</span><p style="margin-top:6px;font-size:12.5px;">817-884-1111</p></td>
+        <td><span class="chip no">Deleted</span><div class="del" style="margin-top:8px;"><div class="del-label">Removed Jul. 1, 2026</div>"If you prefer to contact the ADA Officer directly, please call 817-884-1111 or through the Relay Texas TDD at 1-800-735-2989."</div></td>
+      </tr>
+      <tr>
+        <td class="row-label">Relay Texas TDD (deaf/HH access)</td>
+        <td><span class="chip yes">Present</span><p style="margin-top:6px;font-size:12.5px;">1-800-735-2989</p></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip yes">Present</span></td>
+        <td><span class="chip no">Deleted</span></td>
+      </tr>
+      <tr>
+        <td class="row-label">Word comment marker</td>
+        <td><span class="chip no">Absent</span></td>
+        <td><span class="chip no">Absent</span></td>
+        <td><span class="chip no">Absent</span></td>
+        <td><span class="chip changed">Present</span><p style="margin-top:6px;font-size:12.5px;"><code>[JH1.1]</code> — a Microsoft Word tracked-comment marker, published live in the grievance section. Indicates the page was drafted in Word with comments by a person with initials JH.</p></td>
+        <td><span class="chip changed">Present</span><p style="margin-top:6px;font-size:12.5px;"><code>[JH1.1]</code> still present in July 1 version.</p></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Side-by-side diff: the key transition -->
+  <p class="section-head">The key transition — verbatim text comparison</p>
+  <p style="font-size:14px;color:var(--body);margin-bottom:16px;">The September 26, 2025 version was confirmed live on June 17, 2026 at 5:59 p.m. (Wayback capture <code style="font-size:12px;background:#e8edf5;padding:2px 5px;">20260617175904</code>). The June 18, 2026 version was the next capture. You have both sides of a one-day window.</p>
+
+  <div class="diff-grid">
+    <div class="diff-col">
+      <div class="col-head">Before <span class="date">Sep. 26, 2025 — live through Jun. 17, 2026</span></div>
+      <p>The ADA accommodation process is not for general financial assistance. The ADA accommodation process is for individuals with disabilities who need assistance accessing services, programs or activities made available by Tarrant County, Texas. To request an accommodation for services, programs or activities made available by Tarrant County, Texas, please press the "Request Accommodation" button below and complete the "Tarrant County Public Accommodation Request" form. After you have completed the form, press the "submit" button. <strong>The ADA Officer will review your request for accommodation and will respond within 10 business days of the receipt of the request.</strong></p>
+      <p style="margin-top:10px;"><strong>REQUEST ADA ACCOMMODATION REVIEW</strong><br>
+      If you disagree with the ADA Officer's response, <strong>you may request that the Tarrant County Administrator review your request for accommodation.</strong> To request that the County Administrator review your request for accommodation, press the "Request Review" link below and complete the "Request Review" form within ten business days of your receipt of the ADA Officer's response. After you have completed the form, press the "submit" button. The County Administrator will review your request, the ADA Officer's response, and relevant documentation and will respond within ten 10 business days.</p>
+      <p style="margin-top:10px;"><strong>If you prefer to contact the ADA Officer directly, please call 817-884-1111 or through the Relay Texas TDD at 1-800-735-2989.</strong></p>
+    </div>
+    <div class="diff-col">
+      <div class="col-head">After <span class="date">Jun. 18, 2026 — first version with carve-out</span></div>
+      <div class="added" style="margin-bottom:14px;">
+        <strong>New opening paragraph (inserted):</strong><br>
+        "This process does not pertain to complaints of discrimination under Title I of the ADA. <strong>The County does not have control over a particular Judge's decision when a litigant seeks ADA accommodations that would modify court proceedings. Such a decision relates to a judge's adjudicative responsibilities and is within a judge's sole discretion.</strong>"
+      </div>
+      <div class="removed" style="margin-bottom:14px;">
+        <strong>Deleted:</strong> ADA Officer 10-business-day review promise.
+      </div>
+      <div class="removed" style="margin-bottom:14px;">
+        <strong>Deleted:</strong> County Administrator appeal right and "Request Review" form.
+      </div>
+      <p>Replaced with a new "ADA Grievance Procedures" section establishing a 180-day filing window, 15/30/15-business-day investigation and determination deadlines, and appeal to the ADA Committee — but with no ADA Officer review promise and no County Administrator appeal.</p>
+      <p style="margin-top:10px;">ADA Officer direct line (817-884-1111) and Relay Texas TDD (1-800-735-2989) still present in this version — <strong>removed on July 1, 2026.</strong></p>
+    </div>
+  </div>
+
+  <!-- Consequence analysis -->
+  <div class="consequence">
+    <p class="label">Legal consequences — three points</p>
+    <p><strong>1. The carve-out cannot defend the 2023–2024 conduct.</strong> It did not exist. Under the County's own published policy when Copeland submitted her April 12, 2024 accommodation request, the ADA Officer owed a written response within 10 business days and she had a right of appeal to the County Administrator. Neither was provided.</p>
+    <p><strong>2. The removal of the remedial process is evidence of deliberate indifference, not a cure.</strong> Voluntary cessation doctrine requires that a defendant demonstrate the challenged conduct cannot reasonably be expected to recur. Replacing a 10-business-day review right with a carve-out — while federal litigation is pending — runs in the opposite direction.</p>
+    <p><strong>3. Removing the TDD relay number raises an independent § 35.161 issue.</strong> 28 C.F.R. § 35.161 requires public entities to ensure that telephone emergency services and general communications are accessible to persons with hearing impairments. The removal of the only TDD contact method from the County's ADA accommodation page is not a court proceeding. The carve-out cannot reach it.</p>
+  </div>
+
+  <!-- Word marker note -->
+  <div class="word-marker">
+    <p class="label">The [JH1.1] marker</p>
+    <p>Both the June 18 and July 1, 2026 versions of the page contain the string <code>[JH1.1]</code> embedded in the grievance section text: "It may be used by any person who wishes to file a grievance alleging discrimination<code>[JH1.1]</code> on the basis of disability…" This is a Microsoft Word tracked-comment marker — the initials of the person who left a comment at that location, and the comment number. The page was drafted in Word with tracked changes by a person with initials JH and published without cleaning the comment markers. In the trial-level case, this is a document request with a name attached to it: all drafts, revision history, and tracked comments for <code>request-ada-accommodation.html</code> from January 2026 forward, and the identity of "JH."</p>
+  </div>
+
+  <!-- Sources -->
+  <p class="section-head">Sources</p>
+  <div style="background:var(--wash);border:1px solid var(--rule);padding:18px 22px;font-size:13px;line-height:1.75;color:var(--body);">
+    <p><strong>Mar. 3, 2023 version:</strong> Wayback Machine capture <code>20250109043414</code> of tarrantcountytx.gov/en/county/website-use/request-ada-accommodation.html. Page last modified Mar. 3, 2023.</p>
+    <p style="margin-top:8px;"><strong>Apr. 16, 2025 version:</strong> Wayback Machine capture <code>20250918084500</code>. Page last modified Apr. 16, 2025.</p>
+    <p style="margin-top:8px;"><strong>Sep. 26, 2025 version (live Jun. 17, 2026):</strong> Wayback Machine capture <code>20260617175904</code>, timestamp 5:59 p.m. CDT. Page last modified Sep. 26, 2025.</p>
+    <p style="margin-top:8px;"><strong>Jun. 18, 2026 version:</strong> Direct capture of tarrantcountytx.gov, printed Jun. 30, 2026. Page last modified Jun. 18, 2026.</p>
+    <p style="margin-top:8px;"><strong>Jul. 1, 2026 version:</strong> Direct capture of tarrantcountytx.gov, printed Jul. 31, 2026. Page last modified Jul. 1, 2026.</p>
+    <p style="margin-top:8px;">All five captures are in the possession of Kathryn Copeland and available on request. Wayback Machine URLs are independently verifiable.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Copeland v. Tarrant County, No. 26-10389 (5th Cir.) &nbsp;·&nbsp; Appellant's brief due August 31, 2026<br>
+    Kathryn "Katie" Copeland &nbsp;·&nbsp; Texas Bar No. 24086056 &nbsp;·&nbsp; Katie@KatieCopeland.com
+  </div>
+
+</div>
+</body>
+</html>
